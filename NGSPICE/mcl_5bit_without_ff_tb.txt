@@ -1,0 +1,39 @@
+
+* Supply
+Vdd vdd gnd {SUPPLY}
+
+* Clock Generation
+Vclk clk gnd PULSE(0 {SUPPLY} 20n 100p 100p 20n 40n)
+
+* Inputs - limited randomization for verification
+* You can change these values or make a PWL to randomize further
+VA0 A0 gnd 1.8
+VB0 B0 gnd 1.8
+VA1 A1 gnd 1.8
+VB1 B1 gnd 1.8
+VA2 A2 gnd 1.8
+VB2 B2 gnd 1.8
+VA3 A3 gnd 1.8
+VB3 B3 gnd 1.8
+VA4 A4 gnd 1.8
+VB4 B4 gnd 1.8
+
+* Initial carry input
+VCin Cin gnd 0
+
+Xn1 Cinbar Cin gnd gnd nmos wn=1u
+Xp1 Cinbar Cin vdd vdd pmos wp=2u
+
+* Instantiate 5-bit Manchester Carry Adder
+Xmca clk A0 B0 A1 B1 A2 B2 A3 B3 A4 B4 Cin Cinbar Cout Coutbar S0 S1 S2 S3 S4 vdd gnd mca_5bit
+
+* Probes / Measurement
+.control
+tran 0.1n 200n
+
+run
+* plot outputs
+plot Cout S0+2 S1+4 S2+6 S3+8 S4+10 Coutbar-2
+.endc
+
+.end
