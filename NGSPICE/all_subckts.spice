@@ -43,20 +43,20 @@ Mn D G S B CMOSN W={wn} L={2*lambda}
 
 * ===== Inverters to generate A_bar and B_bar =====
 * Inverter 1 -> A_bar
-C_abar A_BAR gnd 10f
+C_abar A_BAR gnd 1f
 Xpa_invA A_BAR A vdd vdd pmos wp=2u
 Xna_invA A_BAR A gnd gnd nmos wn=1u
 
 
 
 * Inverter 2 -> B_bar
-C_bbar B_BAR gnd 10f
+C_bbar B_BAR gnd 1f
 Xpa_invB B_BAR B vdd vdd pmos wp=2u
 Xna_invB B_BAR B gnd gnd nmos wn=1u
 
 
 * ===== PTL Pass Network =====
-C_yinv Yinv gnd 10f
+C_yinv Yinv gnd 1f
 * Path 1 : Yinv = Abar when B = 0  -> gate = B_BAR, pass A_BAR -> Yinv
 Xn1 Yinv B_BAR A_BAR gnd nmos wn=1u
 
@@ -81,27 +81,27 @@ Xna_out Y Yinv gnd gnd nmos wn=1.5u
 * ----------------------------------------------------------- 
 .subckt ff_1bit clk In Qout vdd gnd 
 
-Xm1 W In vdd vdd pmos wp=2u
-Xm2 A clk W vdd pmos wp=2u
-Xm3 A In gnd gnd nmos wn=1u
+Xm1 W In vdd vdd pmos wp=7.2u
+Xm2 A clk W vdd pmos wp=7.2u
+Xm3 A In gnd gnd nmos wn=3.6u
 
-Xm4 B clk vdd vdd pmos wp=2u
-Xm5 Y A B gnd nmos wn=1u
-Xm6 Y clk gnd gnd nmos wn=1u
+Xm4 B clk vdd vdd pmos wp=7.2u
+Xm5 Y A B gnd nmos wn=3.6u
+Xm6 Y clk gnd gnd nmos wn=3.6u
 
-Xm7 Qinv B vdd vdd pmos wp=2u
-Xm8 Qinv clk Z gnd nmos wn=1u
-Xm9 Z B gnd gnd nmos wn=1u
+Xm7 Qinv B vdd vdd pmos wp=7.2u
+Xm8 Qinv clk Z gnd nmos wn=3.6u
+Xm9 Z B gnd gnd nmos wn=3.6u
 
-Xinvn Qout Qinv gnd gnd nmos wn=1u
-Xinvp Qout Qinv vdd vdd pmos wp=2u
+Xinvn Qout Qinv gnd gnd nmos wn=3.6u
+Xinvp Qout Qinv vdd vdd pmos wp=7.2u
 
-Cqinv Qinv gnd 10f
-Ca A gnd 10f
-Cb B gnd 10f
-Cz Z gnd 10f
-Cy Y gnd 10f
-Cw W gnd 10f
+Cqinv Qinv gnd 1f
+Ca A gnd 1f
+Cb B gnd 1f
+Cz Z gnd 1f
+Cy Y gnd 1f
+Cw W gnd 1f
 
 .ends ff_1bit
 
@@ -116,7 +116,7 @@ Cw W gnd 10f
 .subckt mcl clk A B Cin Cinbar Cout Coutbar Sum vdd gnd
 
 * ----- 1. Generate P = A XOR B -----
-Cp P gnd 10f
+Cp P gnd 1f
 Xxor_AB A B P vdd gnd xor2
 
 *---------Propagate Coutbar = Cinbar when P = 1
@@ -129,9 +129,9 @@ XclkPMOS Coutbar clk vdd vdd pmos wp=2u
 
 
 *----------Generate G = AB , putting two nmos in series with gates as A
-C_ab AB gnd 10f
+C_ab AB gnd 1f
 XnA Coutbar A AB gnd nmos wn=1u
-C_bclk Bclk gnd 10f
+C_bclk Bclk gnd 1f
 XnB AB B Bclk gnd nmos wn=1u
 
 XclkNMOS Bclk clk gnd gnd nmos wn=1u
@@ -158,37 +158,36 @@ Xsum P Cin Sum vdd gnd xor2
 
 *---------bit 0------------
 Xbit0 clk A0 B0 Cin Cinbar C0 C0bar S0 vdd gnd mcl
-C_c0 C0 gnd 10f
-C_c0bar C0bar gnd 10f
-C_s0 S0 gnd 10f
+C_c0 C0 gnd 1f
+C_c0bar C0bar gnd 1f
+C_s0 S0 gnd 1f
 
 *----------bit 1--------------
 Xbit1 clk A1 B1 C0 C0bar C1 C1bar S1 vdd gnd mcl
-C_c1 C1 gnd 10f
-C_c1bar C1bar gnd 10f
-C_s1 S1 gnd 10f
+C_c1 C1 gnd 1f
+C_c1bar C1bar gnd 1f
+C_s1 S1 gnd 1f
 
 *----------bit 2-------------
 Xbit2 clk A2 B2 C1 C1bar C2 C2bar S2 vdd gnd mcl
-C_c2 C2 gnd 10f
-C_c2bar C2bar gnd 10f
-C_s2 S2 gnd 10f
+C_c2 C2 gnd 1f
+C_c2bar C2bar gnd 1f
+C_s2 S2 gnd 1f
 
 *----------bit 3-------------
 Xbit3 clk A3 B3 C2 C2bar C3 C3bar S3 vdd gnd mcl
-C_c3 C3 gnd 10f
-C_c3bar C3bar gnd 10f
-C_s3 S3 gnd 10f
+C_c3 C3 gnd 1f
+C_c3bar C3bar gnd 1f
+C_s3 S3 gnd 1f
 
 *----------bit 4-------------
 Xbit4 clk A4 B4 C3 C3bar Cout Coutbar S4 vdd gnd mcl
-C_cout Cout gnd 10f
-C_coutbar Coutbar gnd 10f
-C_s4 S4 gnd 10f
+C_cout Cout gnd 1f
+C_coutbar Coutbar gnd 1f
+C_s4 S4 gnd 1f
 
 .ends mca_5bit
 
 *---------------------------------------------------------
 *                  TESTBENCH
 *---------------------------------------------------------
-

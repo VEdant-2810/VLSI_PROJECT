@@ -17,9 +17,17 @@ Cq Q gnd 10f
 .control
 run
 
-meas tran Q_delay TRIG v(clk) VAL='0.9*V(SUPPLY)' RISE=1 TARG v(Q) VAL='0.9*V(SUPPLY)' RISE=1
+meas tran Q_delay_fall TRIG v(clk) VAL=0.9 RISE=3 TARG v(Q) val=0.9 FALL=1
+meas tran Q_delay_rise TRIG v(clk) VAL=0.9 RISE=4 TARG v(Q) VAL=0.9 RISE=1
+let tp2q = (Q_delay_rise + Q_delay_fall)/2
+print tp2q;
+
+meas tran tsu_r TRIG v(D) VAL=0.9 RISE=4 TARG v(Xff1.A) VAL=0.9 FALL=3
+meas tran tsu_f TRIG v(D) VAL=0.9 FALL=3 TARG v(Xff1.A) VAL=0.9 RISE=2
+let tsu = (tsu_r + tsu_f)/2
+print tsu;
 
 
-plot V(D)+4 V(clk)+2 v(Q)
+plot V(D)+4 V(clk)+2 V(Q) V(Xff1.A)+6
 .endc
 .end
