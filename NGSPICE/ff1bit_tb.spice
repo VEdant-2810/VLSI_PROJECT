@@ -1,3 +1,6 @@
+
+.include all_subckts.spice
+
 Vdd vdd gnd {SUPPLY}
 
 Vclk clk 0 PULSE(0 {SUPPLY} 2n 100p 100p 35n 70n)
