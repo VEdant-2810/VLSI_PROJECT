@@ -1,0 +1,102 @@
+$date
+	Tue Dec  2 16:53:32 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mcl_1bit_tb $end
+$var wire 1 ! Sum $end
+$var wire 1 " Cout $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$var reg 1 % Cin $end
+$var reg 1 & clk $end
+$scope module mod $end
+$var wire 1 # A $end
+$var wire 1 $ B $end
+$var wire 1 % Cin $end
+$var wire 1 ' G $end
+$var wire 1 ( P $end
+$var wire 1 & clk $end
+$var reg 1 " Cout $end
+$var reg 1 ! Sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+1"
+0!
+$end
+#5
+0"
+1&
+#10
+1!
+1"
+1(
+0&
+1$
+#15
+0"
+1&
+#20
+1"
+0&
+0$
+1#
+#25
+0"
+1&
+#30
+0!
+1"
+0(
+1'
+0&
+1$
+#35
+1&
+#40
+1!
+0&
+1%
+#45
+1&
+#50
+0!
+1(
+0'
+0&
+0#
+#55
+1&
+#60
+0&
+0$
+1#
+#65
+1&
+#70
+1!
+0(
+0&
+0#
+#75
+0"
+1&
+#80
+1"
+0&
