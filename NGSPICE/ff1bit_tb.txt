@@ -1,0 +1,18 @@
+Vdd vdd gnd {SUPPLY}
+
+Vclk clk 0 PULSE(0 {SUPPLY} 2n 100p 100p 35n 70n)
+Vd   D   0 PULSE(0 {SUPPLY} 5n 100p 100p 20n 40n)  
+*D is delayed by 5ns, for setup time and holdtime violation protection  
+
+
+Xff1 clk D Q vdd gnd ff_1bit 
+
+Cq Q gnd 10f
+
+.tran 1n 340n 
+
+.control
+run
+plot V(D)+4 V(clk)+2 v(Q)
+.endc
+.end

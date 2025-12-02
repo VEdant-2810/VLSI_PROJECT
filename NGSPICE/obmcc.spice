@@ -1,0 +1,172 @@
+* one bit manchester carry along with flipflop for input and output
+
+.include 'TSMC_180nm.txt'
+.param lambda=0.09u
+.param SUPPLY=1.8
+.param width_N=20*lambda
+.global gnd vdd
+
+
+* -----------------------------------------------------------
+* PMOS subcircuit
+* Terminals: D G S B
+* Parameter: wp (user-specified width)
+* -----------------------------------------------------------
+.subckt pmos D G S B wp=0
+
+Mp D G S B CMOSP W={wp} L={2*lambda} 
++ AS={5*wp*lambda} PS={10*lambda + 2*wp} 
++ AD={5*wp*lambda} PD={10*lambda + 2*wp}
+
+.ends pmos
+
+
+* -----------------------------------------------------------
+* NMOS subcircuit
+* Terminals: D G S B
+* Parameter: wn (user-specified width)
+* -----------------------------------------------------------
+.subckt nmos D G S B wn=0
+
+Mn D G S B CMOSN W={wn} L={2*lambda} 
++ AS={5*wn*lambda} PS={10*lambda + 2*wn} 
++ AD={5*wn*lambda} PD={10*lambda + 2*wn}
+
+.ends nmos
+
+
+* -----------------------------------------------------------
+* 2input XOR subcircuit
+* Terminals: A B Y vdd gnd
+* -----------------------------------------------------------
+.subckt xor2 A B Y vdd gnd
+
+* ===== Inverters to generate A_bar and B_bar =====
+* Inverter 1 -> A_bar
+C_abar A_BAR gnd 10f
+Xpa_invA A_BAR A vdd vdd pmos wp=2u
+Xna_invA A_BAR A gnd gnd nmos wn=1u
+
+
+
+* Inverter 2 -> B_bar
+C_bbar B_BAR gnd 10f
+Xpa_invB B_BAR B vdd vdd pmos wp=2u
+Xna_invB B_BAR B gnd gnd nmos wn=1u
+
+
+* ===== PTL Pass Network =====
+C_yinv Yinv gnd 10f
+* Path 1 : Yinv = Abar when B = 0  -> gate = B_BAR, pass A_BAR -> Yinv
+Xn1 Yinv B_BAR A_BAR gnd nmos wn=1u
+
+* Path 2 : Yinv = A when B = 1 -> gate = B, pass A -> Yinv
+Xn2 Yinv B A gnd nmos wn=1u 
+
+
+
+
+* ===== Output Inverter (restores swing) =====
+Xpa_out Y Yinv vdd vdd pmos wp=2.5u
+Xna_out Y Yinv gnd gnd nmos wn=1.5u
+
+
+.ends xor2
+
+
+* -----------------------------------------------------------
+* TRUE Manchester Carry Chain Cell 
+*
+* Terminals:
+*   clk A B Cin Cinbar Cout Coutbar vdd gnd
+* ----------------------------------------------------------- 
+.subckt mcl clk A B Cin Cinbar Cout Coutbar Sum vdd gnd
+
+* ----- 1. Generate P = A XOR B -----
+Cp P gnd 10f
+Xxor_AB A B P vdd gnd xor2
+
+*---------Propagate Coutbar = Cinbar when P = 1
+* Pass transistor: gate = P, pass Cinbar -> Coutbar
+XpassP Coutbar P Cinbar gnd nmos wn=1u
+
+
+*----------PMOS with clock as input  (precharge style)
+XclkPMOS Coutbar clk vdd vdd pmos wp=2u
+
+
+*----------Generate G = AB , putting two nmos in series with gates as A
+C_ab AB gnd 10f
+XnA Coutbar A AB gnd nmos wn=1u
+C_bclk Bclk gnd 10f
+XnB AB B Bclk gnd nmos wn=1u
+
+XclkNMOS Bclk clk gnd gnd nmos wn=1u
+
+
+* ----- 4. Restoring inverter : Coutbar to Cout 
+Xcout_p Cout Coutbar vdd vdd pmos wp=3u
+Xcout_n Cout Coutbar gnd gnd nmos wn=1.5u
+
+*----------Calculate sum = p ^ cin
+Xsum P Cin Sum vdd gnd xor2
+
+.ends mcl
+
+* -----------------------------------------------------------
+* Flip FLop     
+*
+* Terminals:
+*   clk In Qout vdd gnd
+* ----------------------------------------------------------- 
+.subckt ff_1bit clk In Qout vdd gnd 
+
+Xm1 W In vdd vdd pmos wp=2u
+Xm2 A clk W vdd pmos wp=2u
+Xm3 A In gnd gnd nmos wn=1u
+
+Xm4 B clk vdd vdd pmos wp=2u
+Xm5 Y A B gnd nmos wn=1u
+Xm6 Y clk gnd gnd nmos wn=1u
+
+Xm7 Qinv B vdd vdd pmos wp=2u
+Xm8 Qinv clk Z gnd nmos wn=1u
+Xm9 Z B gnd gnd nmos wn=1u
+
+Xinvn Qout Qinv gnd gnd nmos wn=1u
+Xinvp Qout Qinv vdd vdd pmos wp=2u
+
+Cqinv Qinv gnd 10f
+Ca A gnd 10f
+Cb B gnd 10f
+Cz Z gnd 10f
+Cy Y gnd 10f
+Cw W gnd 10f
+
+
+.ends ff_1bit
+
+
+*---------------------------------------------------------
+*                  TESTBENCH
+*---------------------------------------------------------
+
+Vdd vdd gnd {SUPPLY}
+
+Vclk clk 0 PULSE(0 {SUPPLY} 2n 100p 100p 35n 70n)
+Vd   D   0 PULSE(0 {SUPPLY} 5n 100p 100p 20n 40n)  
+*D is delayed by 5ns, for setup time and holdtime violation protection  
+
+
+Xff1 clk D Q vdd gnd ff_1bit 
+
+Cq Q gnd 10f
+
+.tran 1n 340n 
+
+.control
+
+run
+plot V(D)+4 V(clk)+2 v(Q)
+.endc
+.end

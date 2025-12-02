@@ -1,0 +1,17 @@
+Vdd vdd gnd {SUPPLY}
+
+Va A 0 PULSE(0 {SUPPLY} 0 100p 100p 40n 80n)
+Vb B 0 PULSE(0 {SUPPLY} 0 100p 100p 20n 40n)
+
+X_xor2check A B Y vdd gnd xor2 
+
+
+Cload Y gnd 10f
+
+.tran 1n 160n 
+
+.control
+run
+plot V(A) V(B)+2 V(Y)+4
+.endc
+.end

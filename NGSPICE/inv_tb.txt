@@ -1,0 +1,17 @@
+
+Vdd vdd 0 {SUPPLY}
+
+Vin gate 0 0
+
+XNMOS1 drain gate gnd gnd nmos wn={width_N}
+XPMOS1 drain gate vdd vdd pmos wp={width_N * 2}
+
+Cload drain gnd 10u
+
+.dc Vin 0 {SUPPLY} 0.01
+
+.control
+run
+plot v(drain) vs v(gate)
+.endc
+.end
