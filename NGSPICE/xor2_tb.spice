@@ -1,10 +1,12 @@
+
+.include all_subckts.spice
+
 Vdd vdd gnd {SUPPLY}
 
 Va A 0 PULSE(0 {SUPPLY} 0 100p 100p 40n 80n)
 Vb B 0 PULSE(0 {SUPPLY} 0 100p 100p 20n 40n)
 
 X_xor2check A B Y vdd gnd xor2 
-
 
 Cload Y gnd 10f
 
@@ -13,5 +15,12 @@ Cload Y gnd 10f
 .control
 run
 plot V(A) V(B)+2 V(Y)+4
+
+meas tran tdr TRIG V(B) VAL=0.9 FALL=3 TARG V(Y) VAL=0.9 RISE=2
+meas tran tdf TRIG V(B) VAL=0.9 FALL=2 TARG V(Y) VAL=0.9 FALL=1
+
+let delay_xor2 = (tdr + tdf)/2
+print delay_xor2;
+
 .endc
 .end

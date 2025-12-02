@@ -1,4 +1,6 @@
 
+
+.include all_subckts.spice
 Vdd vdd gnd {SUPPLY}
 
 Vclk clk 0 PULSE(0 {SUPPLY} 10n 100p 100p 10n 20n)
@@ -8,8 +10,8 @@ Vb B 0 PULSE(0 {SUPPLY} 40n 100p 100p 40n 80n)
 Vc Cin 0 PULSE(0 {SUPPLY} 20n 100p 100p 20n 40n)
 
 C_cinbar Cinbar gnd 10f
-Xcin_p Cinbar Cin vdd vdd pmos wp={width_N * 2}
-Xcin_n Cinbar Cin gnd gnd nmos wn={width_N}
+Xcin_p Cinbar Cin vdd vdd pmos wp={1.8u}
+Xcin_n Cinbar Cin gnd gnd nmos wn={0.9u}
 
 
 Xmcl clk A B Cin Cinbar Cout Coutbar Sum vdd gnd mcl

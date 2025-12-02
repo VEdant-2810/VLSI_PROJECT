@@ -20,7 +20,6 @@ Mp D G S B CMOSP W={wp} L={2*lambda}
 
 .ends pmos
 
-
 * -----------------------------------------------------------
 * NMOS subcircuit
 * Terminals: D G S B
@@ -31,9 +30,7 @@ Mp D G S B CMOSP W={wp} L={2*lambda}
 Mn D G S B CMOSN W={wn} L={2*lambda} 
 + AS={5*wn*lambda} PS={10*lambda + 2*wn} 
 + AD={5*wn*lambda} PD={10*lambda + 2*wn}
-
 .ends nmos
-
 
 * -----------------------------------------------------------
 * 2input XOR subcircuit
@@ -44,31 +41,25 @@ Mn D G S B CMOSN W={wn} L={2*lambda}
 * ===== Inverters to generate A_bar and B_bar =====
 * Inverter 1 -> A_bar
 C_abar A_BAR gnd 1f
-Xpa_invA A_BAR A vdd vdd pmos wp=2u
-Xna_invA A_BAR A gnd gnd nmos wn=1u
-
-
+Xpa_invA A_BAR A vdd vdd pmos wp=1.8u
+Xna_invA A_BAR A gnd gnd nmos wn=0.9u
 
 * Inverter 2 -> B_bar
 C_bbar B_BAR gnd 1f
-Xpa_invB B_BAR B vdd vdd pmos wp=2u
-Xna_invB B_BAR B gnd gnd nmos wn=1u
-
+Xpa_invB B_BAR B vdd vdd pmos wp=1.8u
+Xna_invB B_BAR B gnd gnd nmos wn=0.9u
 
 * ===== PTL Pass Network =====
 C_yinv Yinv gnd 1f
 * Path 1 : Yinv = Abar when B = 0  -> gate = B_BAR, pass A_BAR -> Yinv
-Xn1 Yinv B_BAR A_BAR gnd nmos wn=1u
+Xn1 Yinv B_BAR A_BAR gnd nmos wn=0.9u
 
 * Path 2 : Yinv = A when B = 1 -> gate = B, pass A -> Yinv
-Xn2 Yinv B A gnd nmos wn=1u 
-
-
-
+Xn2 Yinv B A gnd nmos wn=0.9u
 
 * ===== Output Inverter (restores swing) =====
-Xpa_out Y Yinv vdd vdd pmos wp=2.5u
-Xna_out Y Yinv gnd gnd nmos wn=1.5u
+Xpa_out Y Yinv vdd vdd pmos wp=1.8u
+Xna_out Y Yinv gnd gnd nmos wn=0.9u
 
 
 .ends xor2
@@ -81,20 +72,20 @@ Xna_out Y Yinv gnd gnd nmos wn=1.5u
 * ----------------------------------------------------------- 
 .subckt ff_1bit clk In Qout vdd gnd 
 
-Xm1 W In vdd vdd pmos wp=7.2u
-Xm2 A clk W vdd pmos wp=7.2u
-Xm3 A In gnd gnd nmos wn=3.6u
+Xm1 W In vdd vdd pmos wp=1.8u
+Xm2 A clk W vdd pmos wp=1.8u
+Xm3 A In gnd gnd nmos wn=0.9u
 
-Xm4 B clk vdd vdd pmos wp=7.2u
-Xm5 Y A B gnd nmos wn=3.6u
-Xm6 Y clk gnd gnd nmos wn=3.6u
+Xm4 B clk vdd vdd pmos wp=1.8u
+Xm5 Y A B gnd nmos wn=0.9u
+Xm6 Y clk gnd gnd nmos wn=0.9u
 
-Xm7 Qinv B vdd vdd pmos wp=7.2u
-Xm8 Qinv clk Z gnd nmos wn=3.6u
-Xm9 Z B gnd gnd nmos wn=3.6u
+Xm7 Qinv B vdd vdd pmos wp=1.8u
+Xm8 Qinv clk Z gnd nmos wn=0.9u
+Xm9 Z B gnd gnd nmos wn=0.9u
 
-Xinvn Qout Qinv gnd gnd nmos wn=3.6u
-Xinvp Qout Qinv vdd vdd pmos wp=7.2u
+Xinvn Qout Qinv gnd gnd nmos wn=0.9u
+Xinvp Qout Qinv vdd vdd pmos wp=1.8u
 
 Cqinv Qinv gnd 1f
 Ca A gnd 1f
@@ -104,7 +95,6 @@ Cy Y gnd 1f
 Cw W gnd 1f
 
 .ends ff_1bit
-
 
 
 * -----------------------------------------------------------
@@ -121,25 +111,25 @@ Xxor_AB A B P vdd gnd xor2
 
 *---------Propagate Coutbar = Cinbar when P = 1
 * Pass transistor: gate = P, pass Cinbar -> Coutbar
-XpassP Coutbar P Cinbar gnd nmos wn=1u
+XpassP Coutbar P Cinbar gnd nmos wn=2u
 
 
 *----------PMOS with clock as input  (precharge style)
-XclkPMOS Coutbar clk vdd vdd pmos wp=2u
+XclkPMOS Coutbar clk vdd vdd pmos wp=1.8u
 
 
 *----------Generate G = AB , putting two nmos in series with gates as A
 C_ab AB gnd 1f
-XnA Coutbar A AB gnd nmos wn=1u
+XnA Coutbar A AB gnd nmos wn=0.9u
 C_bclk Bclk gnd 1f
-XnB AB B Bclk gnd nmos wn=1u
+XnB AB B Bclk gnd nmos wn=0.9u
 
-XclkNMOS Bclk clk gnd gnd nmos wn=1u
+XclkNMOS Bclk clk gnd gnd nmos wn=0.9u
 
 
 * ----- 4. Restoring inverter : Coutbar to Cout 
-Xcout_p Cout Coutbar vdd vdd pmos wp=3u
-Xcout_n Cout Coutbar gnd gnd nmos wn=1.5u
+Xcout_p Cout Coutbar vdd vdd pmos wp=1.8u
+Xcout_n Cout Coutbar gnd gnd nmos wn=1.8u
 
 *----------Calculate sum = p ^ cin
 Xsum P Cin Sum vdd gnd xor2

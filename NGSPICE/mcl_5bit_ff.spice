@@ -1,0 +1,102 @@
+* ======================================================================
+* 5-BIT MANCHESTER ADDER WITH INPUT & OUTPUT FLIP-FLOPS
+* USING TWO DIFFERENT CLOCKS (clk for FFs, clkmcl for mca)
+* ======================================================================
+
+.include all_subckts.spice
+.param SUPPLY = 1.8
+
+.global gnd vdd
+
+Vdd vdd gnd {SUPPLY}
+
+* -------------------------
+* CLOCKS
+* -------------------------
+Vclk clk gnd PULSE(0 {SUPPLY} 2n 100p 100p 10n 20n)
+
+Vclkbar clkmcl gnd PULSE({SUPPLY} 0 3n 100p 100p 10n 20n)
+
+* -------------------------
+* INPUT stimulus
+* -------------------------
+VA0 A0_in gnd PULSE(0 {SUPPLY} 0 100p 100p 20n 40n)
+VB0 B0_in gnd 0
+VA1 A1_in gnd 1.8
+VB1 B1_in gnd 0
+VA2 A2_in gnd 0
+VB2 B2_in gnd 1.8
+VA3 A3_in gnd 1.8
+VB3 B3_in gnd 0
+VA4 A4_in gnd 1.8
+VB4 B4_in gnd 0
+
+VCin_raw Cin_in gnd 1.8
+
+* ======================================================================
+* INPUT STAGE FLIP-FLOPS
+* ======================================================================
+
+Xff_A0 clk A0_in A0_reg vdd gnd ff_1bit
+Xff_B0 clk B0_in B0_reg vdd gnd ff_1bit
+
+Xff_A1 clk A1_in A1_reg vdd gnd ff_1bit
+Xff_B1 clk B1_in B1_reg vdd gnd ff_1bit
+
+Xff_A2 clk A2_in A2_reg vdd gnd ff_1bit
+Xff_B2 clk B2_in B2_reg vdd gnd ff_1bit
+
+Xff_A3 clk A3_in A3_reg vdd gnd ff_1bit
+Xff_B3 clk B3_in B3_reg vdd gnd ff_1bit
+
+Xff_A4 clk A4_in A4_reg vdd gnd ff_1bit
+Xff_B4 clk B4_in B4_reg vdd gnd ff_1bit
+
+Xff_Cin clk Cin_in Cin_reg vdd gnd ff_1bit
+
+* ======================================================================
+* CREATE Cinbar
+* ======================================================================
+
+
+.subckt inv_1bit in out vdd gnd
+Xp out in vdd vdd pmos wp=1.8u
+Xn out in gnd gnd nmos wn=0.9u
+.ends inv_1bit
+
+Xcinbar Cin_reg Cinbar vdd gnd inv_1bit
+
+* ======================================================================
+* COMBINATIONAL MANCHESTER ADDER (uses clkmcl, as you wanted)
+* ======================================================================
+
+
+Xmca clkmcl A0_reg B0_reg A1_reg B1_reg A2_reg B2_reg A3_reg B3_reg A4_reg B4_reg Cin_reg Cinbar Cout Coutbar S0 S1 S2 S3 S4 vdd gnd mca_5bit
+
+* ======================================================================
+* OUTPUT REGISTER STAGE
+* ======================================================================
+
+Xff_S0 clk S0 S0_out vdd gnd ff_1bit
+Xff_S1 clk S1 S1_out vdd gnd ff_1bit
+Xff_S2 clk S2 S2_out vdd gnd ff_1bit
+Xff_S3 clk S3 S3_out vdd gnd ff_1bit
+Xff_S4 clk S4 S4_out vdd gnd ff_1bit
+
+Xff_Co clk Cout Cout_out vdd gnd ff_1bit
+
+* ======================================================================
+* SIMULATION
+* ======================================================================
+.control
+tran 0.1n 200n
+
+set color0 = white
+run
+
+plot S0_out S1_out+2 S2_out+4 S3_out+6 S4_out+8 Cout_out+10 A0_in+12 clk+14 clkmcl+16
+
+
+
+.endc
+.end
