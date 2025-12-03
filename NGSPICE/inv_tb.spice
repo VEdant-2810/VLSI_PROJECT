@@ -1,17 +1,23 @@
 
-Vdd vdd 0 {SUPPLY}
+.include all_subckts.spice
+Vdd vdd gnd {SUPPLY}
 
-Vin gate 0 0
+Vin gate gnd PULSE(0 {SUPPLY} 2n 100p 100p 20n 40n)
 
 XNMOS1 drain gate gnd gnd nmos wn={width_N}
 XPMOS1 drain gate vdd vdd pmos wp={width_N * 2}
 
-Cload drain gnd 10u
+Cload drain gnd 1f
 
-.dc Vin 0 {SUPPLY} 0.01
-
+.tran 1n 100n
 .control
 run
-plot v(drain) vs v(gate)
+meas tran t_fall TRIG v(gate) VAL=0.9 RISE=1 TARG v(drain) VAL=0.9 FALL=1
+meas tran t_rise TRIG v(gate) VAL=0.9 FALL=1 TARG v(drain) VAL=0.9 RISE=1
+
+let t_delay = (t_rise + t_fall)/2
+print t_delay
+
+plot drain+2 gate
 .endc
 .end

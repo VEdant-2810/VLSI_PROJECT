@@ -1,0 +1,35 @@
+magic
+tech scmos
+timestamp 1764783150
+<< metal1 >>
+rect 27 25 49 29
+rect -1 -21 4 5
+rect 30 1 52 5
+rect -1 -25 29 -21
+rect 41 -25 45 1
+rect 33 -49 37 -39
+rect 69 -47 75 5
+rect 53 -51 75 -47
+use pmos  pmos_0
+timestamp 1764668421
+transform 1 0 10 0 1 11
+box -10 -11 20 18
+use pmos  pmos_1
+timestamp 1764668421
+transform -1 0 65 0 1 11
+box -10 -11 20 18
+use nmos  nmos_0
+timestamp 1764668464
+transform 1 0 34 0 1 -15
+box -10 -25 20 -5
+use nmos  nmos_1
+timestamp 1764668464
+transform -1 0 44 0 1 -41
+box -10 -25 20 -5
+<< labels >>
+rlabel space 52 -50 52 -50 1 B
+rlabel metal1 20 -24 20 -24 1 A
+rlabel space 53 -22 53 -22 1 out
+rlabel metal1 38 27 38 27 5 vdd!
+rlabel space 42 -64 42 -64 1 gnd!
+<< end >>
