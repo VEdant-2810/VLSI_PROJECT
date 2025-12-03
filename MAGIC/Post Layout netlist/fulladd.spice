@@ -2645,3 +2645,5 @@ C1877 1bitaddie_1/inverter_0/in Gnd 1.07fF
 C1878 1bitaddie_1/nandg_0/pmos_1/w_n8_n5# Gnd 0.58fF
 C1879 1bitaddie_1/nandg_0/pmos_0/w_n8_n5# Gnd 0.58fF
 C1880 1bitaddie_1/nandg_0/m1_26_n48# Gnd 0.21fF
+
+*A0 A1 A2 A3 A4 B0 B1 B2 B3 B4 C0 s0 s1 s2 s3 s4 Cout Vdd Gnd

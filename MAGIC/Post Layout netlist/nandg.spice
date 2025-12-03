@@ -1,12 +1,40 @@
 * SPICE3 file created from nandg.ext - technology: scmos
-
+.include TSMC_180nm.txt
 .option scale=0.09u
 
-M1000 m1_30_1# A m1_26_n48# Gnd nfet w=4 l=2
+* --------------------------
+* Transistors
+* --------------------------
+
+M1000 X A gnd Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=40 ps=36
-M1001 m1_26_n48# m1_54_n51# nmos_1/a_n1_n17# Gnd nfet w=4 l=2
+
+M1001 Y B X Gnd CMOSN w=4 l=2
 +  ad=0 pd=0 as=20 ps=18
-M1002 m1_30_1# A vdd pmos_0/w_n8_n5# pfet w=8 l=2
+
+* The node "pmos_0/w_n8_n5#" is illegal in ngspice
+* Only the node name is sanitized → values unchanged
+M1002 Y A vdd pmos0_CMOSP CMOSP w=8 l=2
 +  ad=80 pd=52 as=80 ps=52
-M1003 m1_30_1# m1_54_n51# vdd pmos_1/w_n8_n5# pfet w=8 l=2
+
+M1003 Y B vdd pmos1_CMOSP CMOSP w=8 l=2
 +  ad=0 pd=0 as=0 ps=0
+
+* --------------------------
+* Inputs (syntax only fixed)
+* --------------------------
+Va A 0 PULSE(0 1.8 0 100p 100p 1n 2n)
+Vb B 0 PULSE(0 1.8 0 100p 100p 2n 4n)
+
+* Supply
+Vdd vdd 0 DC 1.8
+
+* Simulation
+.tran 0.1n 20n
+
+.control
+run
+plot v(Y) v(A)+2 v(B)+4
+.endc
+
+.end

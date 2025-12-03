@@ -1,0 +1,116 @@
+magic
+tech scmos
+timestamp 1731350700
+<< nwell >>
+rect -22 46 62 81
+<< ntransistor >>
+rect -11 7 -9 37
+rect 5 7 7 37
+rect 27 7 29 37
+rect 49 27 51 37
+<< ptransistor >>
+rect -11 53 -9 73
+rect 5 53 7 73
+rect 27 53 29 73
+rect 49 53 51 73
+<< ndiffusion >>
+rect -12 7 -11 37
+rect -9 7 -8 37
+rect 4 7 5 37
+rect 7 7 8 37
+rect 26 7 27 37
+rect 29 7 30 37
+rect 48 27 49 37
+rect 51 27 52 37
+<< pdiffusion >>
+rect -12 53 -11 73
+rect -9 53 -8 73
+rect 4 53 5 73
+rect 7 53 8 73
+rect 26 53 27 73
+rect 29 53 30 73
+rect 48 53 49 73
+rect 51 53 52 73
+<< ndcontact >>
+rect -16 7 -12 37
+rect -8 7 -4 37
+rect 0 7 4 37
+rect 8 7 12 37
+rect 22 7 26 37
+rect 30 7 34 37
+rect 44 27 48 37
+rect 52 27 56 37
+<< pdcontact >>
+rect -16 53 -12 73
+rect -8 53 -4 73
+rect 0 53 4 73
+rect 8 53 12 73
+rect 22 53 26 73
+rect 30 53 34 73
+rect 44 53 48 73
+rect 52 53 56 73
+<< polysilicon >>
+rect -11 73 -9 76
+rect 5 73 7 76
+rect 27 73 29 76
+rect 49 73 51 76
+rect -11 37 -9 53
+rect 5 37 7 53
+rect 27 37 29 53
+rect 49 37 51 53
+rect 49 24 51 27
+rect -11 4 -9 7
+rect 5 4 7 7
+rect 27 4 29 7
+<< polycontact >>
+rect -15 40 -11 44
+rect 7 40 11 44
+rect 29 40 33 44
+rect 45 40 49 44
+<< metal1 >>
+rect -22 77 62 81
+rect -16 73 -12 77
+rect 8 73 12 77
+rect 30 73 34 77
+rect -8 44 -4 53
+rect 44 73 48 77
+rect 0 45 4 53
+rect 22 45 26 53
+rect -19 40 -15 44
+rect -8 40 -1 44
+rect 11 40 15 44
+rect 33 40 37 44
+rect 52 44 56 53
+rect 52 40 62 44
+rect -8 37 -4 40
+rect 52 37 56 40
+rect -16 3 -12 7
+rect 0 3 4 7
+rect 8 3 12 7
+rect 22 -5 26 7
+rect 30 3 34 7
+rect 44 -5 48 27
+rect -22 -10 62 -5
+<< metal2 >>
+rect 0 46 45 50
+rect -1 45 4 46
+rect 21 45 26 46
+rect 40 45 45 46
+rect -12 -2 -1 3
+rect 13 -2 30 3
+<< m123contact >>
+rect -1 40 4 45
+rect 21 40 26 45
+rect 40 40 45 45
+rect -17 -2 -12 3
+rect -1 -2 4 3
+rect 8 -2 13 3
+rect 30 -2 35 3
+<< labels >>
+rlabel metal1 59 41 60 42 7 out
+rlabel metal1 34 41 35 42 1 a
+rlabel metal1 26 79 27 80 5 vdd
+rlabel metal1 -18 41 -17 42 3 b
+rlabel metal1 13 42 13 42 1 c
+rlabel metal1 43 -8 44 -7 1 gnd
+<< end >>
