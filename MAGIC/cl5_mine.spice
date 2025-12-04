@@ -1,0 +1,1107 @@
+* SPICE3 file created from cl5_mine.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 inverter_0/out B0 gnd Gnd nfet w=4 l=2
++  ad=40 pd=36 as=1040 ps=936
+M1001 inverter_0/out B0 vdd inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=2080 ps=1352
+M1002 Cout inverter_1/in gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 Cout inverter_1/in vdd inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1004 inverter_2/out C0bar gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1005 inverter_2/out C0bar vdd inverter_2/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1006 inverter_3/out C1bar gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1007 inverter_3/out C1bar vdd inverter_3/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 inverter_4/out C2bar gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1009 inverter_4/out C2bar vdd inverter_4/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1010 inverter_5/out C3bar gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1011 inverter_5/out C3bar vdd inverter_5/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1012 clk_mca clk gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1013 clk_mca clk vdd inverter_6/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1014 xorg_0/inverter_0/out P0 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1015 xorg_0/inverter_0/out P0 vdd xorg_0/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1016 xorg_0/inverter_1/out B0 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1017 xorg_0/inverter_1/out B0 vdd xorg_0/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1018 S0 B0 xorg_0/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1019 xorg_0/m1_26_n95# P0 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 S0 xorg_0/inverter_1/out xorg_0/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1021 xorg_0/m1_102_n91# xorg_0/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 xorg_0/m1_25_n11# xorg_0/inverter_0/out vdd xorg_0/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1023 S0 B0 xorg_0/m1_25_n11# xorg_0/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1024 xorg_0/m1_102_n17# P0 vdd xorg_0/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1025 S0 xorg_0/inverter_1/out xorg_0/m1_102_n17# xorg_0/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 xorg_1/inverter_0/out P1 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1027 xorg_1/inverter_0/out P1 vdd xorg_1/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1028 xorg_1/inverter_1/out inverter_2/out gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1029 xorg_1/inverter_1/out inverter_2/out vdd xorg_1/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1030 S1 inverter_2/out xorg_1/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1031 xorg_1/m1_26_n95# P1 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 S1 xorg_1/inverter_1/out xorg_1/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1033 xorg_1/m1_102_n91# xorg_1/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 xorg_1/m1_25_n11# xorg_1/inverter_0/out vdd xorg_1/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1035 S1 inverter_2/out xorg_1/m1_25_n11# xorg_1/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1036 xorg_1/m1_102_n17# P1 vdd xorg_1/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1037 S1 xorg_1/inverter_1/out xorg_1/m1_102_n17# xorg_1/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 xorg_2/inverter_0/out P2 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1039 xorg_2/inverter_0/out P2 vdd xorg_2/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1040 xorg_2/inverter_1/out inverter_3/out gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1041 xorg_2/inverter_1/out inverter_3/out vdd xorg_2/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1042 S2 inverter_3/out xorg_2/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1043 xorg_2/m1_26_n95# P2 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1044 S2 xorg_2/inverter_1/out xorg_2/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1045 xorg_2/m1_102_n91# xorg_2/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1046 xorg_2/m1_25_n11# xorg_2/inverter_0/out vdd xorg_2/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1047 S2 inverter_3/out xorg_2/m1_25_n11# xorg_2/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1048 xorg_2/m1_102_n17# P2 vdd xorg_2/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1049 S2 xorg_2/inverter_1/out xorg_2/m1_102_n17# xorg_2/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1050 xorg_3/inverter_0/out P3 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1051 xorg_3/inverter_0/out P3 vdd xorg_3/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1052 xorg_3/inverter_1/out inverter_4/out gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1053 xorg_3/inverter_1/out inverter_4/out vdd xorg_3/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1054 S3 inverter_4/out xorg_3/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1055 xorg_3/m1_26_n95# P3 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1056 S3 xorg_3/inverter_1/out xorg_3/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1057 xorg_3/m1_102_n91# xorg_3/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1058 xorg_3/m1_25_n11# xorg_3/inverter_0/out vdd xorg_3/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1059 S3 inverter_4/out xorg_3/m1_25_n11# xorg_3/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1060 xorg_3/m1_102_n17# P3 vdd xorg_3/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1061 S3 xorg_3/inverter_1/out xorg_3/m1_102_n17# xorg_3/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1062 xorg_4/inverter_0/out P4 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1063 xorg_4/inverter_0/out P4 vdd xorg_4/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1064 xorg_4/inverter_1/out inverter_5/out gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1065 xorg_4/inverter_1/out inverter_5/out vdd xorg_4/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1066 S4 inverter_5/out xorg_4/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1067 xorg_4/m1_26_n95# P4 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1068 S4 xorg_4/inverter_1/out xorg_4/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1069 xorg_4/m1_102_n91# xorg_4/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 xorg_4/m1_25_n11# xorg_4/inverter_0/out vdd xorg_4/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1071 S4 inverter_5/out xorg_4/m1_25_n11# xorg_4/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1072 xorg_4/m1_102_n17# P4 vdd xorg_4/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1073 S4 xorg_4/inverter_1/out xorg_4/m1_102_n17# xorg_4/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1074 1bit_mcl_0/xorg_0/inverter_0/out A0 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1075 1bit_mcl_0/xorg_0/inverter_0/out A0 vdd 1bit_mcl_0/xorg_0/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1076 1bit_mcl_0/xorg_0/inverter_1/out B0 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1077 1bit_mcl_0/xorg_0/inverter_1/out B0 vdd 1bit_mcl_0/xorg_0/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1078 P0 B0 1bit_mcl_0/xorg_0/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1079 1bit_mcl_0/xorg_0/m1_26_n95# A0 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1080 P0 1bit_mcl_0/xorg_0/inverter_1/out 1bit_mcl_0/xorg_0/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1081 1bit_mcl_0/xorg_0/m1_102_n91# 1bit_mcl_0/xorg_0/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1082 1bit_mcl_0/xorg_0/m1_25_n11# 1bit_mcl_0/xorg_0/inverter_0/out vdd 1bit_mcl_0/xorg_0/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1083 P0 B0 1bit_mcl_0/xorg_0/m1_25_n11# 1bit_mcl_0/xorg_0/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1084 1bit_mcl_0/xorg_0/m1_102_n17# A0 vdd 1bit_mcl_0/xorg_0/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1085 P0 1bit_mcl_0/xorg_0/inverter_1/out 1bit_mcl_0/xorg_0/m1_102_n17# 1bit_mcl_0/xorg_0/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1086 C0bar P0 inverter_0/out Gnd nfet w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1087 C0bar clk_mca 1bit_mcl_0/m1_45_n67# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1088 1bit_mcl_0/m1_45_n67# A0 1bit_mcl_0/m1_45_n97# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1089 1bit_mcl_0/m1_45_n97# B0 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1090 C0bar clk_mca vdd 1bit_mcl_0/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1091 1bit_mcl_1/xorg_0/inverter_0/out A1 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1092 1bit_mcl_1/xorg_0/inverter_0/out A1 vdd 1bit_mcl_1/xorg_0/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1093 1bit_mcl_1/xorg_0/inverter_1/out B1 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1094 1bit_mcl_1/xorg_0/inverter_1/out B1 vdd 1bit_mcl_1/xorg_0/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1095 P1 B1 1bit_mcl_1/xorg_0/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1096 1bit_mcl_1/xorg_0/m1_26_n95# A1 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1097 P1 1bit_mcl_1/xorg_0/inverter_1/out 1bit_mcl_1/xorg_0/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1098 1bit_mcl_1/xorg_0/m1_102_n91# 1bit_mcl_1/xorg_0/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1099 1bit_mcl_1/xorg_0/m1_25_n11# 1bit_mcl_1/xorg_0/inverter_0/out vdd 1bit_mcl_1/xorg_0/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1100 P1 B1 1bit_mcl_1/xorg_0/m1_25_n11# 1bit_mcl_1/xorg_0/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1101 1bit_mcl_1/xorg_0/m1_102_n17# A1 vdd w_462_353# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1102 P1 1bit_mcl_1/xorg_0/inverter_1/out 1bit_mcl_1/xorg_0/m1_102_n17# 1bit_mcl_1/xorg_0/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1103 C1bar P1 C0bar Gnd nfet w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1104 C1bar clk_mca 1bit_mcl_1/m1_45_n67# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1105 1bit_mcl_1/m1_45_n67# A1 1bit_mcl_1/m1_45_n97# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1106 1bit_mcl_1/m1_45_n97# B1 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1107 C1bar clk_mca vdd 1bit_mcl_1/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1108 1bit_mcl_2/xorg_0/inverter_0/out A2 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1109 1bit_mcl_2/xorg_0/inverter_0/out A2 vdd 1bit_mcl_2/xorg_0/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1110 1bit_mcl_2/xorg_0/inverter_1/out B2 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1111 1bit_mcl_2/xorg_0/inverter_1/out B2 vdd 1bit_mcl_2/xorg_0/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1112 P2 B2 1bit_mcl_2/xorg_0/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1113 1bit_mcl_2/xorg_0/m1_26_n95# A2 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 P2 1bit_mcl_2/xorg_0/inverter_1/out 1bit_mcl_2/xorg_0/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1115 1bit_mcl_2/xorg_0/m1_102_n91# 1bit_mcl_2/xorg_0/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1116 1bit_mcl_2/xorg_0/m1_25_n11# 1bit_mcl_2/xorg_0/inverter_0/out vdd 1bit_mcl_2/xorg_0/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1117 P2 B2 1bit_mcl_2/xorg_0/m1_25_n11# 1bit_mcl_2/xorg_0/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1118 1bit_mcl_2/xorg_0/m1_102_n17# A2 vdd 1bit_mcl_2/xorg_0/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1119 P2 1bit_mcl_2/xorg_0/inverter_1/out 1bit_mcl_2/xorg_0/m1_102_n17# 1bit_mcl_2/xorg_0/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1120 C2bar P2 C1bar Gnd nfet w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1121 C2bar clk_mca 1bit_mcl_2/m1_45_n67# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1122 1bit_mcl_2/m1_45_n67# A2 1bit_mcl_2/m1_45_n97# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1123 1bit_mcl_2/m1_45_n97# B2 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1124 C2bar clk_mca vdd 1bit_mcl_2/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1125 1bit_mcl_3/xorg_0/inverter_0/out A3 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1126 1bit_mcl_3/xorg_0/inverter_0/out A3 vdd 1bit_mcl_3/xorg_0/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1127 1bit_mcl_3/xorg_0/inverter_1/out B3 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1128 1bit_mcl_3/xorg_0/inverter_1/out B3 vdd 1bit_mcl_3/xorg_0/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1129 P3 B3 1bit_mcl_3/xorg_0/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1130 1bit_mcl_3/xorg_0/m1_26_n95# A3 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1131 P3 1bit_mcl_3/xorg_0/inverter_1/out 1bit_mcl_3/xorg_0/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1132 1bit_mcl_3/xorg_0/m1_102_n91# 1bit_mcl_3/xorg_0/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1133 1bit_mcl_3/xorg_0/m1_25_n11# 1bit_mcl_3/xorg_0/inverter_0/out vdd w_928_355# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1134 P3 B3 1bit_mcl_3/xorg_0/m1_25_n11# 1bit_mcl_3/xorg_0/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1135 1bit_mcl_3/xorg_0/m1_102_n17# A3 vdd 1bit_mcl_3/xorg_0/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1136 P3 1bit_mcl_3/xorg_0/inverter_1/out 1bit_mcl_3/xorg_0/m1_102_n17# 1bit_mcl_3/xorg_0/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1137 C3bar P3 C2bar Gnd nfet w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1138 C3bar clk_mca 1bit_mcl_3/m1_45_n67# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1139 1bit_mcl_3/m1_45_n67# A3 1bit_mcl_3/m1_45_n97# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1140 1bit_mcl_3/m1_45_n97# B3 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1141 C3bar clk_mca vdd 1bit_mcl_3/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1142 1bit_mcl_4/xorg_0/inverter_0/out A4 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1143 1bit_mcl_4/xorg_0/inverter_0/out A4 vdd 1bit_mcl_4/xorg_0/inverter_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1144 1bit_mcl_4/xorg_0/inverter_1/out B4 gnd Gnd nfet w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1145 1bit_mcl_4/xorg_0/inverter_1/out B4 vdd 1bit_mcl_4/xorg_0/inverter_1/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1146 P4 B4 1bit_mcl_4/xorg_0/m1_26_n95# Gnd nfet w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1147 1bit_mcl_4/xorg_0/m1_26_n95# A4 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1148 P4 1bit_mcl_4/xorg_0/inverter_1/out 1bit_mcl_4/xorg_0/m1_102_n91# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1149 1bit_mcl_4/xorg_0/m1_102_n91# 1bit_mcl_4/xorg_0/inverter_0/out gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1150 1bit_mcl_4/xorg_0/m1_25_n11# 1bit_mcl_4/xorg_0/inverter_0/out vdd 1bit_mcl_4/xorg_0/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1151 P4 B4 1bit_mcl_4/xorg_0/m1_25_n11# 1bit_mcl_4/xorg_0/pmos_1/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1152 1bit_mcl_4/xorg_0/m1_102_n17# A4 vdd 1bit_mcl_4/xorg_0/pmos_2/w_n8_n5# pfet w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1153 P4 1bit_mcl_4/xorg_0/inverter_1/out 1bit_mcl_4/xorg_0/m1_102_n17# 1bit_mcl_4/xorg_0/pmos_3/w_n8_n5# pfet w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1154 inverter_1/in P4 C3bar Gnd nfet w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1155 inverter_1/in clk_mca 1bit_mcl_4/m1_45_n67# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1156 1bit_mcl_4/m1_45_n67# A4 1bit_mcl_4/m1_45_n97# Gnd nfet w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1157 1bit_mcl_4/m1_45_n97# B4 gnd Gnd nfet w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1158 inverter_1/in clk_mca vdd 1bit_mcl_4/pmos_0/w_n8_n5# pfet w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 1bit_mcl_0/xorg_0/inverter_0/out B0 1.46fF
+C1 1bit_mcl_1/xorg_0/inverter_1/out 1bit_mcl_1/xorg_0/inverter_1/w_n8_n5# 0.03fF
+C2 gnd xorg_3/m1_26_n95# 0.08fF
+C3 xorg_2/pmos_2/w_n8_n5# vdd 0.08fF
+C4 Cout gnd 0.32fF
+C5 vdd 1bit_mcl_4/xorg_0/inverter_1/w_n8_n5# 0.08fF
+C6 P3 xorg_3/inverter_0/w_n8_n5# 0.07fF
+C7 P3 1bit_mcl_3/xorg_0/m1_102_n17# 0.12fF
+C8 vdd inverter_2/out 0.28fF
+C9 vdd B3 0.11fF
+C10 xorg_0/inverter_0/out xorg_0/m1_102_n91# 0.05fF
+C11 vdd B2 0.09fF
+C12 P0 B0 0.91fF
+C13 xorg_1/pmos_1/w_n8_n5# S1 0.03fF
+C14 inverter_2/out xorg_1/m1_26_n95# 0.05fF
+C15 xorg_3/inverter_1/out gnd 0.08fF
+C16 xorg_2/m1_102_n91# S2 0.08fF
+C17 B0 1bit_mcl_0/m1_45_n97# 0.05fF
+C18 A2 P2 0.13fF
+C19 1bit_mcl_1/xorg_0/pmos_1/w_n8_n5# P1 0.03fF
+C20 vdd inverter_6/w_n8_n5# 0.08fF
+C21 1bit_mcl_4/xorg_0/m1_25_n11# A4 0.14fF
+C22 1bit_mcl_1/m1_45_n67# C1bar 0.08fF
+C23 xorg_0/pmos_2/w_n8_n5# P0 0.07fF
+C24 1bit_mcl_2/xorg_0/inverter_1/w_n8_n5# B2 0.07fF
+C25 xorg_3/m1_102_n91# S3 0.08fF
+C26 vdd A3 0.18fF
+C27 xorg_0/inverter_1/out B0 0.05fF
+C28 S0 xorg_0/m1_26_n95# 0.08fF
+C29 clk_mca 1bit_mcl_3/m1_45_n67# 0.05fF
+C30 P0 xorg_0/inverter_0/w_n8_n5# 0.07fF
+C31 1bit_mcl_4/xorg_0/inverter_0/out 1bit_mcl_4/xorg_0/inverter_0/w_n8_n5# 0.03fF
+C32 S0 xorg_0/m1_102_n91# 0.08fF
+C33 P3 xorg_3/m1_26_n95# 0.05fF
+C34 xorg_2/inverter_0/out xorg_2/inverter_0/w_n8_n5# 0.03fF
+C35 vdd xorg_3/pmos_2/w_n8_n5# 0.08fF
+C36 S0 xorg_0/pmos_1/w_n8_n5# 0.03fF
+C37 xorg_2/inverter_0/out gnd 0.36fF
+C38 xorg_3/inverter_1/out xorg_3/inverter_1/w_n8_n5# 0.03fF
+C39 P3 gnd 0.68fF
+C40 P4 gnd 0.74fF
+C41 1bit_mcl_3/xorg_0/pmos_3/w_n8_n5# 1bit_mcl_3/xorg_0/m1_102_n17# 0.08fF
+C42 inverter_4/out xorg_3/m1_25_n11# 0.03fF
+C43 1bit_mcl_0/xorg_0/m1_26_n95# P0 0.08fF
+C44 A1 B1 0.13fF
+C45 1bit_mcl_0/xorg_0/pmos_3/w_n8_n5# 1bit_mcl_0/xorg_0/m1_102_n17# 0.08fF
+C46 1bit_mcl_4/xorg_0/m1_25_n11# 1bit_mcl_4/xorg_0/inverter_0/out 0.05fF
+C47 vdd xorg_1/inverter_1/w_n8_n5# 0.08fF
+C48 S2 gnd 0.30fF
+C49 1bit_mcl_2/xorg_0/m1_26_n95# gnd 0.08fF
+C50 xorg_0/m1_102_n17# xorg_0/pmos_3/w_n8_n5# 0.08fF
+C51 vdd 1bit_mcl_2/xorg_0/inverter_0/w_n8_n5# 0.08fF
+C52 vdd inverter_5/out 0.27fF
+C53 inverter_1/w_n8_n5# Cout 0.03fF
+C54 clk gnd 0.05fF
+C55 xorg_0/m1_25_n11# P0 0.14fF
+C56 inverter_3/out C1bar 0.05fF
+C57 1bit_mcl_4/xorg_0/inverter_0/out A4 0.34fF
+C58 vdd 1bit_mcl_1/xorg_0/inverter_1/w_n8_n5# 0.08fF
+C59 1bit_mcl_1/xorg_0/m1_25_n11# 1bit_mcl_1/xorg_0/inverter_0/out 0.05fF
+C60 1bit_mcl_0/xorg_0/inverter_0/out A0 0.27fF
+C61 1bit_mcl_3/xorg_0/pmos_2/w_n8_n5# vdd 0.08fF
+C62 1bit_mcl_2/xorg_0/m1_102_n91# gnd 0.08fF
+C63 clk_mca C1bar 0.40fF
+C64 1bit_mcl_1/xorg_0/m1_102_n91# P1 0.08fF
+C65 P0 A0 0.10fF
+C66 1bit_mcl_3/xorg_0/inverter_1/out gnd 0.08fF
+C67 xorg_3/inverter_0/out xorg_3/inverter_0/w_n8_n5# 0.03fF
+C68 1bit_mcl_4/xorg_0/inverter_1/out gnd 0.08fF
+C69 1bit_mcl_2/xorg_0/inverter_0/out gnd 0.44fF
+C70 inverter_3/out gnd 0.14fF
+C71 A0 1bit_mcl_0/m1_45_n97# 0.05fF
+C72 xorg_4/pmos_3/w_n8_n5# xorg_4/inverter_1/out 0.07fF
+C73 vdd 1bit_mcl_1/xorg_0/m1_25_n11# 0.12fF
+C74 xorg_4/inverter_1/w_n8_n5# vdd 0.08fF
+C75 vdd 1bit_mcl_0/xorg_0/m1_102_n17# 0.12fF
+C76 clk_mca gnd 0.08fF
+C77 1bit_mcl_4/pmos_0/w_n8_n5# inverter_1/in 0.03fF
+C78 1bit_mcl_4/m1_45_n97# gnd 0.08fF
+C79 vdd 1bit_mcl_2/xorg_0/pmos_2/w_n8_n5# 0.08fF
+C80 xorg_2/pmos_2/w_n8_n5# P2 0.07fF
+C81 P4 xorg_4/m1_25_n11# 0.14fF
+C82 xorg_4/m1_26_n95# gnd 0.08fF
+C83 xorg_3/inverter_1/out xorg_3/pmos_3/w_n8_n5# 0.07fF
+C84 gnd xorg_4/m1_102_n91# 0.08fF
+C85 inverter_5/out xorg_4/inverter_1/out 0.05fF
+C86 B2 P2 0.46fF
+C87 clk_mca 1bit_mcl_1/m1_45_n67# 0.05fF
+C88 C1bar P1 0.05fF
+C89 vdd xorg_4/pmos_2/w_n8_n5# 0.08fF
+C90 S0 xorg_0/pmos_3/w_n8_n5# 0.03fF
+C91 P3 1bit_mcl_3/xorg_0/inverter_1/out 0.22fF
+C92 P0 1bit_mcl_0/xorg_0/inverter_1/out 0.22fF
+C93 P1 xorg_1/m1_25_n11# 0.14fF
+C94 1bit_mcl_1/xorg_0/inverter_0/out A1 0.33fF
+C95 A4 1bit_mcl_4/xorg_0/m1_26_n95# 0.05fF
+C96 vdd inverter_2/w_n8_n5# 0.08fF
+C97 P4 1bit_mcl_4/xorg_0/inverter_1/out 0.22fF
+C98 P4 xorg_4/m1_102_n17# 0.20fF
+C99 P3 1bit_mcl_3/xorg_0/pmos_3/w_n8_n5# 0.03fF
+C100 vdd xorg_3/m1_25_n11# 0.12fF
+C101 clk_mca P3 0.26fF
+C102 gnd xorg_3/inverter_0/out 0.35fF
+C103 xorg_1/m1_102_n17# P1 0.20fF
+C104 gnd P1 0.61fF
+C105 1bit_mcl_1/m1_45_n97# B1 0.05fF
+C106 clk_mca P4 0.28fF
+C107 A2 B2 0.14fF
+C108 vdd A1 0.17fF
+C109 1bit_mcl_1/xorg_0/pmos_1/w_n8_n5# B1 0.07fF
+C110 xorg_4/inverter_1/w_n8_n5# xorg_4/inverter_1/out 0.03fF
+C111 inverter_3/out S2 0.19fF
+C112 w_928_355# 1bit_mcl_3/xorg_0/m1_25_n11# 0.03fF
+C113 gnd xorg_0/inverter_0/out 0.49fF
+C114 P4 xorg_4/m1_26_n95# 0.05fF
+C115 1bit_mcl_3/xorg_0/m1_25_n11# 1bit_mcl_3/xorg_0/inverter_0/out 0.05fF
+C116 C1bar C2bar 0.08fF
+C117 1bit_mcl_1/pmos_0/w_n8_n5# C1bar 0.03fF
+C118 A1 w_462_353# 0.07fF
+C119 1bit_mcl_2/xorg_0/inverter_0/out 1bit_mcl_2/xorg_0/m1_102_n91# 0.05fF
+C120 C3bar 1bit_mcl_3/m1_45_n67# 0.08fF
+C121 inverter_4/out xorg_3/pmos_1/w_n8_n5# 0.07fF
+C122 xorg_2/m1_26_n95# P2 0.05fF
+C123 clk_mca clk 0.05fF
+C124 xorg_1/inverter_0/w_n8_n5# P1 0.07fF
+C125 xorg_2/pmos_3/w_n8_n5# xorg_2/m1_102_n17# 0.08fF
+C126 gnd C2bar 0.25fF
+C127 P3 xorg_3/inverter_0/out 0.27fF
+C128 1bit_mcl_3/xorg_0/inverter_1/out 1bit_mcl_3/xorg_0/pmos_3/w_n8_n5# 0.07fF
+C129 P0 C0bar 0.05fF
+C130 S0 gnd 0.30fF
+C131 gnd xorg_1/inverter_1/out 0.08fF
+C132 xorg_3/m1_25_n11# S3 0.12fF
+C133 1bit_mcl_0/xorg_0/pmos_2/w_n8_n5# vdd 0.08fF
+C134 B4 gnd 0.24fF
+C135 S2 xorg_2/pmos_1/w_n8_n5# 0.03fF
+C136 1bit_mcl_4/pmos_0/w_n8_n5# vdd 0.08fF
+C137 xorg_1/m1_102_n17# xorg_1/pmos_2/w_n8_n5# 0.03fF
+C138 xorg_2/pmos_3/w_n8_n5# xorg_2/inverter_1/out 0.07fF
+C139 1bit_mcl_0/m1_45_n67# A0 0.05fF
+C140 1bit_mcl_0/xorg_0/m1_102_n91# gnd 0.08fF
+C141 vdd xorg_2/m1_25_n11# 0.12fF
+C142 1bit_mcl_4/m1_45_n67# clk_mca 0.05fF
+C143 vdd xorg_2/m1_102_n17# 0.12fF
+C144 1bit_mcl_4/m1_45_n67# 1bit_mcl_4/m1_45_n97# 0.08fF
+C145 P3 C2bar 0.14fF
+C146 A2 1bit_mcl_2/xorg_0/inverter_0/w_n8_n5# 0.07fF
+C147 vdd 1bit_mcl_0/xorg_0/pmos_0/w_n8_n5# 0.08fF
+C148 inverter_3/out xorg_2/pmos_1/w_n8_n5# 0.07fF
+C149 inverter_2/out C0bar 0.05fF
+C150 xorg_4/pmos_3/w_n8_n5# S4 0.03fF
+C151 vdd 1bit_mcl_2/xorg_0/inverter_1/out 0.12fF
+C152 1bit_mcl_1/xorg_0/m1_102_n91# 1bit_mcl_1/xorg_0/inverter_1/out 0.05fF
+C153 B4 P4 0.43fF
+C154 1bit_mcl_2/xorg_0/inverter_0/out 1bit_mcl_2/xorg_0/m1_25_n11# 0.05fF
+C155 clk_mca P1 0.26fF
+C156 1bit_mcl_0/xorg_0/m1_102_n17# A0 0.20fF
+C157 P3 1bit_mcl_3/xorg_0/m1_25_n11# 0.12fF
+C158 1bit_mcl_3/xorg_0/m1_26_n95# B3 0.05fF
+C159 P3 xorg_3/m1_102_n17# 0.20fF
+C160 1bit_mcl_2/xorg_0/inverter_1/out 1bit_mcl_2/xorg_0/inverter_1/w_n8_n5# 0.03fF
+C161 1bit_mcl_0/xorg_0/pmos_1/w_n8_n5# 1bit_mcl_0/xorg_0/m1_25_n11# 0.08fF
+C162 inverter_5/out S4 0.19fF
+C163 vdd 1bit_mcl_2/xorg_0/m1_102_n17# 0.12fF
+C164 C3bar gnd 0.22fF
+C165 vdd xorg_2/inverter_1/out 0.12fF
+C166 xorg_1/m1_102_n17# xorg_1/pmos_3/w_n8_n5# 0.08fF
+C167 B0 xorg_0/m1_26_n95# 0.05fF
+C168 A2 1bit_mcl_2/xorg_0/pmos_2/w_n8_n5# 0.07fF
+C169 xorg_1/inverter_0/out xorg_1/m1_25_n11# 0.05fF
+C170 1bit_mcl_3/xorg_0/m1_26_n95# A3 0.05fF
+C171 1bit_mcl_1/xorg_0/m1_102_n17# P1 0.12fF
+C172 inverter_1/in Cout 0.05fF
+C173 xorg_1/inverter_0/out gnd 0.37fF
+C174 xorg_0/pmos_1/w_n8_n5# B0 0.07fF
+C175 inverter_4/out xorg_3/m1_26_n95# 0.05fF
+C176 xorg_1/pmos_1/w_n8_n5# inverter_2/out 0.07fF
+C177 clk_mca C2bar 0.33fF
+C178 1bit_mcl_4/xorg_0/pmos_2/w_n8_n5# 1bit_mcl_4/xorg_0/m1_102_n17# 0.03fF
+C179 xorg_4/m1_25_n11# xorg_4/pmos_0/w_n8_n5# 0.03fF
+C180 B4 1bit_mcl_4/xorg_0/inverter_1/out 0.05fF
+C181 xorg_4/pmos_1/w_n8_n5# xorg_4/m1_25_n11# 0.08fF
+C182 A3 B3 0.11fF
+C183 clk_mca 1bit_mcl_1/pmos_0/w_n8_n5# 0.07fF
+C184 inverter_1/in gnd 0.05fF
+C185 gnd B1 0.23fF
+C186 inverter_5/w_n8_n5# inverter_5/out 0.03fF
+C187 inverter_4/out xorg_3/inverter_1/out 0.05fF
+C188 clk_mca B4 0.16fF
+C189 P3 C3bar 0.05fF
+C190 1bit_mcl_4/m1_45_n97# B4 0.05fF
+C191 1bit_mcl_1/xorg_0/inverter_1/out gnd 0.08fF
+C192 inverter_4/out gnd 0.14fF
+C193 P4 C3bar 0.14fF
+C194 1bit_mcl_2/m1_45_n67# 1bit_mcl_2/m1_45_n97# 0.08fF
+C195 1bit_mcl_1/xorg_0/m1_102_n91# 1bit_mcl_1/xorg_0/inverter_0/out 0.05fF
+C196 xorg_1/inverter_0/w_n8_n5# xorg_1/inverter_0/out 0.03fF
+C197 S0 xorg_0/m1_102_n17# 0.12fF
+C198 xorg_3/pmos_1/w_n8_n5# S3 0.03fF
+C199 vdd xorg_4/inverter_0/w_n8_n5# 0.08fF
+C200 1bit_mcl_4/xorg_0/m1_102_n17# P4 0.12fF
+C201 1bit_mcl_0/m1_45_n67# 1bit_mcl_0/m1_45_n97# 0.08fF
+C202 C0bar 1bit_mcl_0/m1_45_n67# 0.08fF
+C203 xorg_3/pmos_3/w_n8_n5# xorg_3/m1_102_n17# 0.08fF
+C204 1bit_mcl_0/xorg_0/pmos_2/w_n8_n5# A0 0.07fF
+C205 vdd xorg_3/inverter_0/w_n8_n5# 0.08fF
+C206 P0 1bit_mcl_0/xorg_0/m1_102_n17# 0.12fF
+C207 inverter_4/out xorg_3/inverter_1/w_n8_n5# 0.07fF
+C208 xorg_1/inverter_1/w_n8_n5# inverter_2/out 0.07fF
+C209 P4 inverter_1/in 0.05fF
+C210 1bit_mcl_3/xorg_0/m1_102_n17# vdd 0.12fF
+C211 w_928_355# vdd 0.08fF
+C212 P3 inverter_4/out 0.34fF
+C213 1bit_mcl_3/xorg_0/inverter_1/out 1bit_mcl_3/xorg_0/inverter_1/w_n8_n5# 0.03fF
+C214 clk_mca 1bit_mcl_0/pmos_0/w_n8_n5# 0.07fF
+C215 vdd 1bit_mcl_3/xorg_0/inverter_0/out 0.57fF
+C216 P2 xorg_2/m1_25_n11# 0.14fF
+C217 P2 xorg_2/m1_102_n17# 0.20fF
+C218 xorg_1/pmos_2/w_n8_n5# P1 0.07fF
+C219 clk_mca C3bar 0.39fF
+C220 xorg_0/pmos_1/w_n8_n5# xorg_0/m1_25_n11# 0.08fF
+C221 S1 xorg_1/m1_25_n11# 0.12fF
+C222 1bit_mcl_2/xorg_0/inverter_1/out P2 0.22fF
+C223 vdd C1bar 0.12fF
+C224 1bit_mcl_1/xorg_0/inverter_0/out gnd 0.49fF
+C225 xorg_2/pmos_0/w_n8_n5# xorg_2/m1_25_n11# 0.03fF
+C226 1bit_mcl_4/xorg_0/pmos_0/w_n8_n5# vdd 0.08fF
+C227 vdd 1bit_mcl_3/xorg_0/inverter_0/w_n8_n5# 0.08fF
+C228 vdd xorg_1/m1_25_n11# 0.12fF
+C229 inverter_2/w_n8_n5# C0bar 0.07fF
+C230 vdd Cout 0.12fF
+C231 inverter_1/in inverter_1/w_n8_n5# 0.07fF
+C232 xorg_1/m1_102_n17# S1 0.12fF
+C233 S1 gnd 0.30fF
+C234 1bit_mcl_0/xorg_0/inverter_0/w_n8_n5# vdd 0.08fF
+C235 1bit_mcl_3/xorg_0/pmos_2/w_n8_n5# A3 0.07fF
+C236 xorg_3/inverter_1/out vdd 0.12fF
+C237 1bit_mcl_2/xorg_0/m1_102_n17# P2 0.12fF
+C238 xorg_4/inverter_0/w_n8_n5# xorg_4/inverter_0/out 0.03fF
+C239 xorg_3/m1_25_n11# xorg_3/pmos_0/w_n8_n5# 0.03fF
+C240 vdd xorg_2/inverter_0/w_n8_n5# 0.08fF
+C241 vdd gnd 0.42fF
+C242 xorg_1/m1_102_n17# vdd 0.12fF
+C243 A1 C0bar 0.09fF
+C244 clk_mca inverter_1/in 0.30fF
+C245 clk_mca B1 0.12fF
+C246 vdd 1bit_mcl_0/xorg_0/inverter_1/w_n8_n5# 0.08fF
+C247 P3 1bit_mcl_3/xorg_0/pmos_1/w_n8_n5# 0.03fF
+C248 gnd xorg_1/m1_26_n95# 0.08fF
+C249 1bit_mcl_4/xorg_0/pmos_2/w_n8_n5# vdd 0.08fF
+C250 xorg_1/m1_102_n91# gnd 0.08fF
+C251 xorg_2/pmos_3/w_n8_n5# S2 0.03fF
+C252 xorg_0/pmos_0/w_n8_n5# xorg_0/inverter_0/out 0.07fF
+C253 1bit_mcl_4/m1_45_n67# inverter_1/in 0.08fF
+C254 inverter_2/out inverter_2/w_n8_n5# 0.03fF
+C255 A2 1bit_mcl_2/xorg_0/m1_102_n17# 0.20fF
+C256 1bit_mcl_1/xorg_0/pmos_3/w_n8_n5# 1bit_mcl_1/xorg_0/m1_102_n17# 0.08fF
+C257 xorg_1/inverter_0/out P1 0.27fF
+C258 gnd inverter_0/out 0.08fF
+C259 vdd xorg_2/inverter_0/out 0.27fF
+C260 xorg_3/m1_26_n95# S3 0.08fF
+C261 vdd xorg_1/inverter_0/w_n8_n5# 0.08fF
+C262 xorg_3/inverter_1/w_n8_n5# vdd 0.08fF
+C263 1bit_mcl_1/xorg_0/pmos_3/w_n8_n5# P1 0.03fF
+C264 P3 vdd 0.30fF
+C265 vdd inverter_0/w_n8_n5# 0.08fF
+C266 1bit_mcl_1/xorg_0/inverter_0/out 1bit_mcl_1/xorg_0/inverter_0/w_n8_n5# 0.03fF
+C267 P4 1bit_mcl_4/xorg_0/pmos_1/w_n8_n5# 0.03fF
+C268 P4 vdd 0.27fF
+C269 B1 P1 0.39fF
+C270 xorg_3/inverter_1/out S3 0.22fF
+C271 gnd B0 0.72fF
+C272 C3bar C2bar 0.08fF
+C273 1bit_mcl_1/xorg_0/inverter_1/out P1 0.22fF
+C274 gnd S3 0.30fF
+C275 vdd 1bit_mcl_0/xorg_0/m1_25_n11# 0.12fF
+C276 1bit_mcl_0/xorg_0/inverter_1/w_n8_n5# B0 0.07fF
+C277 gnd xorg_4/inverter_1/out 0.08fF
+C278 P0 xorg_0/m1_26_n95# 0.05fF
+C279 vdd 1bit_mcl_1/xorg_0/inverter_0/w_n8_n5# 0.08fF
+C280 B4 C3bar 0.16fF
+C281 clk_mca 1bit_mcl_2/m1_45_n67# 0.05fF
+C282 1bit_mcl_2/xorg_0/pmos_1/w_n8_n5# 1bit_mcl_2/xorg_0/m1_25_n11# 0.08fF
+C283 xorg_1/pmos_3/w_n8_n5# xorg_1/inverter_1/out 0.07fF
+C284 1bit_mcl_0/xorg_0/inverter_0/out 1bit_mcl_0/xorg_0/pmos_0/w_n8_n5# 0.07fF
+C285 xorg_4/inverter_1/w_n8_n5# inverter_5/out 0.07fF
+C286 vdd xorg_4/m1_25_n11# 0.12fF
+C287 inverter_0/w_n8_n5# inverter_0/out 0.03fF
+C288 gnd xorg_4/inverter_0/out 0.24fF
+C289 1bit_mcl_4/xorg_0/pmos_3/w_n8_n5# P4 0.03fF
+C290 vdd inverter_1/w_n8_n5# 0.08fF
+C291 1bit_mcl_3/xorg_0/inverter_1/out vdd 0.12fF
+C292 xorg_0/inverter_1/out xorg_0/m1_102_n91# 0.05fF
+C293 inverter_0/w_n8_n5# B0 0.07fF
+C294 1bit_mcl_4/xorg_0/inverter_1/out vdd 0.12fF
+C295 1bit_mcl_2/xorg_0/inverter_0/out vdd 0.60fF
+C296 inverter_4/out C2bar 0.05fF
+C297 inverter_3/out vdd 0.27fF
+C298 xorg_2/inverter_1/w_n8_n5# xorg_2/inverter_1/out 0.03fF
+C299 vdd xorg_4/m1_102_n17# 0.12fF
+C300 1bit_mcl_4/xorg_0/inverter_0/out 1bit_mcl_4/xorg_0/m1_102_n91# 0.05fF
+C301 clk_mca vdd 0.51fF
+C302 xorg_2/pmos_2/w_n8_n5# xorg_2/m1_102_n17# 0.03fF
+C303 1bit_mcl_0/xorg_0/m1_26_n95# gnd 0.08fF
+C304 C2bar inverter_4/w_n8_n5# 0.07fF
+C305 C1bar P2 0.07fF
+C306 A2 1bit_mcl_2/m1_45_n97# 0.06fF
+C307 P4 xorg_4/inverter_0/out 0.27fF
+C308 1bit_mcl_4/xorg_0/pmos_3/w_n8_n5# 1bit_mcl_4/xorg_0/inverter_1/out 0.07fF
+C309 1bit_mcl_4/xorg_0/m1_25_n11# 1bit_mcl_4/xorg_0/pmos_0/w_n8_n5# 0.03fF
+C310 A1 1bit_mcl_1/xorg_0/m1_26_n95# 0.05fF
+C311 xorg_0/m1_102_n17# vdd 0.12fF
+C312 P2 xorg_2/inverter_0/w_n8_n5# 0.07fF
+C313 1bit_mcl_2/xorg_0/inverter_1/out B2 0.05fF
+C314 P2 gnd 0.57fF
+C315 vdd 1bit_mcl_1/xorg_0/m1_102_n17# 0.12fF
+C316 1bit_mcl_0/xorg_0/inverter_0/w_n8_n5# A0 0.07fF
+C317 A2 C1bar 0.10fF
+C318 gnd A0 0.19fF
+C319 vdd xorg_3/inverter_0/out 0.27fF
+C320 vdd P1 0.28fF
+C321 1bit_mcl_2/m1_45_n67# C2bar 0.08fF
+C322 xorg_4/m1_25_n11# xorg_4/inverter_0/out 0.05fF
+C323 1bit_mcl_1/xorg_0/m1_25_n11# A1 0.14fF
+C324 1bit_mcl_2/xorg_0/pmos_3/w_n8_n5# P2 0.03fF
+C325 clk_mca B0 0.09fF
+C326 P1 xorg_1/m1_26_n95# 0.05fF
+C327 vdd 1bit_mcl_2/xorg_0/m1_25_n11# 0.12fF
+C328 1bit_mcl_1/xorg_0/m1_102_n17# w_462_353# 0.03fF
+C329 1bit_mcl_1/xorg_0/pmos_0/w_n8_n5# 1bit_mcl_1/xorg_0/inverter_0/out 0.07fF
+C330 A4 gnd 0.05fF
+C331 vdd xorg_0/inverter_0/out 0.35fF
+C332 inverter_1/in C3bar 0.08fF
+C333 A2 gnd 0.20fF
+C334 xorg_2/inverter_0/out P2 0.27fF
+C335 xorg_4/m1_102_n91# xorg_4/inverter_1/out 0.05fF
+C336 1bit_mcl_4/xorg_0/pmos_2/w_n8_n5# A4 0.07fF
+C337 1bit_mcl_3/xorg_0/pmos_1/w_n8_n5# 1bit_mcl_3/xorg_0/m1_25_n11# 0.08fF
+C338 xorg_3/pmos_3/w_n8_n5# S3 0.03fF
+C339 vdd 1bit_mcl_1/xorg_0/pmos_0/w_n8_n5# 0.07fF
+C340 B3 1bit_mcl_3/m1_45_n97# 0.05fF
+C341 S1 xorg_1/inverter_1/out 0.22fF
+C342 1bit_mcl_4/xorg_0/m1_25_n11# P4 0.12fF
+C343 vdd C2bar 0.12fF
+C344 1bit_mcl_0/xorg_0/inverter_1/out gnd 0.08fF
+C345 xorg_2/inverter_0/out xorg_2/pmos_0/w_n8_n5# 0.07fF
+C346 xorg_0/pmos_2/w_n8_n5# xorg_0/m1_102_n17# 0.03fF
+C347 clk_mca 1bit_mcl_2/pmos_0/w_n8_n5# 0.07fF
+C348 1bit_mcl_2/xorg_0/m1_26_n95# P2 0.08fF
+C349 vdd 1bit_mcl_1/pmos_0/w_n8_n5# 0.08fF
+C350 1bit_mcl_0/xorg_0/inverter_1/w_n8_n5# 1bit_mcl_0/xorg_0/inverter_1/out 0.03fF
+C351 gnd S4 0.30fF
+C352 vdd xorg_1/inverter_1/out 0.12fF
+C353 xorg_0/inverter_1/out xorg_0/pmos_3/w_n8_n5# 0.07fF
+C354 xorg_4/m1_102_n91# xorg_4/inverter_0/out 0.05fF
+C355 1bit_mcl_4/xorg_0/inverter_0/out 1bit_mcl_4/xorg_0/pmos_0/w_n8_n5# 0.07fF
+C356 A0 1bit_mcl_0/xorg_0/m1_25_n11# 0.14fF
+C357 B4 vdd 0.15fF
+C358 1bit_mcl_1/xorg_0/inverter_1/out 1bit_mcl_1/xorg_0/pmos_3/w_n8_n5# 0.07fF
+C359 1bit_mcl_0/xorg_0/pmos_2/w_n8_n5# 1bit_mcl_0/xorg_0/m1_102_n17# 0.03fF
+C360 B4 1bit_mcl_4/xorg_0/pmos_1/w_n8_n5# 0.07fF
+C361 A3 1bit_mcl_3/m1_45_n97# 0.05fF
+C362 A4 P4 0.10fF
+C363 1bit_mcl_1/xorg_0/inverter_1/out B1 0.05fF
+C364 1bit_mcl_2/xorg_0/inverter_0/out 1bit_mcl_2/xorg_0/pmos_0/w_n8_n5# 0.07fF
+C365 1bit_mcl_3/xorg_0/m1_25_n11# vdd 0.12fF
+C366 xorg_1/m1_102_n91# xorg_1/inverter_1/out 0.05fF
+C367 1bit_mcl_4/xorg_0/inverter_0/out gnd 0.51fF
+C368 1bit_mcl_2/xorg_0/m1_102_n91# P2 0.08fF
+C369 vdd xorg_3/m1_102_n17# 0.12fF
+C370 xorg_1/pmos_0/w_n8_n5# xorg_1/m1_25_n11# 0.03fF
+C371 A3 1bit_mcl_3/m1_45_n67# 0.05fF
+C372 vdd xorg_4/pmos_0/w_n8_n5# 0.08fF
+C373 xorg_1/pmos_2/w_n8_n5# vdd 0.08fF
+C374 1bit_mcl_0/xorg_0/inverter_0/w_n8_n5# 1bit_mcl_0/xorg_0/inverter_0/out 0.03fF
+C375 A2 1bit_mcl_2/xorg_0/m1_26_n95# 0.05fF
+C376 inverter_3/out P2 0.20fF
+C377 C1bar C0bar 0.08fF
+C378 1bit_mcl_0/xorg_0/inverter_0/out gnd 0.28fF
+C379 inverter_4/out inverter_4/w_n8_n5# 0.03fF
+C380 xorg_0/inverter_0/out xorg_0/inverter_0/w_n8_n5# 0.03fF
+C381 clk_mca P2 0.03fF
+C382 1bit_mcl_2/m1_45_n97# B2 0.05fF
+C383 S0 B0 0.19fF
+C384 P0 gnd 0.65fF
+C385 1bit_mcl_3/xorg_0/inverter_0/out B3 0.90fF
+C386 gnd 1bit_mcl_0/m1_45_n97# 0.08fF
+C387 gnd C0bar 0.22fF
+C388 clk_mca A0 0.11fF
+C389 1bit_mcl_1/xorg_0/pmos_1/w_n8_n5# 1bit_mcl_1/xorg_0/m1_25_n11# 0.08fF
+C390 vdd 1bit_mcl_0/pmos_0/w_n8_n5# 0.08fF
+C391 xorg_3/inverter_1/out xorg_3/m1_102_n91# 0.05fF
+C392 xorg_3/m1_102_n91# gnd 0.08fF
+C393 1bit_mcl_3/xorg_0/m1_102_n17# A3 0.20fF
+C394 1bit_mcl_2/xorg_0/inverter_0/out A2 0.33fF
+C395 inverter_3/w_n8_n5# C1bar 0.07fF
+C396 B0 1bit_mcl_0/xorg_0/pmos_1/w_n8_n5# 0.07fF
+C397 xorg_0/pmos_0/w_n8_n5# vdd 0.08fF
+C398 xorg_1/pmos_3/w_n8_n5# S1 0.03fF
+C399 xorg_0/inverter_1/out gnd 0.08fF
+C400 vdd 1bit_mcl_3/xorg_0/inverter_1/w_n8_n5# 0.08fF
+C401 clk_mca A4 0.12fF
+C402 C3bar vdd 0.12fF
+C403 1bit_mcl_3/xorg_0/inverter_0/out A3 0.34fF
+C404 1bit_mcl_4/m1_45_n97# A4 0.05fF
+C405 xorg_4/m1_25_n11# S4 0.12fF
+C406 clk_mca A2 0.09fF
+C407 C1bar B2 0.10fF
+C408 1bit_mcl_3/xorg_0/m1_26_n95# gnd 0.08fF
+C409 S3 xorg_3/m1_102_n17# 0.12fF
+C410 1bit_mcl_2/xorg_0/m1_102_n17# 1bit_mcl_2/xorg_0/pmos_2/w_n8_n5# 0.03fF
+C411 1bit_mcl_2/xorg_0/m1_25_n11# 1bit_mcl_2/xorg_0/pmos_0/w_n8_n5# 0.03fF
+C412 inverter_2/out xorg_1/m1_25_n11# 0.15fF
+C413 1bit_mcl_4/xorg_0/m1_26_n95# gnd 0.08fF
+C414 1bit_mcl_4/xorg_0/m1_102_n17# vdd 0.12fF
+C415 clk_mca 1bit_mcl_3/pmos_0/w_n8_n5# 0.07fF
+C416 1bit_mcl_2/pmos_0/w_n8_n5# C2bar 0.03fF
+C417 1bit_mcl_1/xorg_0/inverter_0/out B1 0.11fF
+C418 1bit_mcl_4/m1_45_n67# A4 0.05fF
+C419 1bit_mcl_0/xorg_0/inverter_0/out 1bit_mcl_0/xorg_0/m1_25_n11# 0.05fF
+C420 vdd xorg_1/inverter_0/out 0.27fF
+C421 xorg_1/pmos_1/w_n8_n5# xorg_1/m1_25_n11# 0.08fF
+C422 B3 gnd 0.22fF
+C423 inverter_2/out gnd 0.14fF
+C424 1bit_mcl_2/xorg_0/m1_25_n11# P2 0.12fF
+C425 B2 gnd 0.24fF
+C426 xorg_4/m1_102_n17# S4 0.12fF
+C427 xorg_0/m1_25_n11# xorg_0/inverter_0/out 0.05fF
+C428 A3 1bit_mcl_3/xorg_0/inverter_0/w_n8_n5# 0.07fF
+C429 P0 1bit_mcl_0/xorg_0/m1_25_n11# 0.12fF
+C430 xorg_4/pmos_0/w_n8_n5# xorg_4/inverter_0/out 0.07fF
+C431 1bit_mcl_1/m1_45_n97# A1 0.05fF
+C432 inverter_1/in vdd 0.12fF
+C433 vdd B1 0.11fF
+C434 xorg_1/inverter_0/out xorg_1/m1_102_n91# 0.05fF
+C435 1bit_mcl_1/xorg_0/inverter_1/out vdd 0.12fF
+C436 inverter_4/out vdd 0.28fF
+C437 1bit_mcl_4/xorg_0/pmos_3/w_n8_n5# 1bit_mcl_4/xorg_0/m1_102_n17# 0.08fF
+C438 1bit_mcl_3/xorg_0/m1_26_n95# P3 0.08fF
+C439 A3 gnd 0.20fF
+C440 xorg_3/pmos_1/w_n8_n5# xorg_3/m1_25_n11# 0.08fF
+C441 xorg_4/m1_26_n95# S4 0.08fF
+C442 vdd xorg_0/inverter_1/w_n8_n5# 0.08fF
+C443 S4 xorg_4/m1_102_n91# 0.08fF
+C444 1bit_mcl_4/xorg_0/m1_26_n95# P4 0.08fF
+C445 P2 C2bar 0.05fF
+C446 A2 1bit_mcl_2/xorg_0/m1_25_n11# 0.14fF
+C447 inverter_3/out xorg_2/inverter_1/w_n8_n5# 0.07fF
+C448 S0 xorg_0/m1_25_n11# 0.12fF
+C449 vdd inverter_4/w_n8_n5# 0.08fF
+C450 1bit_mcl_3/xorg_0/pmos_2/w_n8_n5# 1bit_mcl_3/xorg_0/m1_102_n17# 0.03fF
+C451 P3 B3 0.72fF
+C452 xorg_2/m1_26_n95# gnd 0.08fF
+C453 clk_mca P0 0.11fF
+C454 B2 1bit_mcl_2/xorg_0/m1_26_n95# 0.05fF
+C455 P3 A3 0.11fF
+C456 clk_mca C0bar 0.36fF
+C457 inverter_4/out S3 0.19fF
+C458 A4 B4 0.13fF
+C459 xorg_0/inverter_1/w_n8_n5# B0 0.07fF
+C460 inverter_5/out gnd 0.14fF
+C461 xorg_0/m1_102_n17# P0 0.20fF
+C462 inverter_6/w_n8_n5# clk 0.07fF
+C463 inverter_3/out inverter_3/w_n8_n5# 0.03fF
+C464 P3 xorg_3/pmos_2/w_n8_n5# 0.07fF
+C465 gnd 1bit_mcl_1/xorg_0/m1_26_n95# 0.08fF
+C466 1bit_mcl_3/xorg_0/inverter_1/out B3 0.05fF
+C467 1bit_mcl_4/xorg_0/inverter_1/out 1bit_mcl_4/xorg_0/inverter_1/w_n8_n5# 0.03fF
+C468 vdd 1bit_mcl_1/xorg_0/inverter_0/out 0.47fF
+C469 1bit_mcl_2/xorg_0/inverter_0/out B2 0.10fF
+C470 xorg_0/pmos_0/w_n8_n5# xorg_0/m1_25_n11# 0.03fF
+C471 clk_mca B3 0.12fF
+C472 clk_mca B2 0.09fF
+C473 P1 C0bar 0.14fF
+C474 S1 xorg_1/m1_26_n95# 0.08fF
+C475 xorg_3/pmos_0/w_n8_n5# xorg_3/inverter_0/out 0.07fF
+C476 xorg_3/m1_102_n91# xorg_3/inverter_0/out 0.05fF
+C477 xorg_2/m1_26_n95# S2 0.08fF
+C478 P0 xorg_0/inverter_0/out 0.30fF
+C479 clk_mca inverter_6/w_n8_n5# 0.03fF
+C480 xorg_1/m1_102_n91# S1 0.08fF
+C481 P4 inverter_5/out 0.24fF
+C482 clk_mca A3 0.11fF
+C483 1bit_mcl_0/xorg_0/m1_102_n91# 1bit_mcl_0/xorg_0/inverter_1/out 0.05fF
+C484 1bit_mcl_4/xorg_0/inverter_0/out B4 0.10fF
+C485 vdd 1bit_mcl_2/xorg_0/inverter_1/w_n8_n5# 0.08fF
+C486 vdd w_462_353# 0.08fF
+C487 xorg_4/pmos_1/w_n8_n5# S4 0.03fF
+C488 A4 C3bar 0.14fF
+C489 vdd inverter_0/out 0.12fF
+C490 inverter_2/out P1 0.29fF
+C491 inverter_3/out xorg_2/m1_26_n95# 0.05fF
+C492 1bit_mcl_4/xorg_0/m1_102_n17# A4 0.20fF
+C493 xorg_4/pmos_3/w_n8_n5# xorg_4/m1_102_n17# 0.08fF
+C494 inverter_5/out xorg_4/m1_25_n11# 0.15fF
+C495 C3bar 1bit_mcl_3/pmos_0/w_n8_n5# 0.03fF
+C496 1bit_mcl_2/xorg_0/pmos_1/w_n8_n5# P2 0.03fF
+C497 vdd B0 0.58fF
+C498 P0 1bit_mcl_0/xorg_0/pmos_1/w_n8_n5# 0.03fF
+C499 A1 gnd 0.20fF
+C500 vdd xorg_4/inverter_1/out 0.12fF
+C501 S0 xorg_0/inverter_1/out 0.22fF
+C502 1bit_mcl_0/xorg_0/m1_102_n91# 1bit_mcl_0/xorg_0/inverter_0/out 0.05fF
+C503 1bit_mcl_2/xorg_0/inverter_0/out 1bit_mcl_2/xorg_0/inverter_0/w_n8_n5# 0.03fF
+C504 xorg_0/pmos_2/w_n8_n5# vdd 0.08fF
+C505 1bit_mcl_0/xorg_0/m1_102_n91# P0 0.08fF
+C506 P4 xorg_4/pmos_2/w_n8_n5# 0.07fF
+C507 B4 1bit_mcl_4/xorg_0/m1_26_n95# 0.05fF
+C508 B3 C2bar 0.12fF
+C509 1bit_mcl_1/m1_45_n67# A1 0.05fF
+C510 vdd xorg_0/inverter_0/w_n8_n5# 0.08fF
+C511 vdd xorg_4/inverter_0/out 0.27fF
+C512 B0 inverter_0/out 0.05fF
+C513 clk_mca 1bit_mcl_0/m1_45_n67# 0.05fF
+C514 inverter_2/out xorg_1/inverter_1/out 0.05fF
+C515 inverter_5/out xorg_4/m1_26_n95# 0.05fF
+C516 P3 xorg_3/m1_25_n11# 0.14fF
+C517 B4 1bit_mcl_4/xorg_0/inverter_1/w_n8_n5# 0.07fF
+C518 vdd 1bit_mcl_2/pmos_0/w_n8_n5# 0.08fF
+C519 A3 C2bar 0.11fF
+C520 1bit_mcl_0/pmos_0/w_n8_n5# C0bar 0.03fF
+C521 C3bar inverter_5/w_n8_n5# 0.07fF
+C522 xorg_2/m1_102_n91# xorg_2/inverter_1/out 0.05fF
+C523 1bit_mcl_4/xorg_0/inverter_0/w_n8_n5# vdd 0.08fF
+C524 1bit_mcl_3/m1_45_n67# 1bit_mcl_3/m1_45_n97# 0.08fF
+C525 vdd 1bit_mcl_2/xorg_0/pmos_0/w_n8_n5# 0.07fF
+C526 A1 1bit_mcl_1/xorg_0/inverter_0/w_n8_n5# 0.07fF
+C527 xorg_1/pmos_0/w_n8_n5# xorg_1/inverter_0/out 0.07fF
+C528 1bit_mcl_3/xorg_0/m1_25_n11# A3 0.14fF
+C529 1bit_mcl_1/xorg_0/m1_26_n95# P1 0.08fF
+C530 xorg_4/m1_102_n17# xorg_4/pmos_2/w_n8_n5# 0.03fF
+C531 gnd xorg_0/m1_26_n95# 0.08fF
+C532 A2 1bit_mcl_2/m1_45_n67# 0.05fF
+C533 gnd xorg_0/m1_102_n91# 0.08fF
+C534 vdd xorg_0/m1_25_n11# 0.12fF
+C535 1bit_mcl_3/xorg_0/m1_102_n91# 1bit_mcl_3/xorg_0/inverter_0/out 0.05fF
+C536 vdd P2 0.13fF
+C537 1bit_mcl_0/xorg_0/pmos_3/w_n8_n5# 1bit_mcl_0/xorg_0/inverter_1/out 0.07fF
+C538 1bit_mcl_4/xorg_0/m1_25_n11# vdd 0.12fF
+C539 1bit_mcl_4/xorg_0/m1_25_n11# 1bit_mcl_4/xorg_0/pmos_1/w_n8_n5# 0.08fF
+C540 1bit_mcl_2/xorg_0/inverter_1/out gnd 0.08fF
+C541 1bit_mcl_1/xorg_0/m1_25_n11# P1 0.12fF
+C542 vdd A0 0.42fF
+C543 xorg_3/pmos_2/w_n8_n5# xorg_3/m1_102_n17# 0.03fF
+C544 1bit_mcl_1/m1_45_n97# gnd 0.08fF
+C545 B1 C0bar 0.11fF
+C546 B3 1bit_mcl_3/xorg_0/inverter_1/w_n8_n5# 0.07fF
+C547 xorg_1/inverter_1/w_n8_n5# xorg_1/inverter_1/out 0.03fF
+C548 clk_mca A1 0.10fF
+C549 xorg_2/inverter_0/out xorg_2/m1_25_n11# 0.05fF
+C550 vdd xorg_2/pmos_0/w_n8_n5# 0.08fF
+C551 1bit_mcl_0/xorg_0/m1_26_n95# B0 0.05fF
+C552 A4 vdd 0.19fF
+C553 1bit_mcl_2/xorg_0/inverter_1/out 1bit_mcl_2/xorg_0/pmos_3/w_n8_n5# 0.07fF
+C554 A2 vdd 0.17fF
+C555 xorg_2/inverter_1/out gnd 0.08fF
+C556 1bit_mcl_1/m1_45_n67# 1bit_mcl_1/m1_45_n97# 0.08fF
+C557 1bit_mcl_3/pmos_0/w_n8_n5# vdd 0.08fF
+C558 1bit_mcl_1/xorg_0/m1_25_n11# 1bit_mcl_1/xorg_0/pmos_0/w_n8_n5# 0.03fF
+C559 xorg_0/inverter_1/out xorg_0/inverter_1/w_n8_n5# 0.03fF
+C560 1bit_mcl_3/xorg_0/m1_102_n91# gnd 0.08fF
+C561 1bit_mcl_2/xorg_0/pmos_3/w_n8_n5# 1bit_mcl_2/xorg_0/m1_102_n17# 0.08fF
+C562 1bit_mcl_4/xorg_0/m1_102_n91# gnd 0.08fF
+C563 S2 xorg_2/m1_25_n11# 0.12fF
+C564 S2 xorg_2/m1_102_n17# 0.12fF
+C565 A1 1bit_mcl_1/xorg_0/m1_102_n17# 0.20fF
+C566 1bit_mcl_0/xorg_0/pmos_0/w_n8_n5# 1bit_mcl_0/xorg_0/m1_25_n11# 0.03fF
+C567 vdd 1bit_mcl_0/xorg_0/inverter_1/out 0.12fF
+C568 xorg_3/m1_25_n11# xorg_3/inverter_0/out 0.05fF
+C569 1bit_mcl_0/xorg_0/pmos_3/w_n8_n5# P0 0.03fF
+C570 inverter_5/out xorg_4/pmos_1/w_n8_n5# 0.07fF
+C571 A0 B0 0.63fF
+C572 1bit_mcl_3/m1_45_n97# gnd 0.08fF
+C573 A1 P1 0.09fF
+C574 1bit_mcl_2/xorg_0/pmos_1/w_n8_n5# B2 0.07fF
+C575 w_928_355# 1bit_mcl_3/xorg_0/inverter_0/out 0.07fF
+C576 1bit_mcl_4/pmos_0/w_n8_n5# clk_mca 0.07fF
+C577 1bit_mcl_4/xorg_0/inverter_0/out vdd 0.51fF
+C578 inverter_3/out xorg_2/m1_25_n11# 0.15fF
+C579 P3 1bit_mcl_3/xorg_0/m1_102_n91# 0.08fF
+C580 1bit_mcl_2/xorg_0/inverter_1/out 1bit_mcl_2/xorg_0/m1_102_n91# 0.05fF
+C581 S2 xorg_2/inverter_1/out 0.22fF
+C582 P4 1bit_mcl_4/xorg_0/m1_102_n91# 0.08fF
+C583 vdd xorg_2/inverter_1/w_n8_n5# 0.08fF
+C584 C3bar inverter_5/out 0.05fF
+C585 vdd 1bit_mcl_0/xorg_0/inverter_0/out 0.52fF
+C586 xorg_1/pmos_0/w_n8_n5# vdd 0.08fF
+C587 vdd inverter_5/w_n8_n5# 0.08fF
+C588 xorg_2/m1_102_n91# gnd 0.08fF
+C589 1bit_mcl_1/xorg_0/m1_102_n91# gnd 0.08fF
+C590 1bit_mcl_3/xorg_0/inverter_0/out 1bit_mcl_3/xorg_0/inverter_0/w_n8_n5# 0.03fF
+C591 1bit_mcl_0/xorg_0/inverter_1/out B0 0.05fF
+C592 vdd P0 0.49fF
+C593 vdd C0bar 0.12fF
+C594 S4 xorg_4/inverter_1/out 0.22fF
+C595 1bit_mcl_2/m1_45_n97# gnd 0.08fF
+C596 1bit_mcl_3/xorg_0/pmos_1/w_n8_n5# B3 0.07fF
+C597 vdd xorg_3/pmos_0/w_n8_n5# 0.08fF
+C598 1bit_mcl_3/xorg_0/inverter_0/out gnd 0.45fF
+C599 1bit_mcl_0/xorg_0/m1_26_n95# A0 0.05fF
+C600 inverter_3/out xorg_2/inverter_1/out 0.05fF
+C601 vdd xorg_0/inverter_1/out 0.12fF
+C602 A4 1bit_mcl_4/xorg_0/inverter_0/w_n8_n5# 0.07fF
+C603 1bit_mcl_3/xorg_0/inverter_1/out 1bit_mcl_3/xorg_0/m1_102_n91# 0.05fF
+C604 P4 xorg_4/inverter_0/w_n8_n5# 0.07fF
+C605 xorg_2/pmos_1/w_n8_n5# xorg_2/m1_25_n11# 0.08fF
+C606 xorg_2/m1_102_n91# xorg_2/inverter_0/out 0.05fF
+C607 P0 inverter_0/out 0.15fF
+C608 1bit_mcl_4/xorg_0/inverter_1/out 1bit_mcl_4/xorg_0/m1_102_n91# 0.05fF
+C609 B1 1bit_mcl_1/xorg_0/m1_26_n95# 0.05fF
+C610 B1 1bit_mcl_1/xorg_0/inverter_1/w_n8_n5# 0.07fF
+C611 inverter_2/out S1 0.19fF
+C612 vdd inverter_3/w_n8_n5# 0.08fF
+C613 C0bar inverter_0/out 0.08fF
+C614 C1bar gnd 0.20fF
+C615 1bit_mcl_4/pmos_0/w_n8_n5# Gnd 0.58fF
+C616 1bit_mcl_4/m1_45_n97# Gnd 0.24fF
+C617 inverter_1/in Gnd 0.28fF
+C618 1bit_mcl_4/m1_45_n67# Gnd 0.23fF
+C619 1bit_mcl_4/xorg_0/m1_102_n17# Gnd 0.04fF
+C620 1bit_mcl_4/xorg_0/pmos_3/w_n8_n5# Gnd 0.58fF
+C621 1bit_mcl_4/xorg_0/pmos_2/w_n8_n5# Gnd 0.58fF
+C622 1bit_mcl_4/xorg_0/m1_25_n11# Gnd 0.13fF
+C623 1bit_mcl_4/xorg_0/pmos_1/w_n8_n5# Gnd 0.58fF
+C624 1bit_mcl_4/xorg_0/pmos_0/w_n8_n5# Gnd 0.58fF
+C625 1bit_mcl_4/xorg_0/m1_102_n91# Gnd 0.22fF
+C626 1bit_mcl_4/xorg_0/inverter_1/out Gnd 0.45fF
+C627 P4 Gnd 3.87fF
+C628 1bit_mcl_4/xorg_0/m1_26_n95# Gnd 0.22fF
+C629 B4 Gnd 1.05fF
+C630 1bit_mcl_4/xorg_0/inverter_1/w_n8_n5# Gnd 0.53fF
+C631 1bit_mcl_4/xorg_0/inverter_0/out Gnd 1.74fF
+C632 A4 Gnd 4.48fF
+C633 1bit_mcl_4/xorg_0/inverter_0/w_n8_n5# Gnd 0.53fF
+C634 1bit_mcl_3/pmos_0/w_n8_n5# Gnd 0.58fF
+C635 1bit_mcl_3/m1_45_n97# Gnd 0.24fF
+C636 1bit_mcl_3/m1_45_n67# Gnd 0.23fF
+C637 1bit_mcl_3/xorg_0/m1_102_n17# Gnd 0.04fF
+C638 1bit_mcl_3/xorg_0/pmos_3/w_n8_n5# Gnd 0.58fF
+C639 1bit_mcl_3/xorg_0/pmos_2/w_n8_n5# Gnd 0.58fF
+C640 1bit_mcl_3/xorg_0/m1_25_n11# Gnd 0.13fF
+C641 1bit_mcl_3/xorg_0/pmos_1/w_n8_n5# Gnd 0.58fF
+C642 w_928_355# Gnd 0.58fF
+C643 1bit_mcl_3/xorg_0/m1_102_n91# Gnd 0.22fF
+C644 1bit_mcl_3/xorg_0/inverter_1/out Gnd 0.45fF
+C645 P3 Gnd 3.93fF
+C646 1bit_mcl_3/xorg_0/m1_26_n95# Gnd 0.22fF
+C647 B3 Gnd 1.22fF
+C648 1bit_mcl_3/xorg_0/inverter_1/w_n8_n5# Gnd 0.53fF
+C649 1bit_mcl_3/xorg_0/inverter_0/out Gnd 1.74fF
+C650 A3 Gnd 3.97fF
+C651 1bit_mcl_3/xorg_0/inverter_0/w_n8_n5# Gnd 0.53fF
+C652 1bit_mcl_2/pmos_0/w_n8_n5# Gnd 0.58fF
+C653 1bit_mcl_2/m1_45_n97# Gnd 0.24fF
+C654 1bit_mcl_2/m1_45_n67# Gnd 0.23fF
+C655 1bit_mcl_2/xorg_0/m1_102_n17# Gnd 0.04fF
+C656 1bit_mcl_2/xorg_0/pmos_3/w_n8_n5# Gnd 0.58fF
+C657 1bit_mcl_2/xorg_0/pmos_2/w_n8_n5# Gnd 0.58fF
+C658 1bit_mcl_2/xorg_0/m1_25_n11# Gnd 0.13fF
+C659 1bit_mcl_2/xorg_0/pmos_1/w_n8_n5# Gnd 0.58fF
+C660 1bit_mcl_2/xorg_0/pmos_0/w_n8_n5# Gnd 0.58fF
+C661 1bit_mcl_2/xorg_0/m1_102_n91# Gnd 0.22fF
+C662 1bit_mcl_2/xorg_0/inverter_1/out Gnd 0.45fF
+C663 P2 Gnd 3.96fF
+C664 1bit_mcl_2/xorg_0/m1_26_n95# Gnd 0.22fF
+C665 B2 Gnd 4.33fF
+C666 1bit_mcl_2/xorg_0/inverter_1/w_n8_n5# Gnd 0.53fF
+C667 1bit_mcl_2/xorg_0/inverter_0/out Gnd 1.74fF
+C668 A2 Gnd 4.41fF
+C669 1bit_mcl_2/xorg_0/inverter_0/w_n8_n5# Gnd 0.53fF
+C670 1bit_mcl_1/pmos_0/w_n8_n5# Gnd 0.58fF
+C671 1bit_mcl_1/m1_45_n97# Gnd 0.24fF
+C672 1bit_mcl_1/m1_45_n67# Gnd 0.23fF
+C673 1bit_mcl_1/xorg_0/m1_102_n17# Gnd 0.04fF
+C674 1bit_mcl_1/xorg_0/pmos_3/w_n8_n5# Gnd 0.58fF
+C675 w_462_353# Gnd 0.58fF
+C676 1bit_mcl_1/xorg_0/m1_25_n11# Gnd 0.13fF
+C677 1bit_mcl_1/xorg_0/pmos_1/w_n8_n5# Gnd 0.58fF
+C678 1bit_mcl_1/xorg_0/pmos_0/w_n8_n5# Gnd 0.58fF
+C679 1bit_mcl_1/xorg_0/m1_102_n91# Gnd 0.22fF
+C680 1bit_mcl_1/xorg_0/inverter_1/out Gnd 0.45fF
+C681 P1 Gnd 3.46fF
+C682 1bit_mcl_1/xorg_0/m1_26_n95# Gnd 0.22fF
+C683 B1 Gnd 4.49fF
+C684 1bit_mcl_1/xorg_0/inverter_1/w_n8_n5# Gnd 0.53fF
+C685 1bit_mcl_1/xorg_0/inverter_0/out Gnd 1.74fF
+C686 A1 Gnd 4.39fF
+C687 1bit_mcl_1/xorg_0/inverter_0/w_n8_n5# Gnd 0.53fF
+C688 1bit_mcl_0/pmos_0/w_n8_n5# Gnd 0.58fF
+C689 1bit_mcl_0/m1_45_n97# Gnd 0.24fF
+C690 C0bar Gnd 1.24fF
+C691 1bit_mcl_0/m1_45_n67# Gnd 0.23fF
+C692 inverter_0/out Gnd 0.30fF
+C693 1bit_mcl_0/xorg_0/m1_102_n17# Gnd 0.04fF
+C694 1bit_mcl_0/xorg_0/pmos_3/w_n8_n5# Gnd 0.58fF
+C695 1bit_mcl_0/xorg_0/pmos_2/w_n8_n5# Gnd 0.58fF
+C696 1bit_mcl_0/xorg_0/m1_25_n11# Gnd 0.13fF
+C697 1bit_mcl_0/xorg_0/pmos_1/w_n8_n5# Gnd 0.58fF
+C698 1bit_mcl_0/xorg_0/pmos_0/w_n8_n5# Gnd 0.58fF
+C699 1bit_mcl_0/xorg_0/m1_102_n91# Gnd 0.22fF
+C700 1bit_mcl_0/xorg_0/inverter_1/out Gnd 0.45fF
+C701 P0 Gnd 8.29fF
+C702 1bit_mcl_0/xorg_0/m1_26_n95# Gnd 0.22fF
+C703 1bit_mcl_0/xorg_0/inverter_1/w_n8_n5# Gnd 0.53fF
+C704 1bit_mcl_0/xorg_0/inverter_0/out Gnd 1.74fF
+C705 A0 Gnd 2.26fF
+C706 1bit_mcl_0/xorg_0/inverter_0/w_n8_n5# Gnd 0.53fF
+C707 xorg_4/m1_102_n17# Gnd 0.04fF
+C708 xorg_4/pmos_3/w_n8_n5# Gnd 0.58fF
+C709 xorg_4/pmos_2/w_n8_n5# Gnd 0.58fF
+C710 xorg_4/m1_25_n11# Gnd 0.13fF
+C711 xorg_4/pmos_1/w_n8_n5# Gnd 0.58fF
+C712 xorg_4/pmos_0/w_n8_n5# Gnd 0.58fF
+C713 xorg_4/m1_102_n91# Gnd 0.22fF
+C714 xorg_4/inverter_1/out Gnd 0.45fF
+C715 S4 Gnd 0.90fF
+C716 xorg_4/m1_26_n95# Gnd 0.22fF
+C717 inverter_5/out Gnd 0.73fF
+C718 xorg_4/inverter_1/w_n8_n5# Gnd 0.53fF
+C719 xorg_4/inverter_0/out Gnd 1.74fF
+C720 xorg_4/inverter_0/w_n8_n5# Gnd 0.53fF
+C721 xorg_3/m1_102_n17# Gnd 0.04fF
+C722 xorg_3/pmos_3/w_n8_n5# Gnd 0.58fF
+C723 xorg_3/pmos_2/w_n8_n5# Gnd 0.58fF
+C724 xorg_3/m1_25_n11# Gnd 0.13fF
+C725 xorg_3/pmos_1/w_n8_n5# Gnd 0.58fF
+C726 xorg_3/pmos_0/w_n8_n5# Gnd 0.58fF
+C727 xorg_3/m1_102_n91# Gnd 0.22fF
+C728 xorg_3/inverter_1/out Gnd 0.45fF
+C729 S3 Gnd 0.96fF
+C730 xorg_3/m1_26_n95# Gnd 0.22fF
+C731 xorg_3/inverter_1/w_n8_n5# Gnd 0.53fF
+C732 xorg_3/inverter_0/out Gnd 1.74fF
+C733 xorg_3/inverter_0/w_n8_n5# Gnd 0.53fF
+C734 xorg_2/m1_102_n17# Gnd 0.04fF
+C735 xorg_2/pmos_3/w_n8_n5# Gnd 0.58fF
+C736 xorg_2/pmos_2/w_n8_n5# Gnd 0.58fF
+C737 xorg_2/m1_25_n11# Gnd 0.13fF
+C738 xorg_2/pmos_1/w_n8_n5# Gnd 0.58fF
+C739 xorg_2/pmos_0/w_n8_n5# Gnd 0.58fF
+C740 xorg_2/m1_102_n91# Gnd 0.22fF
+C741 xorg_2/inverter_1/out Gnd 0.45fF
+C742 S2 Gnd 0.96fF
+C743 xorg_2/m1_26_n95# Gnd 0.22fF
+C744 xorg_2/inverter_1/w_n8_n5# Gnd 0.53fF
+C745 xorg_2/inverter_0/out Gnd 1.74fF
+C746 xorg_2/inverter_0/w_n8_n5# Gnd 0.53fF
+C747 xorg_1/m1_102_n17# Gnd 0.04fF
+C748 xorg_1/pmos_3/w_n8_n5# Gnd 0.58fF
+C749 xorg_1/pmos_2/w_n8_n5# Gnd 0.58fF
+C750 xorg_1/m1_25_n11# Gnd 0.13fF
+C751 xorg_1/pmos_1/w_n8_n5# Gnd 0.58fF
+C752 xorg_1/pmos_0/w_n8_n5# Gnd 0.58fF
+C753 xorg_1/m1_102_n91# Gnd 0.22fF
+C754 xorg_1/inverter_1/out Gnd 0.45fF
+C755 S1 Gnd 1.02fF
+C756 xorg_1/m1_26_n95# Gnd 0.22fF
+C757 inverter_2/out Gnd 0.72fF
+C758 xorg_1/inverter_1/w_n8_n5# Gnd 0.53fF
+C759 xorg_1/inverter_0/out Gnd 1.74fF
+C760 xorg_1/inverter_0/w_n8_n5# Gnd 0.53fF
+C761 xorg_0/m1_102_n17# Gnd 0.04fF
+C762 xorg_0/pmos_3/w_n8_n5# Gnd 0.58fF
+C763 xorg_0/pmos_2/w_n8_n5# Gnd 0.58fF
+C764 xorg_0/m1_25_n11# Gnd 0.13fF
+C765 xorg_0/pmos_1/w_n8_n5# Gnd 0.58fF
+C766 xorg_0/pmos_0/w_n8_n5# Gnd 0.58fF
+C767 xorg_0/m1_102_n91# Gnd 0.22fF
+C768 xorg_0/inverter_1/out Gnd 0.45fF
+C769 S0 Gnd 1.05fF
+C770 xorg_0/m1_26_n95# Gnd 0.22fF
+C771 B0 Gnd 6.43fF
+C772 xorg_0/inverter_1/w_n8_n5# Gnd 0.53fF
+C773 gnd Gnd 20.66fF
+C774 xorg_0/inverter_0/out Gnd 1.74fF
+C775 xorg_0/inverter_0/w_n8_n5# Gnd 0.53fF
+C776 clk Gnd 0.20fF
+C777 inverter_6/w_n8_n5# Gnd 0.53fF
+C778 inverter_5/w_n8_n5# Gnd 0.53fF
+C779 inverter_4/w_n8_n5# Gnd 0.53fF
+C780 inverter_3/w_n8_n5# Gnd 0.53fF
+C781 inverter_2/w_n8_n5# Gnd 0.53fF
+C782 Cout Gnd 0.23fF
+C783 inverter_1/w_n8_n5# Gnd 0.53fF
+C784 inverter_0/w_n8_n5# Gnd 0.53fF

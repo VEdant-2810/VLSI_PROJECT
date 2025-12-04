@@ -1,0 +1,359 @@
+* SPICE3 file created from cla5_mine.ext - technology: scmos
+.include TSMC_180nm.txt
+.option scale=0.09u
+
+M1000 inverter_0_out B0 gnd Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=1040 ps=936
+M1001 inverter_0_out B0 vdd inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=2080 ps=1352
+M1002 Cout inverter_1_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 Cout inverter_1_in vdd inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1004 inverter_2_out C0bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1005 inverter_2_out C0bar vdd inverter_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1006 inverter_3_out C1bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1007 inverter_3_out C1bar vdd inverter_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 inverter_4_out C2bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1009 inverter_4_out C2bar vdd inverter_4_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1010 inverter_5_out C3bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1011 inverter_5_out C3bar vdd inverter_5_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1012 clk_mca clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1013 clk_mca clk vdd inverter_6_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1014 xorg_0_inverter_0_out P0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1015 xorg_0_inverter_0_out P0 vdd xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1016 xorg_0_inverter_1_out B0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1017 xorg_0_inverter_1_out B0 vdd xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1018 S0 B0 xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1019 xorg_0_m1_26_n95 P0 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 S0 xorg_0_inverter_1_out xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1021 xorg_0_m1_102_n91 xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1022 xorg_0_m1_25_n11 xorg_0_inverter_0_out vdd xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1023 S0 B0 xorg_0_m1_25_n11 xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1024 xorg_0_m1_102_n17 P0 vdd xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1025 S0 xorg_0_inverter_1_out xorg_0_m1_102_n17 xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1026 xorg_1_inverter_0_out P1 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1027 xorg_1_inverter_0_out P1 vdd xorg_1_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1028 xorg_1_inverter_1_out inverter_2_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1029 xorg_1_inverter_1_out inverter_2_out vdd xorg_1_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1030 S1 inverter_2_out xorg_1_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1031 xorg_1_m1_26_n95 P1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 S1 xorg_1_inverter_1_out xorg_1_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1033 xorg_1_m1_102_n91 xorg_1_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 xorg_1_m1_25_n11 xorg_1_inverter_0_out vdd xorg_1_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1035 S1 inverter_2_out xorg_1_m1_25_n11 xorg_1_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1036 xorg_1_m1_102_n17 P1 vdd xorg_1_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1037 S1 xorg_1_inverter_1_out xorg_1_m1_102_n17 xorg_1_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 xorg_2_inverter_0_out P2 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1039 xorg_2_inverter_0_out P2 vdd xorg_2_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1040 xorg_2_inverter_1_out inverter_3_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1041 xorg_2_inverter_1_out inverter_3_out vdd xorg_2_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1042 S2 inverter_3_out xorg_2_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1043 xorg_2_m1_26_n95 P2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1044 S2 xorg_2_inverter_1_out xorg_2_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1045 xorg_2_m1_102_n91 xorg_2_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1046 xorg_2_m1_25_n11 xorg_2_inverter_0_out vdd xorg_2_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1047 S2 inverter_3_out xorg_2_m1_25_n11 xorg_2_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1048 xorg_2_m1_102_n17 P2 vdd xorg_2_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1049 S2 xorg_2_inverter_1_out xorg_2_m1_102_n17 xorg_2_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1050 xorg_3_inverter_0_out P3 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1051 xorg_3_inverter_0_out P3 vdd xorg_3_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1052 xorg_3_inverter_1_out inverter_4_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1053 xorg_3_inverter_1_out inverter_4_out vdd xorg_3_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1054 S3 inverter_4_out xorg_3_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1055 xorg_3_m1_26_n95 P3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1056 S3 xorg_3_inverter_1_out xorg_3_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1057 xorg_3_m1_102_n91 xorg_3_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1058 xorg_3_m1_25_n11 xorg_3_inverter_0_out vdd xorg_3_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1059 S3 inverter_4_out xorg_3_m1_25_n11 xorg_3_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1060 xorg_3_m1_102_n17 P3 vdd xorg_3_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1061 S3 xorg_3_inverter_1_out xorg_3_m1_102_n17 xorg_3_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1062 xorg_4_inverter_0_out P4 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1063 xorg_4_inverter_0_out P4 vdd xorg_4_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1064 xorg_4_inverter_1_out inverter_5_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1065 xorg_4_inverter_1_out inverter_5_out vdd xorg_4_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1066 S4 inverter_5_out xorg_4_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1067 xorg_4_m1_26_n95 P4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1068 S4 xorg_4_inverter_1_out xorg_4_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1069 xorg_4_m1_102_n91 xorg_4_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 xorg_4_m1_25_n11 xorg_4_inverter_0_out vdd xorg_4_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1071 S4 inverter_5_out xorg_4_m1_25_n11 xorg_4_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1072 xorg_4_m1_102_n17 P4 vdd xorg_4_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1073 S4 xorg_4_inverter_1_out xorg_4_m1_102_n17 xorg_4_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1074 1bit_mcl_0_xorg_0_inverter_0_out A0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1075 1bit_mcl_0_xorg_0_inverter_0_out A0 vdd 1bit_mcl_0_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1076 1bit_mcl_0_xorg_0_inverter_1_out B0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1077 1bit_mcl_0_xorg_0_inverter_1_out B0 vdd 1bit_mcl_0_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1078 P0 B0 1bit_mcl_0_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1079 1bit_mcl_0_xorg_0_m1_26_n95 A0 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1080 P0 1bit_mcl_0_xorg_0_inverter_1_out 1bit_mcl_0_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1081 1bit_mcl_0_xorg_0_m1_102_n91 1bit_mcl_0_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1082 1bit_mcl_0_xorg_0_m1_25_n11 1bit_mcl_0_xorg_0_inverter_0_out vdd 1bit_mcl_0_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1083 P0 B0 1bit_mcl_0_xorg_0_m1_25_n11 1bit_mcl_0_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1084 1bit_mcl_0_xorg_0_m1_102_n17 A0 vdd 1bit_mcl_0_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1085 P0 1bit_mcl_0_xorg_0_inverter_1_out 1bit_mcl_0_xorg_0_m1_102_n17 1bit_mcl_0_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1086 C0bar P0 inverter_0_out Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1087 C0bar clk_mca 1bit_mcl_0_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1088 1bit_mcl_0_m1_45_n67 A0 1bit_mcl_0_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1089 1bit_mcl_0_m1_45_n97 B0 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1090 C0bar clk_mca vdd 1bit_mcl_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1091 1bit_mcl_1_xorg_0_inverter_0_out A1 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1092 1bit_mcl_1_xorg_0_inverter_0_out A1 vdd 1bit_mcl_1_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1093 1bit_mcl_1_xorg_0_inverter_1_out B1 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1094 1bit_mcl_1_xorg_0_inverter_1_out B1 vdd 1bit_mcl_1_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1095 P1 B1 1bit_mcl_1_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1096 1bit_mcl_1_xorg_0_m1_26_n95 A1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1097 P1 1bit_mcl_1_xorg_0_inverter_1_out 1bit_mcl_1_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1098 1bit_mcl_1_xorg_0_m1_102_n91 1bit_mcl_1_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1099 1bit_mcl_1_xorg_0_m1_25_n11 1bit_mcl_1_xorg_0_inverter_0_out vdd 1bit_mcl_1_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1100 P1 B1 1bit_mcl_1_xorg_0_m1_25_n11 1bit_mcl_1_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1101 1bit_mcl_1_xorg_0_m1_102_n17 A1 vdd w_462_353 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1102 P1 1bit_mcl_1_xorg_0_inverter_1_out 1bit_mcl_1_xorg_0_m1_102_n17 1bit_mcl_1_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1103 C1bar P1 C0bar Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1104 C1bar clk_mca 1bit_mcl_1_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1105 1bit_mcl_1_m1_45_n67 A1 1bit_mcl_1_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1106 1bit_mcl_1_m1_45_n97 B1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1107 C1bar clk_mca vdd 1bit_mcl_1_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1108 1bit_mcl_2_xorg_0_inverter_0_out A2 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1109 1bit_mcl_2_xorg_0_inverter_0_out A2 vdd 1bit_mcl_2_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1110 1bit_mcl_2_xorg_0_inverter_1_out B2 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1111 1bit_mcl_2_xorg_0_inverter_1_out B2 vdd 1bit_mcl_2_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1112 P2 B2 1bit_mcl_2_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1113 1bit_mcl_2_xorg_0_m1_26_n95 A2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 P2 1bit_mcl_2_xorg_0_inverter_1_out 1bit_mcl_2_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1115 1bit_mcl_2_xorg_0_m1_102_n91 1bit_mcl_2_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1116 1bit_mcl_2_xorg_0_m1_25_n11 1bit_mcl_2_xorg_0_inverter_0_out vdd 1bit_mcl_2_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1117 P2 B2 1bit_mcl_2_xorg_0_m1_25_n11 1bit_mcl_2_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1118 1bit_mcl_2_xorg_0_m1_102_n17 A2 vdd 1bit_mcl_2_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1119 P2 1bit_mcl_2_xorg_0_inverter_1_out 1bit_mcl_2_xorg_0_m1_102_n17 1bit_mcl_2_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1120 C2bar P2 C1bar Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1121 C2bar clk_mca 1bit_mcl_2_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1122 1bit_mcl_2_m1_45_n67 A2 1bit_mcl_2_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1123 1bit_mcl_2_m1_45_n97 B2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1124 C2bar clk_mca vdd 1bit_mcl_2_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1125 1bit_mcl_3_xorg_0_inverter_0_out A3 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1126 1bit_mcl_3_xorg_0_inverter_0_out A3 vdd 1bit_mcl_3_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1127 1bit_mcl_3_xorg_0_inverter_1_out B3 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1128 1bit_mcl_3_xorg_0_inverter_1_out B3 vdd 1bit_mcl_3_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1129 P3 B3 1bit_mcl_3_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1130 1bit_mcl_3_xorg_0_m1_26_n95 A3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1131 P3 1bit_mcl_3_xorg_0_inverter_1_out 1bit_mcl_3_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1132 1bit_mcl_3_xorg_0_m1_102_n91 1bit_mcl_3_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1133 1bit_mcl_3_xorg_0_m1_25_n11 1bit_mcl_3_xorg_0_inverter_0_out vdd w_928_355 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1134 P3 B3 1bit_mcl_3_xorg_0_m1_25_n11 1bit_mcl_3_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1135 1bit_mcl_3_xorg_0_m1_102_n17 A3 vdd 1bit_mcl_3_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1136 P3 1bit_mcl_3_xorg_0_inverter_1_out 1bit_mcl_3_xorg_0_m1_102_n17 1bit_mcl_3_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1137 C3bar P3 C2bar Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1138 C3bar clk_mca 1bit_mcl_3_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1139 1bit_mcl_3_m1_45_n67 A3 1bit_mcl_3_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1140 1bit_mcl_3_m1_45_n97 B3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1141 C3bar clk_mca vdd 1bit_mcl_3_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1142 1bit_mcl_4_xorg_0_inverter_0_out A4 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1143 1bit_mcl_4_xorg_0_inverter_0_out A4 vdd 1bit_mcl_4_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1144 1bit_mcl_4_xorg_0_inverter_1_out B4 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1145 1bit_mcl_4_xorg_0_inverter_1_out B4 vdd 1bit_mcl_4_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1146 P4 B4 1bit_mcl_4_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1147 1bit_mcl_4_xorg_0_m1_26_n95 A4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1148 P4 1bit_mcl_4_xorg_0_inverter_1_out 1bit_mcl_4_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1149 1bit_mcl_4_xorg_0_m1_102_n91 1bit_mcl_4_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1150 1bit_mcl_4_xorg_0_m1_25_n11 1bit_mcl_4_xorg_0_inverter_0_out vdd 1bit_mcl_4_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1151 P4 B4 1bit_mcl_4_xorg_0_m1_25_n11 1bit_mcl_4_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1152 1bit_mcl_4_xorg_0_m1_102_n17 A4 vdd 1bit_mcl_4_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1153 P4 1bit_mcl_4_xorg_0_inverter_1_out 1bit_mcl_4_xorg_0_m1_102_n17 1bit_mcl_4_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1154 inverter_1_in P4 C3bar Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1155 inverter_1_in clk_mca 1bit_mcl_4_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1156 1bit_mcl_4_m1_45_n67 A4 1bit_mcl_4_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1157 1bit_mcl_4_m1_45_n97 B4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1158 inverter_1_in clk_mca vdd 1bit_mcl_4_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 P4 Gnd 3.87fF
+C1 A4 Gnd 4.48fF
+C2 P3 Gnd 3.93fF
+C3 A3 Gnd 2.04fF
+C4 P2 Gnd 3.87fF
+C5 A2 Gnd 4.41fF
+C6 A1 Gnd 4.39fF
+C7 P0 Gnd 8.29fF
+C8 A0 Gnd 2.47fF
+C9 B0 Gnd 6.43fF
+C10 gnd Gnd 23.25fF
+
+
+Vdd vdd Gnd 1.8
+Vclk clk gnd PULSE(0 1.8 0 100p 100p 10n 20n)
+
+Va0 A0 gnd 1.8
+Va1 A1 gnd 0
+Va2 A2 gnd 0
+Va3 A3 gnd 1.8
+Va4 A4 gnd 1.8
+
+Vb0 B0 gnd 1
+Vb1 B1 gnd 1
+Vb2 B2 gnd 0
+Vb3 B3 gnd 0
+Vb4 B4 gnd 0
+
+Vcin Cin gnd 1.8
+
+.tran 0.1n 100n
+
+.control
+run
+plot clk clk_mca+2 A0+4 Cout+6 S0+8 S1+10 S2+12 S3+14 S4+16
+.endc
+.end

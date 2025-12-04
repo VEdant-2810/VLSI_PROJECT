@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1764806552
+timestamp 1764806298
 << nwell >>
 rect 462 353 463 356
 rect 928 355 929 356
@@ -30,7 +30,7 @@ rect 1286 252 1291 293
 rect 1463 212 1472 361
 rect -34 195 77 200
 rect -120 163 -103 167
-rect -178 139 -145 143
+rect -159 139 -145 143
 rect -141 -32 -134 125
 rect -34 10 -27 195
 rect 890 193 958 198
@@ -414,10 +414,6 @@ use xorg  xorg_0
 timestamp 1764782750
 transform 1 0 -61 0 1 -201
 box -62 -125 143 29
-use inverter  inverter_6
-timestamp 1764702656
-transform 1 0 -137 0 1 149
-box -10 -25 20 18
 use 1bit_mcl  1bit_mcl_1
 timestamp 1764797379
 transform 1 0 344 0 1 104
@@ -470,7 +466,13 @@ use inverter  inverter_1
 timestamp 1764702656
 transform 1 0 1382 0 1 125
 box -10 -25 20 18
+use inverter  inverter_6
+timestamp 1764702656
+transform 1 0 -137 0 1 149
+box -10 -25 20 18
 << labels >>
+rlabel metal1 157 167 165 169 1 vff
+rlabel metal1 157 167 165 169 1 vdd
 rlabel metal1 161 -9 169 -7 1 gnd
 rlabel space 1289 151 1293 154 1 clk
 rlabel space 85 37 88 39 1 A0
@@ -519,8 +521,7 @@ rlabel metal1 944 35 950 37 1 A3
 rlabel metal1 940 5 946 7 1 B3
 rlabel metal1 1264 44 1270 46 1 A4
 rlabel metal1 1261 13 1267 15 1 B4
+rlabel metal2 -105 137 -97 139 1 clk_mca
+rlabel metal1 -156 139 -152 142 1 clk
 rlabel metal3 -80 111 -76 114 1 Cin
-rlabel metal3 -82 137 -78 138 1 clk_mca
-rlabel metal1 -177 140 -176 141 3 clk
-rlabel metal1 163 167 166 169 1 vdd
 << end >>
