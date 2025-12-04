@@ -19,28 +19,28 @@ rect 0 77 11 86
 rect -6 14 0 19
 << metal2 >>
 rect -6 19 0 86
-use xorg  xorg_0
-timestamp 1764782750
-transform 1 0 -9 0 1 224
-box -62 -125 143 29
-use pmos  pmos_0
-timestamp 1764668421
-transform 1 0 43 0 1 49
-box -10 -11 20 18
-use nmos  nmos_3
+use nmos  nmos_0
 timestamp 1764668464
-transform 1 0 38 0 1 -89
-box -10 -25 20 -5
-use nmos  nmos_2
-timestamp 1764668464
-transform 1 0 38 0 1 -58
+transform 1 0 10 0 1 25
 box -10 -25 20 -5
 use nmos  nmos_1
 timestamp 1764668464
 transform 1 0 38 0 1 -30
 box -10 -25 20 -5
-use nmos  nmos_0
+use nmos  nmos_2
 timestamp 1764668464
-transform 1 0 10 0 1 25
+transform 1 0 38 0 1 -58
 box -10 -25 20 -5
+use nmos  nmos_3
+timestamp 1764668464
+transform 1 0 38 0 1 -89
+box -10 -25 20 -5
+use pmos  pmos_0
+timestamp 1764668421
+transform 1 0 43 0 1 49
+box -10 -11 20 18
+use xorg  xorg_0
+timestamp 1764782750
+transform 1 0 -9 0 1 224
+box -62 -125 143 29
 << end >>

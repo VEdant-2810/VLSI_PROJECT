@@ -2507,19 +2507,19 @@ C1806 ff_7_inverter_0_w_n8_n5 Gnd 0.53fF
 Vdd vdd Gnd 1.8
 Vclk clk gnd PULSE(0 1.8 0 100p 100p 10n 20n)
 
-Va0 A0 gnd 1.8
+Va0 A0 gnd 0
 Va1 A1 gnd 0
 Va2 A2 gnd 0
-Va3 A3 gnd 1.8
-Va4 A4 gnd 1.8
+Va3 A3 gnd 0
+Va4 A4 gnd 0
 
-Vb0 B0 gnd 1
-Vb1 B1 gnd 1
+Vb0 B0 gnd 0
+Vb1 B1 gnd 0
 Vb2 B2 gnd 0
 Vb3 B3 gnd 0
 Vb4 B4 gnd 0
 
-Vcin Cin gnd 1.8
+Vcin Cin gnd PULSE(0 1.8 0 100p 100p 15n 20n)
 
 .tran 0.1n 100n
 

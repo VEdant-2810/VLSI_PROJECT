@@ -22,7 +22,7 @@ Vclkbar clkmcl gnd PULSE({SUPPLY} 0 3n 100p 100p 10n 20n)
 * -------------------------
 VA0 A0_in gnd PULSE(0 {SUPPLY} 0 100p 100p 20n 40n)
 VB0 B0_in gnd 0
-VA1 A1_in gnd 1.8
+VA1 A1_in gnd 0
 VB1 B1_in gnd 0
 VA2 A2_in gnd 0
 VB2 B2_in gnd 1.8

@@ -39,7 +39,7 @@ run
 plot Cinbar Cin+2 clk+4 Cout+6 Coutbar+8
 
 
-meas tran dCarrymax TRIG v(Cin) VAL=0.9 FALL=1 TARG v(Cout) VAL=0.9 FALL=1
+meas tran dCarrymax TRIG v(Clk) VAL=0.9 FALL=1 TARG v(Cout) VAL=0.9 FALL=1
 .endc
 
 .end

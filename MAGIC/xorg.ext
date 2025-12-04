@@ -4,16 +4,16 @@ tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 9
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
-use inverter inverter_0 -1 0 -32 0 1 -87
-use nmos nmos_0 -1 0 20 0 1 -62
-use nmos nmos_1 1 0 10 0 1 -89
-use nmos nmos_3 -1 0 120 0 1 -85
-use nmos nmos_2 1 0 110 0 1 -54
-use pmos pmos_1 -1 0 20 0 1 -29
-use inverter inverter_1 1 0 60 0 1 -35
-use pmos pmos_3 1 0 110 0 1 -35
-use pmos pmos_0 1 0 10 0 1 11
 use pmos pmos_2 -1 0 120 0 1 11
+use pmos pmos_0 1 0 10 0 1 11
+use pmos pmos_3 1 0 110 0 1 -35
+use inverter inverter_1 1 0 60 0 1 -35
+use pmos pmos_1 -1 0 20 0 1 -29
+use nmos nmos_2 1 0 110 0 1 -54
+use nmos nmos_3 -1 0 120 0 1 -85
+use nmos nmos_1 1 0 10 0 1 -89
+use nmos nmos_0 -1 0 20 0 1 -62
+use inverter inverter_0 -1 0 -32 0 1 -87
 node "m1_n24_n113#" 1 85.7079 -24 -113 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 81 60 0 0 0 0 0 0 0 0 0 0
 node "m1_102_n91#" 0 47.2272 102 -91 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 32 0 0 0 0 0 0 0 0 0 0
 node "m1_24_n110#" 3 423.11 24 -110 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 502 264 0 0 0 0 0 0 0 0 0 0
@@ -28,26 +28,26 @@ equiv "A" "An"
 node "m1_25_n11#" 0 41.4324 25 -11 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 30 0 0 0 0 0 0 0 0 0 0
 node "m1_n62_n125#" 9 1409.95 -62 -125 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1653 886 0 0 0 0 0 0 0 0 0 0
 node "m1_27_25#" 2 406.861 27 25 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 514 244 0 0 0 0 0 0 0 0 0 0
-cap "m1_25_n11#" "A" 30.24
-cap "m1_0_n68#" "m1_100_n60#" 74.1564
-cap "m1_27_25#" "A" 85.1355
-cap "m1_n62_n125#" "A" 112.488
-cap "m1_0_n68#" "m1_27_n68#" 74.1564
+cap "A" "m1_25_n11#" 30.24
 cap "A" "m1_102_n17#" 40.32
+cap "m1_0_n68#" "m1_100_n60#" 74.1564
+cap "m1_0_n68#" "m1_27_n68#" 74.1564
+cap "A" "m1_n62_n125#" 112.488
+cap "A" "m1_27_25#" 85.1355
 subcap "m1_24_n110#" -98.9658
 subcap "m1_0_n68#" -941.544
 subcap "A" -1512.97
-cap "inverter_0/in" "inverter_0/w_n8_n5#" -1.42109e-14
-cap "inverter_0/in" "inverter_0/gnd!" 1.42109e-14
-cap "inverter_0/out" "inverter_0/vdd!" 147.279
+cap "inverter_0/gnd!" "inverter_0/in" 1.42109e-14
+cap "inverter_0/w_n8_n5#" "inverter_0/in" -1.42109e-14
+cap "inverter_0/vdd!" "inverter_0/out" 147.279
 cap "nmos_0/a_6_n17#" "nmos_0/a_0_n10#" -1.42109e-14
 subcap "m1_102_n17#" -108.532
-cap "nmos_2/a_6_n17#" "nmos_0/a_0_n10#" 4.488
 cap "nmos_2/a_6_n17#" "nmos_2/a_0_n10#" 40.696
+cap "nmos_2/a_6_n17#" "nmos_0/a_0_n10#" 4.488
 cap "nmos_2/a_6_n17#" "nmos_3/a_n1_n17#" 297.491
 subcap "m1_27_25#" -341.859
-cap "pmos_0/a_0_n10#" "A" 86.5014
-cap "pmos_1/a_n1_2#" "A" 112.488
+cap "A" "pmos_0/a_0_n10#" 86.5014
+cap "A" "pmos_1/a_n1_2#" 112.488
 cap "pmos_2/a_0_n10#" "pmos_3/a_n1_2#" 107.448
 merge "inverter_1/gnd!" "nmos_3/a_n1_n17#" -36.072 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 0 0 0 0 0 0 0 0 0 0
 merge "nmos_3/a_n1_n17#" "nmos_1/a_n1_n17#"

@@ -4,12 +4,12 @@ tech scmos
 style TSMC0.18um(tsmc18)from:t11b
 scale 1000 1 9
 resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
-use nmos nmos_0 1 0 10 0 1 25
-use nmos nmos_1 1 0 38 0 1 -30
-use nmos nmos_2 1 0 38 0 1 -58
-use nmos nmos_3 1 0 38 0 1 -89
-use pmos pmos_0 1 0 43 0 1 49
 use xorg xorg_0 1 0 -9 0 1 224
+use pmos pmos_0 1 0 43 0 1 49
+use nmos nmos_3 1 0 38 0 1 -89
+use nmos nmos_2 1 0 38 0 1 -58
+use nmos nmos_1 1 0 38 0 1 -30
+use nmos nmos_0 1 0 10 0 1 25
 node "m1_45_n97#" 0 67.356 45 -97 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 42 0 0 0 0 0 0 0 0 0 0
 node "m1_45_n67#" 0 53.7624 45 -67 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56 36 0 0 0 0 0 0 0 0 0 0
 node "m1_n17_0#" 0 73.368 -17 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 48 0 0 0 0 0 0 0 0 0 0
@@ -18,8 +18,8 @@ node "m1_n6_14#" 4 2438.84 -6 14 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2594 674 531 178
 subcap "m1_30_15#" -493.437
 subcap "m1_n6_14#" -2052.65
 subcap "m1_30_15#" -250.095
-merge "nmos_2/a_6_n17#" "nmos_1/a_n1_n17#" -35.6376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0 0 0 0 0 0 0
-merge "nmos_1/a_n1_n17#" "m1_45_n67#"
+merge "nmos_1/a_n1_n17#" "nmos_2/a_6_n17#" -35.6376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0 0 0 0 0 0 0
+merge "nmos_2/a_6_n17#" "m1_45_n67#"
 merge "pmos_0/a_6_2#" "nmos_0/a_6_n17#" -48.402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -42 0 0 0 0 0 0 0 0 0 0
 merge "nmos_0/a_6_n17#" "nmos_1/a_6_n17#"
 merge "nmos_1/a_6_n17#" "m1_30_15#"
@@ -27,5 +27,5 @@ merge "xorg_0/m1_0_n68#" "xorg_0/pmos_3/a_6_2#" -116.534 0 0 0 0 0 0 0 0 0 0 0 0
 merge "xorg_0/pmos_3/a_6_2#" "nmos_0/a_0_n10#"
 merge "nmos_0/a_0_n10#" "m1_n6_14#"
 merge "nmos_0/a_n1_n17#" "m1_n17_0#" -11.2836 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4 -10 0 0 0 0 0 0 0 0 0 0
-merge "nmos_3/a_6_n17#" "nmos_2/a_n1_n17#" -37.6416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -30 0 0 0 0 0 0 0 0 0 0
-merge "nmos_2/a_n1_n17#" "m1_45_n97#"
+merge "nmos_2/a_n1_n17#" "nmos_3/a_6_n17#" -37.6416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -30 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3/a_6_n17#" "m1_45_n97#"
