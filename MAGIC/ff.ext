@@ -1,0 +1,43 @@
+timestamp 1764783751
+version 8.3
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use nmos nmos_2 1 0 41 0 1 -46
+use nmos nmos_1 1 0 43 0 1 -9
+use nmos nmos_0 1 0 5 0 1 -46
+use pmos pmos_1 1 0 5 0 1 -28
+use nmos nmos_4 1 0 90 0 1 -46
+use nmos nmos_3 1 0 91 0 1 -8
+use pmos pmos_2 1 0 43 0 1 10
+use pmos pmos_0 1 0 4 0 1 10
+use pmos pmos_3 1 0 91 0 1 10
+use inverter inverter_0 1 0 140 0 1 7
+node "m1_12_n52#" 0 57.03 12 -52 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 38 0 0 0 0 0 0 0 0 0 0
+node "m1_25_n38#" 1 106.044 25 -38 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120 68 0 0 0 0 0 0 0 0 0 0
+node "m1_109_n18#" 1 133.656 109 -18 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 163 82 0 0 0 0 0 0 0 0 0 0
+node "m1_63_n19#" 1 287.647 63 -19 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 365 172 0 0 0 0 0 0 0 0 0 0
+node "m1_11_n14#" 0 57.03 11 -14 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60 38 0 0 0 0 0 0 0 0 0 0
+node "m1_n14_n56#" 1 254.438 -14 -56 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336 148 0 0 0 0 0 0 0 0 0 0
+cap "nmos_1/a_6_n17#" "nmos_2/a_6_n17#" 23.5646
+cap "nmos_0/a_0_n10#" "pmos_1/a_n1_2#" 27.492
+cap "nmos_1/a_n1_n17#" "nmos_1/a_0_n10#" 32.9904
+cap "pmos_1/a_n1_2#" "pmos_1/w_n8_n5#" 1.42109e-14
+cap "pmos_1/a_0_n10#" "nmos_0/a_0_n10#" 41.238
+cap "nmos_1/a_6_n17#" "pmos_2/a_6_2#" 27.492
+cap "nmos_1/a_0_n10#" "nmos_2/a_0_n10#" 27.492
+cap "pmos_3/a_6_2#" "nmos_3/a_6_n17#" 6.873
+merge "pmos_0/a_6_2#" "pmos_1/a_n1_2#" -35.6376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -28 0 0 0 0 0 0 0 0 0 0
+merge "pmos_1/a_n1_2#" "m1_11_n14#"
+merge "pmos_3/a_0_n10#" "nmos_4/a_0_n10#" -14.6796 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 -26 0 0 0 0 0 0 0 0 0 0
+merge "nmos_4/a_0_n10#" "nmos_1/a_6_n17#"
+merge "nmos_1/a_6_n17#" "m1_63_n19#"
+merge "pmos_1/a_6_2#" "nmos_0/a_6_n17#" -51.6696 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -44 0 0 0 0 0 0 0 0 0 0
+merge "nmos_0/a_6_n17#" "m1_12_n52#"
+merge "m1_12_n52#" "nmos_1/a_0_n10#"
+merge "nmos_1/a_0_n10#" "m1_25_n38#"
+merge "inverter_0/in" "nmos_3/a_6_n17#" -25.8348 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -22 0 0 0 0 0 0 0 0 0 0
+merge "nmos_3/a_6_n17#" "m1_109_n18#"
+merge "pmos_0/a_0_n10#" "nmos_0/a_0_n10#" -22.5672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 0 0 0 0 0 0 0 0 0 0
+merge "nmos_0/a_0_n10#" "m1_n14_n56#"

@@ -1,0 +1,2530 @@
+* SPICE3 file created from final_adder.ext - technology: scmos
+.include TSMC_180nm.txt
+.option scale=0.09u
+
+M1000 cla5_final_without_ff_0_A0 ff_7_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=2400 ps=2160
+M1001 cla5_final_without_ff_0_A0 ff_7_inverter_0_in vdd ff_7_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=4800 ps=3120
+M1002 ff_7_m1_25_n38 A0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1003 ff_7_m1_63_n19 ff_7_m1_25_n38 ff_7_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1004 ff_7_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1005 ff_7_inverter_0_in clk ff_7_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1006 ff_7_nmos_4_a_6_n17 ff_7_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1007 ff_7_m1_11_n14 A0_in vdd ff_7_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1008 ff_7_m1_25_n38 clk ff_7_m1_11_n14 ff_7_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1009 ff_7_pmos_2_a_6_2 clk vdd ff_7_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1010 ff_7_pmos_3_a_6_2 ff_7_m1_63_n19 vdd ff_7_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1011 cla5_final_without_ff_0_B0 ff_8_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1012 cla5_final_without_ff_0_B0 ff_8_inverter_0_in vdd ff_8_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1013 ff_8_m1_25_n38 m1_228_773 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1014 ff_8_m1_63_n19 ff_8_m1_25_n38 ff_8_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1015 ff_8_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1016 ff_8_inverter_0_in clk ff_8_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1017 ff_8_nmos_4_a_6_n17 ff_8_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1018 ff_8_m1_11_n14 m1_228_773 vdd ff_8_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1019 ff_8_m1_25_n38 clk ff_8_m1_11_n14 ff_8_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1020 ff_8_pmos_2_a_6_2 clk vdd ff_8_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1021 ff_8_pmos_3_a_6_2 ff_8_m1_63_n19 vdd ff_8_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1022 cla5_final_without_ff_0_A1 ff_9_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1023 cla5_final_without_ff_0_A1 ff_9_inverter_0_in vdd ff_9_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1024 ff_9_m1_25_n38 A1_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1025 ff_9_m1_63_n19 ff_9_m1_25_n38 ff_9_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1026 ff_9_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1027 ff_9_inverter_0_in clk ff_9_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1028 ff_9_nmos_4_a_6_n17 ff_9_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1029 ff_9_m1_11_n14 A1_in vdd ff_9_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1030 ff_9_m1_25_n38 clk ff_9_m1_11_n14 ff_9_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1031 ff_9_pmos_2_a_6_2 clk vdd ff_9_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1032 ff_9_pmos_3_a_6_2 ff_9_m1_63_n19 vdd ff_9_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1033 cla5_final_without_ff_0_B1 ff_10_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1034 cla5_final_without_ff_0_B1 ff_10_inverter_0_in vdd ff_10_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1035 ff_10_m1_25_n38 B1_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1036 ff_10_m1_63_n19 ff_10_m1_25_n38 ff_10_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1037 ff_10_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1038 ff_10_inverter_0_in clk ff_10_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1039 ff_10_nmos_4_a_6_n17 ff_10_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1040 ff_10_m1_11_n14 B1_in vdd ff_10_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1041 ff_10_m1_25_n38 clk ff_10_m1_11_n14 ff_10_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1042 ff_10_pmos_2_a_6_2 clk vdd ff_10_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1043 ff_10_pmos_3_a_6_2 ff_10_m1_63_n19 vdd ff_10_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1044 cla5_final_without_ff_0_A2 ff_11_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1045 cla5_final_without_ff_0_A2 ff_11_inverter_0_in vdd ff_11_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1046 ff_11_m1_25_n38 A2_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1047 ff_11_m1_63_n19 ff_11_m1_25_n38 ff_11_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1048 ff_11_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1049 ff_11_inverter_0_in clk ff_11_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1050 ff_11_nmos_4_a_6_n17 ff_11_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1051 ff_11_m1_11_n14 A2_in vdd ff_11_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1052 ff_11_m1_25_n38 clk ff_11_m1_11_n14 ff_11_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1053 ff_11_pmos_2_a_6_2 clk vdd ff_11_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1054 ff_11_pmos_3_a_6_2 ff_11_m1_63_n19 vdd ff_11_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1055 ff_12_inverter_0_out ff_12_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1056 ff_12_inverter_0_out ff_12_inverter_0_in vdd ff_12_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1057 ff_12_m1_25_n38 B2_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1058 ff_12_m1_63_n19 ff_12_m1_25_n38 ff_12_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1059 ff_12_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1060 ff_12_inverter_0_in clk ff_12_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1061 ff_12_nmos_4_a_6_n17 ff_12_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1062 ff_12_m1_11_n14 B2_in vdd ff_12_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1063 ff_12_m1_25_n38 clk ff_12_m1_11_n14 ff_12_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1064 ff_12_pmos_2_a_6_2 clk vdd ff_12_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1065 ff_12_pmos_3_a_6_2 ff_12_m1_63_n19 vdd ff_12_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1066 cla5_final_without_ff_0_A3 ff_13_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1067 cla5_final_without_ff_0_A3 ff_13_inverter_0_in vdd ff_13_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1068 ff_13_m1_25_n38 A3_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1069 ff_13_m1_63_n19 ff_13_m1_25_n38 ff_13_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1070 ff_13_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1071 ff_13_inverter_0_in clk ff_13_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1072 ff_13_nmos_4_a_6_n17 ff_13_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1073 ff_13_m1_11_n14 A3_in vdd ff_13_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1074 ff_13_m1_25_n38 clk ff_13_m1_11_n14 ff_13_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1075 ff_13_pmos_2_a_6_2 clk vdd ff_13_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1076 ff_13_pmos_3_a_6_2 ff_13_m1_63_n19 vdd ff_13_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1077 cla5_final_without_ff_0_B3 ff_14_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1078 cla5_final_without_ff_0_B3 ff_14_inverter_0_in vdd ff_14_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1079 ff_14_m1_25_n38 B3_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1080 ff_14_m1_63_n19 ff_14_m1_25_n38 ff_14_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1081 ff_14_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1082 ff_14_inverter_0_in clk ff_14_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1083 ff_14_nmos_4_a_6_n17 ff_14_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1084 ff_14_m1_11_n14 B3_in vdd ff_14_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1085 ff_14_m1_25_n38 clk ff_14_m1_11_n14 ff_14_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1086 ff_14_pmos_2_a_6_2 clk vdd ff_14_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1087 ff_14_pmos_3_a_6_2 ff_14_m1_63_n19 vdd ff_14_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1088 ff_16_inverter_0_out ff_16_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1089 ff_16_inverter_0_out ff_16_inverter_0_in vdd ff_16_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1090 ff_16_m1_25_n38 B4_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1091 ff_16_m1_63_n19 ff_16_m1_25_n38 ff_16_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1092 ff_16_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1093 ff_16_inverter_0_in clk ff_16_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1094 ff_16_nmos_4_a_6_n17 ff_16_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1095 ff_16_m1_11_n14 B4_in vdd ff_16_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1096 ff_16_m1_25_n38 clk ff_16_m1_11_n14 ff_16_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1097 ff_16_pmos_2_a_6_2 clk vdd ff_16_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1098 ff_16_pmos_3_a_6_2 ff_16_m1_63_n19 vdd ff_16_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1099 cla5_final_without_ff_0_A4 ff_15_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1100 cla5_final_without_ff_0_A4 ff_15_inverter_0_in vdd ff_15_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1101 ff_15_m1_25_n38 A4_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1102 ff_15_m1_63_n19 ff_15_m1_25_n38 ff_15_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1103 ff_15_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1104 ff_15_inverter_0_in clk ff_15_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1105 ff_15_nmos_4_a_6_n17 ff_15_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1106 ff_15_m1_11_n14 A4_in vdd ff_15_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1107 ff_15_m1_25_n38 clk ff_15_m1_11_n14 ff_15_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1108 ff_15_pmos_2_a_6_2 clk vdd ff_15_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1109 ff_15_pmos_3_a_6_2 ff_15_m1_63_n19 vdd ff_15_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1110 Cout_f ff_0_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1111 Cout_f ff_0_inverter_0_in vdd ff_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1112 ff_0_m1_25_n38 cla5_final_without_ff_0_Cout gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1113 ff_0_m1_63_n19 ff_0_m1_25_n38 ff_0_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1114 ff_0_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1115 ff_0_inverter_0_in clk ff_0_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1116 ff_0_nmos_4_a_6_n17 ff_0_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1117 ff_0_m1_11_n14 cla5_final_without_ff_0_Cout vdd ff_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1118 ff_0_m1_25_n38 clk ff_0_m1_11_n14 ff_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1119 ff_0_pmos_2_a_6_2 clk vdd ff_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1120 ff_0_pmos_3_a_6_2 ff_0_m1_63_n19 vdd ff_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1121 S4_f ff_1_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1122 S4_f ff_1_inverter_0_in vdd ff_1_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1123 ff_1_m1_25_n38 cla5_final_without_ff_0_S4 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1124 ff_1_m1_63_n19 ff_1_m1_25_n38 ff_1_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1125 ff_1_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1126 ff_1_inverter_0_in clk ff_1_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1127 ff_1_nmos_4_a_6_n17 ff_1_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1128 ff_1_m1_11_n14 cla5_final_without_ff_0_S4 vdd ff_1_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1129 ff_1_m1_25_n38 clk ff_1_m1_11_n14 ff_1_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1130 ff_1_pmos_2_a_6_2 clk vdd ff_1_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1131 ff_1_pmos_3_a_6_2 ff_1_m1_63_n19 vdd ff_1_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1132 S3_f ff_2_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1133 S3_f ff_2_inverter_0_in vdd ff_2_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1134 ff_2_m1_25_n38 cla5_final_without_ff_0_S3 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1135 ff_2_m1_63_n19 ff_2_m1_25_n38 ff_2_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1136 ff_2_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1137 ff_2_inverter_0_in clk ff_2_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1138 ff_2_nmos_4_a_6_n17 ff_2_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1139 ff_2_m1_11_n14 cla5_final_without_ff_0_S3 vdd ff_2_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1140 ff_2_m1_25_n38 clk ff_2_m1_11_n14 ff_2_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1141 ff_2_pmos_2_a_6_2 clk vdd ff_2_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1142 ff_2_pmos_3_a_6_2 ff_2_m1_63_n19 vdd ff_2_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1143 S1_f ff_4_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1144 S1_f ff_4_inverter_0_in vdd ff_4_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1145 ff_4_m1_25_n38 cla5_final_without_ff_0_S1 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1146 ff_4_m1_63_n19 ff_4_m1_25_n38 ff_4_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1147 ff_4_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1148 ff_4_inverter_0_in clk ff_4_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1149 ff_4_nmos_4_a_6_n17 ff_4_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1150 ff_4_m1_11_n14 cla5_final_without_ff_0_S1 vdd ff_4_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1151 ff_4_m1_25_n38 clk ff_4_m1_11_n14 ff_4_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1152 ff_4_pmos_2_a_6_2 clk vdd ff_4_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1153 ff_4_pmos_3_a_6_2 ff_4_m1_63_n19 vdd ff_4_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1154 S2_f ff_3_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1155 S2_f ff_3_inverter_0_in vdd ff_3_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1156 ff_3_m1_25_n38 cla5_final_without_ff_0_S2 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1157 ff_3_m1_63_n19 ff_3_m1_25_n38 ff_3_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1158 ff_3_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1159 ff_3_inverter_0_in clk ff_3_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1160 ff_3_nmos_4_a_6_n17 ff_3_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1161 ff_3_m1_11_n14 cla5_final_without_ff_0_S2 vdd ff_3_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1162 ff_3_m1_25_n38 clk ff_3_m1_11_n14 ff_3_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1163 ff_3_pmos_2_a_6_2 clk vdd ff_3_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1164 ff_3_pmos_3_a_6_2 ff_3_m1_63_n19 vdd ff_3_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1165 cla5_final_without_ff_0_inverter_0_out cla5_final_without_ff_0_B0 gnd Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1166 cla5_final_without_ff_0_inverter_0_out cla5_final_without_ff_0_B0 vdd cla5_final_without_ff_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1167 cla5_final_without_ff_0_Cout cla5_final_without_ff_0_inverter_1_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1168 cla5_final_without_ff_0_Cout cla5_final_without_ff_0_inverter_1_in vdd cla5_final_without_ff_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1169 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_C0bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1170 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_C0bar vdd cla5_final_without_ff_0_inverter_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1171 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_C1bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1172 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_C1bar vdd cla5_final_without_ff_0_inverter_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1173 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_C2bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1174 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_C2bar vdd cla5_final_without_ff_0_inverter_4_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1175 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_C3bar gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1176 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_C3bar vdd cla5_final_without_ff_0_inverter_5_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1177 clk_mca clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1178 clk_mca clk vdd cla5_final_without_ff_0_inverter_6_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1179 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_P0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1180 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_P0 vdd cla5_final_without_ff_0_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1181 cla5_final_without_ff_0_xorg_0_inverter_1_out cla5_final_without_ff_0_B0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1182 cla5_final_without_ff_0_xorg_0_inverter_1_out cla5_final_without_ff_0_B0 vdd cla5_final_without_ff_0_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1183 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1184 cla5_final_without_ff_0_xorg_0_m1_26_n95 cla5_final_without_ff_0_P0 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1185 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_inverter_1_out cla5_final_without_ff_0_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1186 cla5_final_without_ff_0_xorg_0_m1_102_n91 cla5_final_without_ff_0_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1187 cla5_final_without_ff_0_xorg_0_m1_25_n11 cla5_final_without_ff_0_xorg_0_inverter_0_out vdd cla5_final_without_ff_0_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1188 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_xorg_0_m1_25_n11 cla5_final_without_ff_0_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1189 cla5_final_without_ff_0_xorg_0_m1_102_n17 cla5_final_without_ff_0_P0 vdd cla5_final_without_ff_0_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1190 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_inverter_1_out cla5_final_without_ff_0_xorg_0_m1_102_n17 cla5_final_without_ff_0_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1191 cla5_final_without_ff_0_xorg_1_inverter_0_out cla5_final_without_ff_0_P1 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1192 cla5_final_without_ff_0_xorg_1_inverter_0_out cla5_final_without_ff_0_P1 vdd cla5_final_without_ff_0_xorg_1_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1193 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_inverter_2_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1194 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_inverter_2_out vdd cla5_final_without_ff_0_xorg_1_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1195 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_xorg_1_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1196 cla5_final_without_ff_0_xorg_1_m1_26_n95 cla5_final_without_ff_0_P1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1197 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_xorg_1_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1198 cla5_final_without_ff_0_xorg_1_m1_102_n91 cla5_final_without_ff_0_xorg_1_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1199 cla5_final_without_ff_0_xorg_1_m1_25_n11 cla5_final_without_ff_0_xorg_1_inverter_0_out vdd cla5_final_without_ff_0_xorg_1_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1200 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_xorg_1_m1_25_n11 cla5_final_without_ff_0_xorg_1_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1201 cla5_final_without_ff_0_xorg_1_m1_102_n17 cla5_final_without_ff_0_P1 vdd cla5_final_without_ff_0_xorg_1_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1202 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_xorg_1_m1_102_n17 cla5_final_without_ff_0_xorg_1_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1203 cla5_final_without_ff_0_xorg_2_inverter_0_out cla5_final_without_ff_0_P2 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1204 cla5_final_without_ff_0_xorg_2_inverter_0_out cla5_final_without_ff_0_P2 vdd cla5_final_without_ff_0_xorg_2_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1205 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_inverter_3_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1206 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_inverter_3_out vdd cla5_final_without_ff_0_xorg_2_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1207 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_xorg_2_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1208 cla5_final_without_ff_0_xorg_2_m1_26_n95 cla5_final_without_ff_0_P2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1209 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_xorg_2_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1210 cla5_final_without_ff_0_xorg_2_m1_102_n91 cla5_final_without_ff_0_xorg_2_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1211 cla5_final_without_ff_0_xorg_2_m1_25_n11 cla5_final_without_ff_0_xorg_2_inverter_0_out vdd cla5_final_without_ff_0_xorg_2_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1212 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_xorg_2_m1_25_n11 cla5_final_without_ff_0_xorg_2_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1213 cla5_final_without_ff_0_xorg_2_m1_102_n17 cla5_final_without_ff_0_P2 vdd cla5_final_without_ff_0_xorg_2_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1214 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_xorg_2_m1_102_n17 cla5_final_without_ff_0_xorg_2_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1215 cla5_final_without_ff_0_xorg_3_inverter_0_out cla5_final_without_ff_0_P3 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1216 cla5_final_without_ff_0_xorg_3_inverter_0_out cla5_final_without_ff_0_P3 vdd cla5_final_without_ff_0_xorg_3_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1217 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_inverter_4_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1218 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_inverter_4_out vdd cla5_final_without_ff_0_xorg_3_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1219 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_xorg_3_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1220 cla5_final_without_ff_0_xorg_3_m1_26_n95 cla5_final_without_ff_0_P3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1221 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_xorg_3_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1222 cla5_final_without_ff_0_xorg_3_m1_102_n91 cla5_final_without_ff_0_xorg_3_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1223 cla5_final_without_ff_0_xorg_3_m1_25_n11 cla5_final_without_ff_0_xorg_3_inverter_0_out vdd cla5_final_without_ff_0_xorg_3_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1224 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_xorg_3_m1_25_n11 cla5_final_without_ff_0_xorg_3_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1225 cla5_final_without_ff_0_xorg_3_m1_102_n17 cla5_final_without_ff_0_P3 vdd cla5_final_without_ff_0_xorg_3_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1226 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_xorg_3_m1_102_n17 cla5_final_without_ff_0_xorg_3_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1227 cla5_final_without_ff_0_xorg_4_inverter_0_out cla5_final_without_ff_0_P4 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1228 cla5_final_without_ff_0_xorg_4_inverter_0_out cla5_final_without_ff_0_P4 vdd cla5_final_without_ff_0_xorg_4_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1229 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_inverter_5_out gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1230 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_inverter_5_out vdd cla5_final_without_ff_0_xorg_4_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1231 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_xorg_4_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1232 cla5_final_without_ff_0_xorg_4_m1_26_n95 cla5_final_without_ff_0_P4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1233 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_xorg_4_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1234 cla5_final_without_ff_0_xorg_4_m1_102_n91 cla5_final_without_ff_0_xorg_4_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1235 cla5_final_without_ff_0_xorg_4_m1_25_n11 cla5_final_without_ff_0_xorg_4_inverter_0_out vdd cla5_final_without_ff_0_xorg_4_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1236 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_xorg_4_m1_25_n11 cla5_final_without_ff_0_xorg_4_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1237 cla5_final_without_ff_0_xorg_4_m1_102_n17 cla5_final_without_ff_0_P4 vdd cla5_final_without_ff_0_xorg_4_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1238 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_xorg_4_m1_102_n17 cla5_final_without_ff_0_xorg_4_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1239 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out cla5_final_without_ff_0_A0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1240 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out cla5_final_without_ff_0_A0 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1241 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_B0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1242 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_B0 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1243 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1244 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_26_n95 cla5_final_without_ff_0_A0 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1245 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1246 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n91 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1247 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1248 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1249 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 cla5_final_without_ff_0_A0 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1250 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1251 cla5_final_without_ff_0_C0bar cla5_final_without_ff_0_P0 cla5_final_without_ff_0_inverter_0_out Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1252 cla5_final_without_ff_0_C0bar clk_mca cla5_final_without_ff_0_1bit_mcl_0_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1253 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n67 cla5_final_without_ff_0_A0 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1254 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n97 cla5_final_without_ff_0_B0 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1255 cla5_final_without_ff_0_C0bar clk_mca vdd cla5_final_without_ff_0_1bit_mcl_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1256 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out cla5_final_without_ff_0_A1 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1257 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out cla5_final_without_ff_0_A1 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1258 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out cla5_final_without_ff_0_B1 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1259 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out cla5_final_without_ff_0_B1 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1260 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1261 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_26_n95 cla5_final_without_ff_0_A1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1262 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1263 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n91 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1264 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1265 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1266 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 cla5_final_without_ff_0_A1 vdd cla5_final_without_ff_0_w_462_353 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1267 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1268 cla5_final_without_ff_0_C1bar cla5_final_without_ff_0_P1 cla5_final_without_ff_0_C0bar Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1269 cla5_final_without_ff_0_C1bar clk_mca cla5_final_without_ff_0_1bit_mcl_1_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1270 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n67 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1271 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n97 cla5_final_without_ff_0_B1 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1272 cla5_final_without_ff_0_C1bar clk_mca vdd cla5_final_without_ff_0_1bit_mcl_1_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1273 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_A2 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1274 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_A2 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1275 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out cla5_final_without_ff_0_B2 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1276 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out cla5_final_without_ff_0_B2 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1277 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1278 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_26_n95 cla5_final_without_ff_0_A2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1279 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1280 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n91 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1281 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1282 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1283 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 cla5_final_without_ff_0_A2 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1284 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1285 cla5_final_without_ff_0_C2bar cla5_final_without_ff_0_P2 cla5_final_without_ff_0_C1bar Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1286 cla5_final_without_ff_0_C2bar clk_mca cla5_final_without_ff_0_1bit_mcl_2_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1287 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n67 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1288 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n97 cla5_final_without_ff_0_B2 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1289 cla5_final_without_ff_0_C2bar clk_mca vdd cla5_final_without_ff_0_1bit_mcl_2_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1290 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_A3 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1291 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_A3 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1292 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out cla5_final_without_ff_0_B3 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1293 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out cla5_final_without_ff_0_B3 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1294 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_B3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1295 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_26_n95 cla5_final_without_ff_0_A3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1296 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1297 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n91 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1298 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out vdd cla5_final_without_ff_0_w_928_355 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1299 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_B3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1300 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 cla5_final_without_ff_0_A3 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1301 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1302 cla5_final_without_ff_0_C3bar cla5_final_without_ff_0_P3 cla5_final_without_ff_0_C2bar Gnd CMOSN w=4 l=2
++  ad=60 pd=54 as=0 ps=0
+M1303 cla5_final_without_ff_0_C3bar clk_mca cla5_final_without_ff_0_1bit_mcl_3_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1304 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n67 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1305 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n97 cla5_final_without_ff_0_B3 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1306 cla5_final_without_ff_0_C3bar clk_mca vdd cla5_final_without_ff_0_1bit_mcl_3_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1307 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_A4 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1308 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_A4 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1309 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out cla5_final_without_ff_0_B4 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1310 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out cla5_final_without_ff_0_B4 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1311 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_B4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_26_n95 Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=40 ps=36
+M1312 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_26_n95 cla5_final_without_ff_0_A4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1313 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n91 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1314 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n91 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1315 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1316 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_B4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1317 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 cla5_final_without_ff_0_A4 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1318 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1319 cla5_final_without_ff_0_inverter_1_in cla5_final_without_ff_0_P4 cla5_final_without_ff_0_C3bar Gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1320 cla5_final_without_ff_0_inverter_1_in clk_mca cla5_final_without_ff_0_1bit_mcl_4_m1_45_n67 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1321 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n67 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n97 Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=40 ps=36
+M1322 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n97 cla5_final_without_ff_0_B4 gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1323 cla5_final_without_ff_0_inverter_1_in clk_mca vdd cla5_final_without_ff_0_1bit_mcl_4_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1324 S0_f ff_5_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1325 S0_f ff_5_inverter_0_in vdd ff_5_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1326 ff_5_m1_25_n38 cla5_final_without_ff_0_S0 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1327 ff_5_m1_63_n19 ff_5_m1_25_n38 ff_5_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1328 ff_5_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1329 ff_5_inverter_0_in clk ff_5_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1330 ff_5_nmos_4_a_6_n17 ff_5_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1331 ff_5_m1_11_n14 cla5_final_without_ff_0_S0 vdd ff_5_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1332 ff_5_m1_25_n38 clk ff_5_m1_11_n14 ff_5_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1333 ff_5_pmos_2_a_6_2 clk vdd ff_5_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1334 ff_5_pmos_3_a_6_2 ff_5_m1_63_n19 vdd ff_5_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1335 cla5_final_without_ff_0_B0 ff_6_inverter_0_in gnd Gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1336 cla5_final_without_ff_0_B0 ff_6_inverter_0_in vdd ff_6_inverter_0_w_n8_n5 CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1337 ff_6_m1_25_n38 Cin_in gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1338 ff_6_m1_63_n19 ff_6_m1_25_n38 ff_6_nmos_1_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1339 ff_6_nmos_2_a_6_n17 clk gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1340 ff_6_inverter_0_in clk ff_6_nmos_3_a_n1_n17 Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=20 ps=18
+M1341 ff_6_nmos_4_a_6_n17 ff_6_m1_63_n19 gnd Gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1342 ff_6_m1_11_n14 Cin_in vdd ff_6_pmos_0_w_n8_n5 CMOSP w=8 l=2
++  ad=80 pd=52 as=0 ps=0
+M1343 ff_6_m1_25_n38 clk ff_6_m1_11_n14 ff_6_pmos_1_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1344 ff_6_pmos_2_a_6_2 clk vdd ff_6_pmos_2_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1345 ff_6_pmos_3_a_6_2 ff_6_m1_63_n19 vdd ff_6_pmos_3_w_n8_n5 CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_A0 0.10fF
+C1 ff_0_inverter_0_in ff_0_pmos_3_a_6_2 0.01fF
+C2 ff_10_pmos_0_w_n8_n5 ff_10_m1_11_n14 0.03fF
+C3 cla5_final_without_ff_0_1bit_mcl_2_pmos_0_w_n8_n5 clk_mca 0.07fF
+C4 clk ff_5_pmos_1_w_n8_n5 0.07fF
+C5 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 0.14fF
+C6 ff_0_pmos_0_w_n8_n5 vdd 0.08fF
+C7 ff_11_nmos_1_a_n1_n17 ff_11_m1_63_n19 0.08fF
+C8 ff_6_m1_11_n14 Cin_in 0.08fF
+C9 ff_5_m1_25_n38 ff_5_m1_63_n19 0.05fF
+C10 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 0.12fF
+C11 cla5_final_without_ff_0_A0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_2_w_n8_n5 0.07fF
+C12 ff_10_pmos_3_a_6_2 vdd 0.12fF
+C13 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_0_w_n8_n5 0.08fF
+C14 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out 0.22fF
+C15 cla5_final_without_ff_0_xorg_3_pmos_0_w_n8_n5 cla5_final_without_ff_0_xorg_3_m1_25_n11 0.03fF
+C16 ff_3_m1_11_n14 vdd 0.12fF
+C17 ff_7_m1_63_n19 ff_7_pmos_2_a_6_2 0.03fF
+C18 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out 0.35fF
+C19 ff_4_m1_63_n19 gnd 0.05fF
+C20 S3_f vdd 0.11fF
+C21 ff_12_m1_63_n19 ff_12_pmos_3_a_6_2 0.05fF
+C22 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_B3 0.90fF
+C23 ff_12_nmos_3_a_n1_n17 ff_12_inverter_0_in 0.08fF
+C24 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_3_w_n8_n5 0.07fF
+C25 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_0_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 0.03fF
+C26 ff_12_pmos_1_w_n8_n5 clk 0.07fF
+C27 cla5_final_without_ff_0_xorg_4_m1_102_n17 cla5_final_without_ff_0_P4 0.20fF
+C28 ff_10_m1_25_n38 ff_10_m1_63_n19 0.05fF
+C29 ff_1_m1_63_n19 ff_1_pmos_3_w_n8_n5 0.07fF
+C30 cla5_final_without_ff_0_inverter_4_w_n8_n5 cla5_final_without_ff_0_inverter_4_out 0.03fF
+C31 ff_2_inverter_0_in clk 0.05fF
+C32 ff_15_m1_63_n19 ff_15_nmos_4_a_6_n17 0.05fF
+C33 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_m1_25_n11 0.12fF
+C34 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_xorg_0_inverter_1_out 0.05fF
+C35 ff_4_m1_25_n38 ff_4_m1_11_n14 0.12fF
+C36 ff_0_m1_63_n19 gnd 0.05fF
+C37 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_w_n8_n5 0.08fF
+C38 gnd cla5_final_without_ff_0_P4 0.66fF
+C39 ff_2_pmos_3_w_n8_n5 vdd 0.08fF
+C40 ff_1_inverter_0_in gnd 0.05fF
+C41 cla5_final_without_ff_0_P1 clk_mca 0.26fF
+C42 ff_9_pmos_1_w_n8_n5 clk 0.07fF
+C43 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_P2 0.46fF
+C44 gnd cla5_final_without_ff_0_xorg_1_m1_102_n91 0.08fF
+C45 ff_6_inverter_0_w_n8_n5 cla5_final_without_ff_0_B0 0.03fF
+C46 vdd ff_5_inverter_0_w_n8_n5 0.08fF
+C47 gnd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n91 0.08fF
+C48 ff_6_nmos_3_a_n1_n17 ff_6_inverter_0_in 0.08fF
+C49 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_pmos_3_w_n8_n5 0.03fF
+C50 gnd cla5_final_without_ff_0_A4 0.37fF
+C51 ff_4_pmos_2_a_6_2 vdd 0.12fF
+C52 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_B2 0.30fF
+C53 ff_6_pmos_2_a_6_2 clk 0.05fF
+C54 ff_9_m1_63_n19 ff_9_pmos_3_a_6_2 0.05fF
+C55 ff_1_pmos_2_w_n8_n5 clk 0.07fF
+C56 ff_9_nmos_3_a_n1_n17 ff_9_inverter_0_in 0.08fF
+C57 gnd ff_6_nmos_4_a_6_n17 0.08fF
+C58 ff_16_inverter_0_in gnd 0.05fF
+C59 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_C3bar 0.05fF
+C60 cla5_final_without_ff_0_xorg_2_inverter_1_w_n8_n5 cla5_final_without_ff_0_inverter_3_out 0.07fF
+C61 ff_14_nmos_3_a_n1_n17 clk 0.07fF
+C62 ff_16_m1_63_n19 ff_16_pmos_3_w_n8_n5 0.07fF
+C63 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_xorg_2_m1_102_n91 0.05fF
+C64 ff_2_m1_25_n38 gnd 0.08fF
+C65 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_3_w_n8_n5 0.03fF
+C66 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out 0.03fF
+C67 cla5_final_without_ff_0_xorg_3_pmos_2_w_n8_n5 cla5_final_without_ff_0_P3 0.07fF
+C68 ff_13_m1_63_n19 ff_13_nmos_4_a_6_n17 0.05fF
+C69 B2_in ff_12_m1_25_n38 0.05fF
+C70 gnd cla5_final_without_ff_0_xorg_4_m1_102_n91 0.08fF
+C71 ff_0_m1_25_n38 ff_0_m1_11_n14 0.12fF
+C72 ff_0_pmos_2_a_6_2 vdd 0.12fF
+C73 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 0.05fF
+C74 vdd cla5_final_without_ff_0_xorg_2_m1_25_n11 0.12fF
+C75 ff_12_inverter_0_w_n8_n5 ff_12_inverter_0_out 0.03fF
+C76 ff_16_inverter_0_out cla5_final_without_ff_0_B4 0.01fF
+C77 ff_16_pmos_2_w_n8_n5 clk 0.07fF
+C78 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_1_w_n8_n5 0.03fF
+C79 cla5_final_without_ff_0_xorg_4_pmos_2_w_n8_n5 cla5_final_without_ff_0_xorg_4_m1_102_n17 0.03fF
+C80 cla5_final_without_ff_0_xorg_2_m1_102_n91 cla5_final_without_ff_0_S2 0.08fF
+C81 cla5_final_without_ff_0_xorg_0_m1_102_n17 vdd 0.12fF
+C82 cla5_final_without_ff_0_xorg_0_pmos_0_w_n8_n5 vdd 0.08fF
+C83 ff_1_pmos_0_w_n8_n5 ff_1_m1_11_n14 0.03fF
+C84 ff_11_nmos_3_a_n1_n17 clk 0.08fF
+C85 gnd S0_f 0.08fF
+C86 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_1_w_n8_n5 0.03fF
+C87 vdd cla5_final_without_ff_0_P4 0.27fF
+C88 ff_2_nmos_1_a_n1_n17 ff_2_m1_63_n19 0.08fF
+C89 A3_in clk 0.09fF
+C90 Cout_f ff_0_inverter_0_w_n8_n5 0.03fF
+C91 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_xorg_4_m1_102_n91 0.05fF
+C92 ff_6_nmos_1_a_n1_n17 ff_6_m1_25_n38 0.09fF
+C93 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_3_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 0.08fF
+C94 gnd cla5_final_without_ff_0_xorg_3_inverter_1_out 0.08fF
+C95 gnd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out 0.08fF
+C96 ff_2_nmos_2_a_6_n17 clk 0.05fF
+C97 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_B1 0.53fF
+C98 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out 1.46fF
+C99 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 0.12fF
+C100 cla5_final_without_ff_0_xorg_2_inverter_0_out cla5_final_without_ff_0_xorg_2_m1_25_n11 0.05fF
+C101 gnd cla5_final_without_ff_0_xorg_2_inverter_1_out 0.08fF
+C102 ff_4_m1_63_n19 ff_4_pmos_3_a_6_2 0.05fF
+C103 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out 0.05fF
+C104 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_xorg_3_m1_102_n17 0.12fF
+C105 ff_4_nmos_3_a_n1_n17 ff_4_inverter_0_in 0.08fF
+C106 ff_11_inverter_0_in cla5_final_without_ff_0_A2 0.05fF
+C107 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_P3 0.34fF
+C108 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_B2 0.07fF
+C109 vdd cla5_final_without_ff_0_A4 0.38fF
+C110 cla5_final_without_ff_0_C0bar cla5_final_without_ff_0_1bit_mcl_0_m1_45_n67 0.08fF
+C111 cla5_final_without_ff_0_xorg_1_m1_25_n11 cla5_final_without_ff_0_P1 0.14fF
+C112 cla5_final_without_ff_0_xorg_1_inverter_0_out cla5_final_without_ff_0_xorg_1_pmos_0_w_n8_n5 0.07fF
+C113 S1_f gnd 0.08fF
+C114 ff_2_m1_25_n38 cla5_final_without_ff_0_S3 0.05fF
+C115 ff_1_m1_25_n38 ff_1_m1_63_n19 0.05fF
+C116 ff_1_nmos_2_a_6_n17 gnd 0.08fF
+C117 B1_in clk 0.08fF
+C118 cla5_final_without_ff_0_1bit_mcl_0_pmos_0_w_n8_n5 clk_mca 0.07fF
+C119 gnd cla5_final_without_ff_0_S0 0.46fF
+C120 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 0.14fF
+C121 vdd cla5_final_without_ff_0_xorg_3_m1_102_n17 0.12fF
+C122 A1_in gnd 0.05fF
+C123 cla5_final_without_ff_0_A0 ff_7_inverter_0_w_n8_n5 0.03fF
+C124 vdd cla5_final_without_ff_0_xorg_3_pmos_0_w_n8_n5 0.08fF
+C125 gnd cla5_final_without_ff_0_S2 0.49fF
+C126 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 0.12fF
+C127 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_0_w_n8_n5 0.08fF
+C128 gnd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out 0.51fF
+C129 B1_in ff_10_pmos_0_w_n8_n5 0.07fF
+C130 ff_16_pmos_0_w_n8_n5 ff_16_m1_11_n14 0.03fF
+C131 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_B2 0.10fF
+C132 cla5_final_without_ff_0_A0 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n97 0.05fF
+C133 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_3_w_n8_n5 0.07fF
+C134 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_0_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 0.03fF
+C135 Cout_f gnd 0.08fF
+C136 gnd ff_8_nmos_2_a_6_n17 0.08fF
+C137 B2_in ff_12_m1_11_n14 0.08fF
+C138 ff_8_m1_25_n38 m1_228_773 0.05fF
+C139 clk Cin_in 0.08fF
+C140 gnd cla5_final_without_ff_0_inverter_5_out 0.14fF
+C141 ff_16_nmos_2_a_6_n17 gnd 0.08fF
+C142 cla5_final_without_ff_0_B3 clk_mca 0.12fF
+C143 cla5_final_without_ff_0_inverter_5_w_n8_n5 cla5_final_without_ff_0_inverter_5_out 0.03fF
+C144 ff_5_nmos_1_a_n1_n17 ff_5_m1_25_n38 0.09fF
+C145 ff_12_pmos_3_w_n8_n5 ff_12_pmos_3_a_6_2 0.03fF
+C146 ff_3_inverter_0_w_n8_n5 vdd 0.08fF
+C147 ff_15_nmos_4_a_6_n17 gnd 0.08fF
+C148 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_S3 0.22fF
+C149 ff_14_inverter_0_w_n8_n5 cla5_final_without_ff_0_B3 0.03fF
+C150 ff_14_pmos_2_w_n8_n5 ff_14_pmos_2_a_6_2 0.03fF
+C151 vdd S0_f 0.12fF
+C152 cla5_final_without_ff_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_inverter_1_in 0.07fF
+C153 ff_0_m1_63_n19 ff_0_pmos_3_a_6_2 0.05fF
+C154 ff_0_nmos_3_a_n1_n17 ff_0_inverter_0_in 0.08fF
+C155 ff_8_m1_25_n38 ff_8_m1_63_n19 0.05fF
+C156 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_w_n8_n5 0.08fF
+C157 ff_14_pmos_2_w_n8_n5 vdd 0.08fF
+C158 cla5_final_without_ff_0_A0 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n67 0.05fF
+C159 cla5_final_without_ff_0_xorg_3_m1_102_n91 cla5_final_without_ff_0_xorg_3_inverter_0_out 0.05fF
+C160 vdd cla5_final_without_ff_0_xorg_3_inverter_1_w_n8_n5 0.08fF
+C161 gnd cla5_final_without_ff_0_P2 0.62fF
+C162 ff_12_m1_25_n38 ff_12_pmos_1_w_n8_n5 0.03fF
+C163 cla5_final_without_ff_0_xorg_3_inverter_1_out vdd 0.12fF
+C164 ff_16_m1_25_n38 ff_16_m1_63_n19 0.05fF
+C165 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out 0.12fF
+C166 cla5_final_without_ff_0_xorg_4_inverter_1_w_n8_n5 cla5_final_without_ff_0_inverter_5_out 0.07fF
+C167 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_w_n8_n5 0.08fF
+C168 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_P1 0.39fF
+C169 vdd cla5_final_without_ff_0_xorg_4_pmos_2_w_n8_n5 0.08fF
+C170 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_inverter_5_out 0.05fF
+C171 ff_1_pmos_0_w_n8_n5 vdd 0.08fF
+C172 ff_6_pmos_1_w_n8_n5 ff_6_m1_11_n14 0.08fF
+C173 cla5_final_without_ff_0_xorg_2_inverter_1_out vdd 0.12fF
+C174 ff_3_m1_63_n19 ff_3_nmos_4_a_6_n17 0.05fF
+C175 ff_2_pmos_2_a_6_2 clk 0.05fF
+C176 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 0.14fF
+C177 ff_13_nmos_4_a_6_n17 gnd 0.08fF
+C178 vdd cla5_final_without_ff_0_xorg_4_inverter_0_w_n8_n5 0.08fF
+C179 cla5_final_without_ff_0_xorg_1_inverter_0_w_n8_n5 cla5_final_without_ff_0_xorg_1_inverter_0_out 0.03fF
+C180 S1_f vdd 0.12fF
+C181 gnd cla5_final_without_ff_0_A2 0.38fF
+C182 vdd cla5_final_without_ff_0_1bit_mcl_3_pmos_0_w_n8_n5 0.08fF
+C183 ff_4_inverter_0_w_n8_n5 S1_f 0.03fF
+C184 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_C1bar 0.05fF
+C185 ff_2_m1_11_n14 cla5_final_without_ff_0_S3 0.08fF
+C186 ff_14_m1_25_n38 ff_14_nmos_1_a_n1_n17 0.09fF
+C187 ff_11_pmos_2_w_n8_n5 vdd 0.08fF
+C188 ff_8_pmos_3_a_6_2 vdd 0.12fF
+C189 ff_10_inverter_0_w_n8_n5 ff_10_inverter_0_in 0.07fF
+C190 cla5_final_without_ff_0_S2 vdd 0.17fF
+C191 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_C2bar 0.05fF
+C192 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_xorg_1_inverter_1_w_n8_n5 0.03fF
+C193 ff_15_m1_63_n19 ff_15_nmos_2_a_6_n17 0.02fF
+C194 gnd cla5_final_without_ff_0_xorg_0_inverter_1_out 0.08fF
+C195 ff_16_pmos_0_w_n8_n5 vdd 0.07fF
+C196 ff_4_inverter_0_in clk 0.05fF
+C197 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out 0.51fF
+C198 ff_9_pmos_3_w_n8_n5 ff_9_pmos_3_a_6_2 0.03fF
+C199 ff_2_m1_11_n14 vdd 0.12fF
+C200 ff_1_m1_63_n19 gnd 0.05fF
+C201 Cout_f vdd 0.12fF
+C202 ff_11_pmos_2_w_n8_n5 ff_11_pmos_2_a_6_2 0.03fF
+C203 gnd cla5_final_without_ff_0_xorg_1_inverter_1_out 0.08fF
+C204 vdd cla5_final_without_ff_0_inverter_5_out 0.27fF
+C205 ff_4_pmos_3_w_n8_n5 vdd 0.08fF
+C206 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 0.05fF
+C207 gnd m1_228_773 0.05fF
+C208 vdd ff_5_pmos_3_a_6_2 0.12fF
+C209 cla5_final_without_ff_0_xorg_4_inverter_0_out cla5_final_without_ff_0_xorg_4_m1_25_n11 0.05fF
+C210 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_m1_25_n11 0.12fF
+C211 ff_10_pmos_1_w_n8_n5 clk 0.07fF
+C212 ff_9_m1_25_n38 ff_9_pmos_1_w_n8_n5 0.03fF
+C213 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_1_w_n8_n5 0.03fF
+C214 ff_16_inverter_0_w_n8_n5 ff_16_inverter_0_in 0.07fF
+C215 gnd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_26_n95 0.08fF
+C216 ff_0_inverter_0_in clk 0.05fF
+C217 Cin_in ff_6_m1_25_n38 0.05fF
+C218 cla5_final_without_ff_0_xorg_1_inverter_1_w_n8_n5 cla5_final_without_ff_0_inverter_2_out 0.07fF
+C219 ff_5_inverter_0_in clk 0.05fF
+C220 gnd ff_8_m1_63_n19 0.05fF
+C221 vdd cla5_final_without_ff_0_P2 0.28fF
+C222 cla5_final_without_ff_0_inverter_0_w_n8_n5 cla5_final_without_ff_0_B0 0.07fF
+C223 ff_3_m1_25_n38 clk 0.08fF
+C224 ff_16_m1_63_n19 gnd 0.05fF
+C225 ff_0_pmos_3_w_n8_n5 vdd 0.08fF
+C226 ff_12_pmos_1_w_n8_n5 ff_12_m1_11_n14 0.08fF
+C227 ff_11_m1_25_n38 ff_11_nmos_1_a_n1_n17 0.09fF
+C228 gnd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out 0.08fF
+C229 ff_15_inverter_0_in gnd 0.05fF
+C230 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 0.12fF
+C231 gnd cla5_final_without_ff_0_inverter_2_out 0.14fF
+C232 ff_10_inverter_0_in ff_10_pmos_3_a_6_2 0.01fF
+C233 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out 0.05fF
+C234 ff_13_m1_63_n19 ff_13_nmos_2_a_6_n17 0.02fF
+C235 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_B1 0.07fF
+C236 cla5_final_without_ff_0_xorg_3_m1_26_n95 cla5_final_without_ff_0_P3 0.05fF
+C237 A0_in ff_7_pmos_0_w_n8_n5 0.07fF
+C238 ff_4_m1_25_n38 gnd 0.08fF
+C239 vdd cla5_final_without_ff_0_A2 0.38fF
+C240 ff_4_pmos_3_w_n8_n5 ff_4_pmos_3_a_6_2 0.03fF
+C241 ff_1_pmos_2_a_6_2 vdd 0.12fF
+C242 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_w_n8_n5 0.07fF
+C243 cla5_final_without_ff_0_xorg_2_inverter_0_out cla5_final_without_ff_0_P2 0.27fF
+C244 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_inverter_0_out 0.05fF
+C245 vdd ff_7_pmos_3_w_n8_n5 0.08fF
+C246 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_P0 0.22fF
+C247 cla5_final_without_ff_0_xorg_0_inverter_1_out vdd 0.12fF
+C248 ff_15_pmos_2_w_n8_n5 clk 0.07fF
+C249 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 0.12fF
+C250 cla5_final_without_ff_0_xorg_0_inverter_0_w_n8_n5 cla5_final_without_ff_0_P0 0.07fF
+C251 ff_13_inverter_0_in gnd 0.05fF
+C252 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_0_w_n8_n5 0.08fF
+C253 ff_15_m1_63_n19 ff_15_pmos_2_a_6_2 0.03fF
+C254 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_pmos_1_w_n8_n5 0.03fF
+C255 gnd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out 0.44fF
+C256 ff_4_m1_25_n38 ff_4_pmos_1_w_n8_n5 0.03fF
+C257 ff_12_nmos_3_a_n1_n17 clk 0.08fF
+C258 ff_0_m1_25_n38 gnd 0.08fF
+C259 cla5_final_without_ff_0_xorg_1_inverter_1_out vdd 0.12fF
+C260 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_0_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 0.03fF
+C261 cla5_final_without_ff_0_inverter_6_w_n8_n5 vdd 0.08fF
+C262 A2_in ff_11_m1_25_n38 0.05fF
+C263 A0_in ff_7_m1_25_n38 0.05fF
+C264 ff_6_inverter_0_w_n8_n5 vdd 0.08fF
+C265 gnd cla5_final_without_ff_0_B4 0.43fF
+C266 gnd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out 0.28fF
+C267 cla5_final_without_ff_0_B1 clk_mca 0.12fF
+C268 gnd cla5_final_without_ff_0_xorg_4_m1_26_n95 0.08fF
+C269 ff_16_pmos_2_a_6_2 vdd 0.12fF
+C270 cla5_final_without_ff_0_xorg_0_inverter_0_w_n8_n5 cla5_final_without_ff_0_xorg_0_inverter_0_out 0.03fF
+C271 ff_4_nmos_2_a_6_n17 clk 0.05fF
+C272 ff_9_pmos_1_w_n8_n5 ff_9_m1_11_n14 0.08fF
+C273 ff_13_pmos_2_w_n8_n5 clk 0.07fF
+C274 cla5_final_without_ff_0_inverter_0_w_n8_n5 cla5_final_without_ff_0_inverter_0_out 0.03fF
+C275 ff_9_nmos_3_a_n1_n17 clk 0.07fF
+C276 A2_in clk 0.09fF
+C277 cla5_final_without_ff_0_C3bar clk_mca 0.39fF
+C278 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out 0.12fF
+C279 ff_0_pmos_3_w_n8_n5 ff_0_pmos_3_a_6_2 0.03fF
+C280 cla5_final_without_ff_0_S0 ff_5_m1_25_n38 0.05fF
+C281 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_w_n8_n5 0.08fF
+C282 cla5_final_without_ff_0_inverter_2_out vdd 0.28fF
+C283 ff_1_inverter_0_w_n8_n5 ff_1_inverter_0_in 0.07fF
+C284 ff_0_nmos_2_a_6_n17 clk 0.05fF
+C285 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out cla5_final_without_ff_0_B1 0.11fF
+C286 ff_2_pmos_2_w_n8_n5 ff_2_pmos_2_a_6_2 0.03fF
+C287 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out 0.03fF
+C288 ff_13_m1_63_n19 ff_13_pmos_2_a_6_2 0.03fF
+C289 ff_5_pmos_2_a_6_2 vdd 0.12fF
+C290 vdd cla5_final_without_ff_0_1bit_mcl_1_pmos_0_w_n8_n5 0.08fF
+C291 ff_0_m1_25_n38 ff_0_pmos_1_w_n8_n5 0.03fF
+C292 S4_f gnd 0.08fF
+C293 ff_6_pmos_1_w_n8_n5 clk 0.07fF
+C294 ff_15_nmos_2_a_6_n17 gnd 0.08fF
+C295 cla5_final_without_ff_0_S0 ff_5_m1_11_n14 0.08fF
+C296 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_C1bar 0.05fF
+C297 ff_3_pmos_3_a_6_2 vdd 0.12fF
+C298 ff_10_m1_25_n38 ff_10_m1_11_n14 0.12fF
+C299 A1_in ff_9_pmos_0_w_n8_n5 0.07fF
+C300 cla5_final_without_ff_0_B4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_1_w_n8_n5 0.07fF
+C301 cla5_final_without_ff_0_inverter_1_w_n8_n5 vdd 0.08fF
+C302 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out 0.60fF
+C303 cla5_final_without_ff_0_xorg_1_inverter_0_out cla5_final_without_ff_0_P1 0.27fF
+C304 ff_4_pmos_1_w_n8_n5 ff_4_m1_11_n14 0.08fF
+C305 ff_2_m1_25_n38 ff_2_nmos_1_a_n1_n17 0.09fF
+C306 vdd cla5_final_without_ff_0_B4 1.13fF
+C307 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out 0.52fF
+C308 ff_1_inverter_0_in ff_1_pmos_3_a_6_2 0.01fF
+C309 ff_16_inverter_0_out gnd 0.16fF
+C310 ff_7_pmos_3_w_n8_n5 ff_7_pmos_3_a_6_2 0.03fF
+C311 ff_3_m1_63_n19 ff_3_nmos_2_a_6_n17 0.02fF
+C312 A2_in ff_11_m1_11_n14 0.08fF
+C313 ff_6_m1_63_n19 ff_6_m1_25_n38 0.05fF
+C314 cla5_final_without_ff_0_xorg_0_m1_26_n95 cla5_final_without_ff_0_P0 0.05fF
+C315 ff_13_nmos_2_a_6_n17 gnd 0.08fF
+C316 ff_12_nmos_1_a_n1_n17 ff_12_m1_63_n19 0.08fF
+C317 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 0.02fF
+C318 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_1_w_n8_n5 0.03fF
+C319 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 0.05fF
+C320 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_xorg_3_pmos_3_w_n8_n5 0.03fF
+C321 gnd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_26_n95 0.08fF
+C322 cla5_final_without_ff_0_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_xorg_0_inverter_1_out 0.03fF
+C323 ff_4_pmos_2_a_6_2 clk 0.05fF
+C324 ff_14_nmos_4_a_6_n17 gnd 0.08fF
+C325 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n67 clk_mca 0.05fF
+C326 ff_2_inverter_0_w_n8_n5 vdd 0.06fF
+C327 vdd ff_5_pmos_0_w_n8_n5 0.08fF
+C328 ff_12_pmos_2_w_n8_n5 vdd 0.08fF
+C329 gnd ff_5_nmos_2_a_6_n17 0.08fF
+C330 ff_8_pmos_0_w_n8_n5 ff_8_m1_11_n14 0.03fF
+C331 gnd cla5_final_without_ff_0_B0 1.11fF
+C332 S2_f ff_3_inverter_0_in 0.05fF
+C333 ff_15_pmos_0_w_n8_n5 vdd 0.08fF
+C334 vdd ff_9_inverter_0_w_n8_n5 0.08fF
+C335 ff_0_pmos_2_a_6_2 clk 0.05fF
+C336 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 0.05fF
+C337 ff_11_nmos_4_a_6_n17 gnd 0.08fF
+C338 ff_4_m1_11_n14 vdd 0.12fF
+C339 S4_f vdd 0.12fF
+C340 ff_0_pmos_1_w_n8_n5 ff_0_m1_11_n14 0.08fF
+C341 ff_9_pmos_2_w_n8_n5 vdd 0.07fF
+C342 ff_16_inverter_0_in ff_16_pmos_3_a_6_2 0.01fF
+C343 ff_13_pmos_0_w_n8_n5 vdd 0.08fF
+C344 ff_6_pmos_1_w_n8_n5 ff_6_m1_25_n38 0.03fF
+C345 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 0.08fF
+C346 ff_1_inverter_0_in clk 0.05fF
+C347 ff_9_nmos_1_a_n1_n17 ff_9_m1_63_n19 0.08fF
+C348 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_C0bar 0.05fF
+C349 vdd ff_5_pmos_3_w_n8_n5 0.08fF
+C350 ff_0_m1_11_n14 vdd 0.12fF
+C351 ff_8_pmos_1_w_n8_n5 clk 0.07fF
+C352 cla5_final_without_ff_0_A0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 0.20fF
+C353 ff_15_m1_63_n19 gnd 0.05fF
+C354 ff_16_inverter_0_out vdd 0.12fF
+C355 gnd cla5_final_without_ff_0_B2 0.37fF
+C356 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 0.12fF
+C357 ff_10_m1_63_n19 ff_10_pmos_3_a_6_2 0.05fF
+C358 ff_1_pmos_3_w_n8_n5 vdd 0.07fF
+C359 ff_10_nmos_3_a_n1_n17 ff_10_inverter_0_in 0.08fF
+C360 ff_3_m1_63_n19 ff_3_pmos_2_a_6_2 0.03fF
+C361 ff_15_m1_63_n19 ff_15_pmos_3_w_n8_n5 0.07fF
+C362 vdd ff_6_pmos_0_w_n8_n5 0.08fF
+C363 ff_16_inverter_0_in clk 0.05fF
+C364 cla5_final_without_ff_0_xorg_4_m1_25_n11 cla5_final_without_ff_0_P4 0.14fF
+C365 cla5_final_without_ff_0_inverter_3_w_n8_n5 cla5_final_without_ff_0_C1bar 0.07fF
+C366 gnd cla5_final_without_ff_0_inverter_0_out 0.08fF
+C367 ff_14_m1_63_n19 ff_14_nmos_4_a_6_n17 0.05fF
+C368 ff_1_m1_25_n38 ff_1_m1_11_n14 0.12fF
+C369 cla5_final_without_ff_0_B0 vdd 0.98fF
+C370 gnd cla5_final_without_ff_0_inverter_1_in 0.05fF
+C371 ff_2_m1_25_n38 clk 0.08fF
+C372 ff_13_m1_63_n19 gnd 0.05fF
+C373 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_xorg_2_m1_25_n11 0.15fF
+C374 cla5_final_without_ff_0_C1bar clk_mca 0.40fF
+C375 ff_16_pmos_3_w_n8_n5 vdd 0.07fF
+C376 ff_14_inverter_0_in gnd 0.05fF
+C377 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 0.02fF
+C378 cla5_final_without_ff_0_Cout ff_0_pmos_0_w_n8_n5 0.07fF
+C379 cla5_final_without_ff_0_P0 clk_mca 0.11fF
+C380 ff_9_inverter_0_in ff_9_inverter_0_w_n8_n5 0.07fF
+C381 ff_1_m1_25_n38 gnd 0.08fF
+C382 ff_4_nmos_1_a_n1_n17 ff_4_m1_63_n19 0.08fF
+C383 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_pmos_1_w_n8_n5 0.03fF
+C384 ff_15_pmos_2_a_6_2 vdd 0.12fF
+C385 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_w_n8_n5 0.03fF
+C386 cla5_final_without_ff_0_B3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_1_w_n8_n5 0.07fF
+C387 ff_14_pmos_2_w_n8_n5 clk 0.07fF
+C388 cla5_final_without_ff_0_inverter_0_w_n8_n5 vdd 0.08fF
+C389 ff_11_inverter_0_in gnd 0.05fF
+C390 ff_10_nmos_3_a_n1_n17 clk 0.07fF
+C391 gnd ff_8_m1_25_n38 0.08fF
+C392 ff_13_m1_63_n19 ff_13_pmos_3_w_n8_n5 0.07fF
+C393 vdd cla5_final_without_ff_0_B2 0.26fF
+C394 ff_16_m1_25_n38 gnd 0.08fF
+C395 ff_11_m1_63_n19 ff_11_nmos_4_a_6_n17 0.05fF
+C396 B1_in ff_10_m1_25_n38 0.05fF
+C397 cla5_final_without_ff_0_xorg_2_inverter_0_w_n8_n5 cla5_final_without_ff_0_P2 0.07fF
+C398 ff_16_m1_25_n38 ff_16_m1_11_n14 0.12fF
+C399 ff_13_pmos_2_a_6_2 vdd 0.12fF
+C400 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 0.02fF
+C401 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_1_w_n8_n5 0.03fF
+C402 cla5_final_without_ff_0_xorg_3_m1_102_n17 cla5_final_without_ff_0_P3 0.20fF
+C403 ff_1_nmos_2_a_6_n17 clk 0.05fF
+C404 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out cla5_final_without_ff_0_A0 0.37fF
+C405 cla5_final_without_ff_0_S0 clk 0.04fF
+C406 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n67 clk_mca 0.05fF
+C407 ff_11_pmos_2_w_n8_n5 clk 0.07fF
+C408 A1_in clk 0.07fF
+C409 clk ff_7_pmos_1_w_n8_n5 0.07fF
+C410 vdd cla5_final_without_ff_0_inverter_0_out 0.12fF
+C411 cla5_final_without_ff_0_S2 clk 0.08fF
+C412 ff_15_pmos_0_w_n8_n5 ff_15_m1_11_n14 0.03fF
+C413 ff_5_pmos_0_w_n8_n5 ff_5_m1_11_n14 0.03fF
+C414 vdd cla5_final_without_ff_0_inverter_1_in 0.12fF
+C415 gnd cla5_final_without_ff_0_xorg_2_m1_102_n91 0.08fF
+C416 cla5_final_without_ff_0_xorg_0_m1_25_n11 vdd 0.12fF
+C417 ff_7_inverter_0_w_n8_n5 ff_7_inverter_0_in 0.07fF
+C418 ff_0_nmos_1_a_n1_n17 ff_0_m1_63_n19 0.08fF
+C419 ff_16_inverter_0_out ff_16_inverter_0_w_n8_n5 0.03fF
+C420 ff_6_nmos_2_a_6_n17 ff_6_m1_63_n19 0.02fF
+C421 clk ff_8_nmos_2_a_6_n17 0.05fF
+C422 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_xorg_0_pmos_1_w_n8_n5 0.07fF
+C423 ff_16_nmos_2_a_6_n17 clk 0.05fF
+C424 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_26_n95 cla5_final_without_ff_0_P4 0.08fF
+C425 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_2_w_n8_n5 0.08fF
+C426 ff_1_m1_63_n19 ff_1_pmos_3_a_6_2 0.05fF
+C427 ff_1_nmos_3_a_n1_n17 ff_1_inverter_0_in 0.08fF
+C428 cla5_final_without_ff_0_xorg_1_pmos_2_w_n8_n5 vdd 0.08fF
+C429 ff_15_m1_25_n38 ff_15_m1_63_n19 0.05fF
+C430 ff_15_inverter_0_w_n8_n5 cla5_final_without_ff_0_A4 0.03fF
+C431 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n91 0.05fF
+C432 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_xorg_3_m1_25_n11 0.12fF
+C433 cla5_final_without_ff_0_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_B0 0.07fF
+C434 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_inverter_3_out 0.05fF
+C435 ff_14_nmos_2_a_6_n17 gnd 0.08fF
+C436 cla5_final_without_ff_0_xorg_1_inverter_0_out cla5_final_without_ff_0_xorg_1_m1_25_n11 0.05fF
+C437 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_26_n95 0.05fF
+C438 ff_2_pmos_3_a_6_2 vdd 0.12fF
+C439 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 0.08fF
+C440 vdd cla5_final_without_ff_0_xorg_3_m1_25_n11 0.12fF
+C441 ff_7_pmos_0_w_n8_n5 ff_7_m1_11_n14 0.03fF
+C442 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_xorg_4_m1_25_n11 0.15fF
+C443 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n67 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n97 0.08fF
+C444 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 0.12fF
+C445 cla5_final_without_ff_0_xorg_2_pmos_2_w_n8_n5 cla5_final_without_ff_0_P2 0.07fF
+C446 ff_3_pmos_1_w_n8_n5 clk 0.07fF
+C447 ff_13_pmos_0_w_n8_n5 ff_13_m1_11_n14 0.03fF
+C448 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_S2 0.19fF
+C449 cla5_final_without_ff_0_xorg_1_pmos_1_w_n8_n5 cla5_final_without_ff_0_xorg_1_m1_25_n11 0.08fF
+C450 B1_in ff_10_m1_11_n14 0.08fF
+C451 ff_11_nmos_2_a_6_n17 gnd 0.08fF
+C452 ff_10_pmos_3_w_n8_n5 ff_10_pmos_3_a_6_2 0.03fF
+C453 gnd ff_5_nmos_4_a_6_n17 0.08fF
+C454 ff_1_pmos_2_a_6_2 clk 0.05fF
+C455 ff_0_inverter_0_w_n8_n5 vdd 0.08fF
+C456 ff_12_nmos_4_a_6_n17 gnd 0.08fF
+C457 ff_4_pmos_0_w_n8_n5 cla5_final_without_ff_0_S1 0.07fF
+C458 gnd cla5_final_without_ff_0_xorg_4_inverter_1_out 0.08fF
+C459 ff_12_pmos_2_w_n8_n5 ff_12_pmos_2_a_6_2 0.03fF
+C460 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_26_n95 0.05fF
+C461 gnd cla5_final_without_ff_0_C2bar 0.25fF
+C462 ff_16_m1_63_n19 ff_16_pmos_3_a_6_2 0.05fF
+C463 ff_16_nmos_3_a_n1_n17 ff_16_inverter_0_in 0.08fF
+C464 ff_10_pmos_2_w_n8_n5 vdd 0.07fF
+C465 ff_13_m1_25_n38 ff_13_m1_63_n19 0.05fF
+C466 ff_10_m1_25_n38 ff_10_pmos_1_w_n8_n5 0.03fF
+C467 ff_7_m1_25_n38 ff_7_m1_11_n14 0.12fF
+C468 ff_3_m1_63_n19 ff_3_pmos_3_w_n8_n5 0.07fF
+C469 ff_6_pmos_0_w_n8_n5 ff_6_m1_11_n14 0.03fF
+C470 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_A0 0.73fF
+C471 cla5_final_without_ff_0_xorg_0_pmos_2_w_n8_n5 cla5_final_without_ff_0_P0 0.07fF
+C472 cla5_final_without_ff_0_inverter_6_w_n8_n5 clk 0.07fF
+C473 ff_14_pmos_0_w_n8_n5 vdd 0.08fF
+C474 clk m1_228_773 0.08fF
+C475 cla5_final_without_ff_0_xorg_0_pmos_1_w_n8_n5 cla5_final_without_ff_0_xorg_0_m1_25_n11 0.08fF
+C476 vdd cla5_final_without_ff_0_xorg_4_m1_102_n17 0.12fF
+C477 cla5_final_without_ff_0_xorg_4_m1_102_n91 cla5_final_without_ff_0_S4 0.08fF
+C478 ff_2_m1_63_n19 ff_2_nmos_4_a_6_n17 0.05fF
+C479 ff_16_pmos_2_a_6_2 clk 0.05fF
+C480 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_P2 0.20fF
+C481 vdd cla5_final_without_ff_0_xorg_4_pmos_0_w_n8_n5 0.08fF
+C482 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_xorg_4_inverter_1_w_n8_n5 0.03fF
+C483 ff_1_m1_11_n14 vdd 0.12fF
+C484 ff_9_nmos_4_a_6_n17 gnd 0.08fF
+C485 cla5_final_without_ff_0_xorg_2_m1_102_n91 cla5_final_without_ff_0_xorg_2_inverter_0_out 0.05fF
+C486 cla5_final_without_ff_0_xorg_1_inverter_1_w_n8_n5 vdd 0.08fF
+C487 gnd cla5_final_without_ff_0_S3 0.45fF
+C488 cla5_final_without_ff_0_C0bar cla5_final_without_ff_0_inverter_0_out 0.08fF
+C489 ff_1_inverter_0_w_n8_n5 S4_f 0.03fF
+C490 ff_12_m1_25_n38 ff_12_nmos_1_a_n1_n17 0.09fF
+C491 gnd cla5_final_without_ff_0_1bit_mcl_3_m1_45_n97 0.08fF
+C492 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_1_w_n8_n5 0.07fF
+C493 ff_14_m1_63_n19 ff_14_nmos_2_a_6_n17 0.02fF
+C494 gnd vdd 1.03fF
+C495 ff_11_pmos_0_w_n8_n5 vdd 0.08fF
+C496 cla5_final_without_ff_0_inverter_5_w_n8_n5 vdd 0.08fF
+C497 ff_15_inverter_0_in clk 0.05fF
+C498 ff_16_m1_11_n14 vdd 0.12fF
+C499 cla5_final_without_ff_0_xorg_3_inverter_0_out cla5_final_without_ff_0_xorg_3_pmos_0_w_n8_n5 0.07fF
+C500 ff_4_m1_25_n38 clk 0.08fF
+C501 ff_14_m1_63_n19 gnd 0.05fF
+C502 ff_9_pmos_2_w_n8_n5 ff_9_pmos_2_a_6_2 0.03fF
+C503 ff_1_pmos_0_w_n8_n5 cla5_final_without_ff_0_S4 0.07fF
+C504 ff_15_pmos_3_w_n8_n5 vdd 0.06fF
+C505 ff_5_pmos_2_a_6_2 clk 0.05fF
+C506 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n67 clk_mca 0.05fF
+C507 ff_8_inverter_0_in ff_8_pmos_3_a_6_2 0.01fF
+C508 vdd cla5_final_without_ff_0_xorg_4_inverter_1_w_n8_n5 0.08fF
+C509 ff_13_inverter_0_w_n8_n5 ff_13_inverter_0_in 0.07fF
+C510 vdd cla5_final_without_ff_0_xorg_4_inverter_1_out 0.12fF
+C511 ff_13_inverter_0_in clk 0.05fF
+C512 vdd cla5_final_without_ff_0_C2bar 0.12fF
+C513 gnd cla5_final_without_ff_0_xorg_2_inverter_0_out 0.30fF
+C514 cla5_final_without_ff_0_xorg_2_pmos_3_w_n8_n5 cla5_final_without_ff_0_xorg_2_m1_102_n17 0.08fF
+C515 ff_0_m1_25_n38 clk 0.08fF
+C516 ff_11_m1_63_n19 gnd 0.05fF
+C517 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_w_n8_n5 0.08fF
+C518 ff_7_pmos_3_w_n8_n5 ff_7_m1_63_n19 0.07fF
+C519 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_2_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 0.03fF
+C520 ff_13_pmos_3_w_n8_n5 vdd 0.08fF
+C521 ff_8_nmos_4_a_6_n17 ff_8_m1_63_n19 0.05fF
+C522 ff_10_pmos_1_w_n8_n5 ff_10_m1_11_n14 0.08fF
+C523 ff_9_m1_25_n38 ff_9_nmos_1_a_n1_n17 0.09fF
+C524 ff_12_inverter_0_in gnd 0.05fF
+C525 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_26_n95 cla5_final_without_ff_0_P3 0.08fF
+C526 vdd cla5_final_without_ff_0_w_462_353 0.08fF
+C527 A4_in ff_15_pmos_0_w_n8_n5 0.07fF
+C528 ff_3_pmos_0_w_n8_n5 ff_3_m1_11_n14 0.03fF
+C529 ff_11_m1_63_n19 ff_11_nmos_2_a_6_n17 0.02fF
+C530 vdd cla5_final_without_ff_0_S3 0.14fF
+C531 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_S4 0.19fF
+C532 ff_15_m1_25_n38 gnd 0.08fF
+C533 cla5_final_without_ff_0_xorg_3_pmos_1_w_n8_n5 cla5_final_without_ff_0_xorg_3_m1_25_n11 0.08fF
+C534 ff_5_nmos_3_a_n1_n17 clk 0.08fF
+C535 ff_1_pmos_3_w_n8_n5 ff_1_pmos_3_a_6_2 0.03fF
+C536 A0_in ff_7_m1_11_n14 0.08fF
+C537 ff_14_pmos_2_a_6_2 vdd 0.12fF
+C538 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_26_n95 0.05fF
+C539 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 0.08fF
+C540 ff_4_pmos_2_w_n8_n5 ff_4_pmos_2_a_6_2 0.03fF
+C541 vdd ff_6_pmos_3_a_6_2 0.12fF
+C542 ff_12_pmos_2_w_n8_n5 clk 0.07fF
+C543 ff_9_inverter_0_in gnd 0.05fF
+C544 ff_4_inverter_0_w_n8_n5 vdd 0.08fF
+C545 ff_14_m1_63_n19 ff_14_pmos_2_a_6_2 0.03fF
+C546 A1_in ff_9_m1_25_n38 0.05fF
+C547 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n67 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n97 0.08fF
+C548 ff_3_m1_25_n38 ff_3_m1_63_n19 0.05fF
+C549 ff_1_m1_25_n38 ff_1_pmos_1_w_n8_n5 0.03fF
+C550 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 0.12fF
+C551 ff_13_m1_25_n38 gnd 0.08fF
+C552 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_xorg_2_pmos_1_w_n8_n5 0.07fF
+C553 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_xorg_2_m1_26_n95 0.08fF
+C554 ff_10_inverter_0_w_n8_n5 cla5_final_without_ff_0_B1 0.03fF
+C555 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_1_w_n8_n5 0.07fF
+C556 ff_11_pmos_2_a_6_2 vdd 0.12fF
+C557 ff_15_nmos_2_a_6_n17 clk 0.05fF
+C558 ff_7_nmos_1_a_n1_n17 ff_7_m1_63_n19 0.08fF
+C559 ff_9_pmos_2_w_n8_n5 clk 0.07fF
+C560 cla5_final_without_ff_0_xorg_2_inverter_0_out vdd 0.27fF
+C561 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_m1_102_n91 0.08fF
+C562 cla5_final_without_ff_0_xorg_0_m1_26_n95 cla5_final_without_ff_0_S0 0.08fF
+C563 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_xorg_3_m1_26_n95 0.05fF
+C564 ff_4_m1_25_n38 ff_4_nmos_1_a_n1_n17 0.09fF
+C565 gnd cla5_final_without_ff_0_C0bar 0.22fF
+C566 cla5_final_without_ff_0_P4 clk_mca 0.28fF
+C567 ff_13_inverter_0_in cla5_final_without_ff_0_A3 0.05fF
+C568 gnd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n91 0.08fF
+C569 ff_16_pmos_3_w_n8_n5 ff_16_pmos_3_a_6_2 0.03fF
+C570 ff_4_pmos_3_a_6_2 vdd 0.12fF
+C571 ff_15_inverter_0_w_n8_n5 ff_15_inverter_0_in 0.07fF
+C572 cla5_final_without_ff_0_xorg_1_m1_26_n95 cla5_final_without_ff_0_inverter_2_out 0.05fF
+C573 ff_13_nmos_2_a_6_n17 clk 0.05fF
+C574 ff_0_pmos_2_w_n8_n5 ff_0_pmos_2_a_6_2 0.03fF
+C575 cla5_final_without_ff_0_A4 clk_mca 0.12fF
+C576 cla5_final_without_ff_0_xorg_2_m1_26_n95 cla5_final_without_ff_0_P2 0.05fF
+C577 gnd ff_5_m1_25_n38 0.08fF
+C578 ff_11_m1_63_n19 ff_11_pmos_2_a_6_2 0.03fF
+C579 ff_16_m1_25_n38 ff_16_pmos_1_w_n8_n5 0.03fF
+C580 gnd cla5_final_without_ff_0_1bit_mcl_1_m1_45_n97 0.08fF
+C581 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_1_w_n8_n5 0.07fF
+C582 ff_3_inverter_0_w_n8_n5 ff_3_inverter_0_in 0.07fF
+C583 ff_12_nmos_2_a_6_n17 gnd 0.08fF
+C584 clk ff_5_nmos_2_a_6_n17 0.05fF
+C585 ff_0_pmos_3_a_6_2 vdd 0.12fF
+C586 A2_in cla5_final_without_ff_0_B1 0.16fF
+C587 gnd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_26_n95 0.08fF
+C588 A1_in ff_9_m1_11_n14 0.08fF
+C589 cla5_final_without_ff_0_xorg_4_pmos_3_w_n8_n5 cla5_final_without_ff_0_xorg_4_m1_102_n17 0.08fF
+C590 ff_1_pmos_1_w_n8_n5 ff_1_m1_11_n14 0.08fF
+C591 ff_0_m1_25_n38 ff_0_nmos_1_a_n1_n17 0.09fF
+C592 ff_2_pmos_1_w_n8_n5 clk 0.07fF
+C593 clk ff_7_nmos_3_a_n1_n17 0.06fF
+C594 ff_15_inverter_0_in ff_15_pmos_3_a_6_2 0.01fF
+C595 ff_11_inverter_0_w_n8_n5 cla5_final_without_ff_0_A2 0.03fF
+C596 gnd cla5_final_without_ff_0_A0 0.48fF
+C597 ff_6_m1_63_n19 ff_6_nmos_1_a_n1_n17 0.08fF
+C598 ff_2_m1_63_n19 ff_2_nmos_2_a_6_n17 0.02fF
+C599 ff_9_nmos_2_a_6_n17 gnd 0.08fF
+C600 vdd ff_7_pmos_3_a_6_2 0.12fF
+C601 cla5_final_without_ff_0_B4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_26_n95 0.05fF
+C602 ff_10_nmos_1_a_n1_n17 ff_10_m1_63_n19 0.08fF
+C603 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_2_w_n8_n5 0.07fF
+C604 ff_15_pmos_2_a_6_2 clk 0.05fF
+C605 ff_8_pmos_2_w_n8_n5 vdd 0.08fF
+C606 cla5_final_without_ff_0_xorg_0_inverter_1_w_n8_n5 vdd 0.08fF
+C607 ff_16_inverter_0_w_n8_n5 vdd 0.08fF
+C608 ff_10_nmos_4_a_6_n17 gnd 0.08fF
+C609 vdd cla5_final_without_ff_0_C0bar 0.12fF
+C610 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_P0 0.30fF
+C611 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_xorg_3_pmos_1_w_n8_n5 0.03fF
+C612 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_2_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 0.03fF
+C613 cla5_final_without_ff_0_Cout cla5_final_without_ff_0_inverter_1_w_n8_n5 0.03fF
+C614 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_26_n95 cla5_final_without_ff_0_P2 0.08fF
+C615 ff_12_pmos_0_w_n8_n5 vdd 0.08fF
+C616 S3_f ff_2_inverter_0_in 0.05fF
+C617 ff_8_pmos_0_w_n8_n5 m1_228_773 0.07fF
+C618 ff_6_pmos_2_a_6_2 ff_6_m1_63_n19 0.03fF
+C619 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_w_n8_n5 cla5_final_without_ff_0_A0 0.07fF
+C620 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_xorg_4_pmos_1_w_n8_n5 0.07fF
+C621 cla5_final_without_ff_0_Cout ff_0_m1_25_n38 0.05fF
+C622 ff_13_pmos_2_a_6_2 clk 0.05fF
+C623 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_xorg_4_pmos_3_w_n8_n5 0.07fF
+C624 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_xorg_4_m1_26_n95 0.08fF
+C625 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_xorg_1_pmos_3_w_n8_n5 0.07fF
+C626 ff_15_m1_11_n14 vdd 0.12fF
+C627 cla5_final_without_ff_0_1bit_mcl_3_pmos_0_w_n8_n5 clk_mca 0.07fF
+C628 cla5_final_without_ff_0_xorg_1_pmos_2_w_n8_n5 cla5_final_without_ff_0_xorg_1_m1_102_n17 0.03fF
+C629 ff_16_pmos_1_w_n8_n5 ff_16_m1_11_n14 0.08fF
+C630 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_26_n95 0.05fF
+C631 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 0.08fF
+C632 ff_12_inverter_0_out cla5_final_without_ff_0_B2 0.02fF
+C633 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_P1 0.29fF
+C634 ff_13_inverter_0_in ff_13_pmos_3_a_6_2 0.01fF
+C635 ff_3_nmos_3_a_n1_n17 clk 0.08fF
+C636 vdd ff_5_m1_11_n14 0.12fF
+C637 ff_9_pmos_0_w_n8_n5 vdd 0.08fF
+C638 ff_14_inverter_0_in clk 0.05fF
+C639 cla5_final_without_ff_0_A1 ff_9_inverter_0_w_n8_n5 0.03fF
+C640 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n67 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n97 0.08fF
+C641 cla5_final_without_ff_0_xorg_2_pmos_0_w_n8_n5 cla5_final_without_ff_0_xorg_2_m1_25_n11 0.03fF
+C642 cla5_final_without_ff_0_inverter_1_in cla5_final_without_ff_0_1bit_mcl_4_pmos_0_w_n8_n5 0.03fF
+C643 ff_13_m1_11_n14 vdd 0.12fF
+C644 vdd cla5_final_without_ff_0_A0 0.69fF
+C645 ff_1_m1_25_n38 clk 0.08fF
+C646 ff_12_m1_63_n19 gnd 0.05fF
+C647 ff_7_m1_25_n38 ff_7_pmos_1_w_n8_n5 0.03fF
+C648 vdd ff_6_pmos_2_w_n8_n5 0.08fF
+C649 vdd ff_6_m1_11_n14 0.12fF
+C650 ff_14_pmos_3_w_n8_n5 vdd 0.08fF
+C651 cla5_final_without_ff_0_A0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 0.14fF
+C652 cla5_final_without_ff_0_xorg_0_pmos_2_w_n8_n5 cla5_final_without_ff_0_xorg_0_m1_102_n17 0.03fF
+C653 ff_2_m1_63_n19 ff_2_pmos_2_a_6_2 0.03fF
+C654 ff_14_m1_63_n19 ff_14_pmos_3_w_n8_n5 0.07fF
+C655 ff_11_inverter_0_in clk 0.05fF
+C656 cla5_final_without_ff_0_P2 clk_mca 0.11fF
+C657 ff_12_m1_63_n19 ff_12_nmos_4_a_6_n17 0.05fF
+C658 ff_15_m1_25_n38 ff_15_m1_11_n14 0.12fF
+C659 clk ff_8_m1_25_n38 0.08fF
+C660 gnd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n91 0.08fF
+C661 ff_3_pmos_0_w_n8_n5 cla5_final_without_ff_0_S2 0.07fF
+C662 ff_16_m1_25_n38 clk 0.08fF
+C663 ff_9_m1_63_n19 gnd 0.05fF
+C664 ff_11_pmos_3_w_n8_n5 vdd 0.08fF
+C665 ff_10_inverter_0_in gnd 0.05fF
+C666 vdd ff_7_pmos_2_w_n8_n5 0.08fF
+C667 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_26_n95 0.05fF
+C668 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_w_n8_n5 0.07fF
+C669 B4_in ff_16_pmos_0_w_n8_n5 0.07fF
+C670 cla5_final_without_ff_0_A2 clk_mca 0.09fF
+C671 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out 0.05fF
+C672 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_xorg_0_m1_102_n91 0.05fF
+C673 cla5_final_without_ff_0_Cout ff_0_m1_11_n14 0.08fF
+C674 ff_14_m1_25_n38 gnd 0.08fF
+C675 cla5_final_without_ff_0_C3bar cla5_final_without_ff_0_P4 0.14fF
+C676 ff_1_nmos_1_a_n1_n17 ff_1_m1_63_n19 0.08fF
+C677 ff_12_pmos_2_a_6_2 vdd 0.12fF
+C678 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_inverter_1_out 0.22fF
+C679 ff_8_inverter_0_in cla5_final_without_ff_0_B0 0.05fF
+C680 ff_10_pmos_2_w_n8_n5 clk 0.07fF
+C681 ff_1_inverter_0_w_n8_n5 vdd 0.08fF
+C682 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_C3bar 0.14fF
+C683 A4_in gnd 0.05fF
+C684 cla5_final_without_ff_0_inverter_6_w_n8_n5 clk_mca 0.03fF
+C685 ff_11_m1_63_n19 ff_11_pmos_3_w_n8_n5 0.07fF
+C686 ff_11_m1_25_n38 gnd 0.08fF
+C687 ff_8_pmos_2_a_6_2 ff_8_m1_63_n19 0.03fF
+C688 ff_9_m1_63_n19 ff_9_nmos_4_a_6_n17 0.05fF
+C689 ff_13_m1_25_n38 ff_13_m1_11_n14 0.12fF
+C690 cla5_final_without_ff_0_B3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_26_n95 0.05fF
+C691 ff_9_pmos_2_a_6_2 vdd 0.12fF
+C692 ff_6_inverter_0_w_n8_n5 ff_6_inverter_0_in 0.07fF
+C693 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_2_w_n8_n5 0.07fF
+C694 ff_14_nmos_2_a_6_n17 clk 0.05fF
+C695 ff_5_pmos_2_a_6_2 ff_5_pmos_2_w_n8_n5 0.03fF
+C696 cla5_final_without_ff_0_inverter_4_w_n8_n5 cla5_final_without_ff_0_C2bar 0.07fF
+C697 cla5_final_without_ff_0_xorg_3_pmos_2_w_n8_n5 cla5_final_without_ff_0_xorg_3_m1_102_n17 0.03fF
+C698 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_inverter_2_out 0.19fF
+C699 cla5_final_without_ff_0_xorg_3_m1_25_n11 cla5_final_without_ff_0_P3 0.14fF
+C700 ff_3_pmos_2_w_n8_n5 vdd 0.08fF
+C701 cla5_final_without_ff_0_B0 ff_8_inverter_0_w_n8_n5 0.03fF
+C702 gnd ff_7_nmos_2_a_6_n17 0.08fF
+C703 ff_14_pmos_0_w_n8_n5 ff_14_m1_11_n14 0.03fF
+C704 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n97 0.05fF
+C705 ff_3_inverter_0_in ff_3_pmos_3_a_6_2 0.01fF
+C706 ff_4_m1_25_n38 cla5_final_without_ff_0_S1 0.05fF
+C707 ff_8_nmos_1_a_n1_n17 ff_8_m1_63_n19 0.08fF
+C708 gnd clk 1.31fF
+C709 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_2_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 0.03fF
+C710 ff_16_nmos_1_a_n1_n17 ff_16_m1_63_n19 0.08fF
+C711 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_xorg_3_m1_102_n91 0.05fF
+C712 ff_1_pmos_3_a_6_2 vdd 0.12fF
+C713 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_26_n95 cla5_final_without_ff_0_P1 0.08fF
+C714 cla5_final_without_ff_0_xorg_4_pmos_0_w_n8_n5 cla5_final_without_ff_0_xorg_4_m1_25_n11 0.03fF
+C715 cla5_final_without_ff_0_xorg_2_inverter_0_w_n8_n5 vdd 0.08fF
+C716 ff_11_nmos_2_a_6_n17 clk 0.05fF
+C717 ff_5_m1_25_n38 ff_5_m1_11_n14 0.12fF
+C718 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_xorg_2_m1_102_n17 0.12fF
+C719 cla5_final_without_ff_0_1bit_mcl_1_pmos_0_w_n8_n5 clk_mca 0.07fF
+C720 ff_15_m1_63_n19 ff_15_pmos_3_a_6_2 0.05fF
+C721 ff_15_nmos_3_a_n1_n17 ff_15_inverter_0_in 0.08fF
+C722 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_3_w_n8_n5 0.07fF
+C723 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 0.12fF
+C724 ff_4_pmos_1_w_n8_n5 clk 0.07fF
+C725 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n67 0.05fF
+C726 vdd cla5_final_without_ff_0_w_928_355 0.08fF
+C727 ff_14_m1_25_n38 ff_14_m1_63_n19 0.05fF
+C728 ff_12_inverter_0_out gnd 0.20fF
+C729 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 0.08fF
+C730 cla5_final_without_ff_0_inverter_4_w_n8_n5 vdd 0.08fF
+C731 ff_10_nmos_2_a_6_n17 gnd 0.08fF
+C732 ff_7_m1_25_n38 ff_7_nmos_1_a_n1_n17 0.09fF
+C733 cla5_final_without_ff_0_xorg_1_m1_102_n17 vdd 0.12fF
+C734 cla5_final_without_ff_0_xorg_1_pmos_0_w_n8_n5 vdd 0.08fF
+C735 ff_16_pmos_3_a_6_2 vdd 0.12fF
+C736 ff_8_pmos_3_w_n8_n5 ff_8_pmos_3_a_6_2 0.03fF
+C737 A4_in vdd 0.05fF
+C738 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_xorg_0_m1_26_n95 0.05fF
+C739 ff_4_m1_63_n19 ff_4_nmos_4_a_6_n17 0.05fF
+C740 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n67 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n97 0.08fF
+C741 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_xorg_2_inverter_1_w_n8_n5 0.03fF
+C742 cla5_final_without_ff_0_B4 clk_mca 0.16fF
+C743 cla5_final_without_ff_0_xorg_2_inverter_0_w_n8_n5 cla5_final_without_ff_0_xorg_2_inverter_0_out 0.03fF
+C744 cla5_final_without_ff_0_C3bar cla5_final_without_ff_0_1bit_mcl_3_pmos_0_w_n8_n5 0.03fF
+C745 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_26_n95 cla5_final_without_ff_0_A0 0.05fF
+C746 cla5_final_without_ff_0_Cout cla5_final_without_ff_0_inverter_1_in 0.05fF
+C747 ff_0_pmos_1_w_n8_n5 clk 0.07fF
+C748 ff_11_pmos_0_w_n8_n5 ff_11_m1_11_n14 0.03fF
+C749 ff_8_nmos_4_a_6_n17 gnd 0.08fF
+C750 cla5_final_without_ff_0_S3 clk 0.09fF
+C751 cla5_final_without_ff_0_xorg_2_m1_102_n17 cla5_final_without_ff_0_P2 0.20fF
+C752 gnd cla5_final_without_ff_0_inverter_3_out 0.14fF
+C753 ff_1_m1_25_n38 cla5_final_without_ff_0_S4 0.05fF
+C754 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_w_n8_n5 0.08fF
+C755 gnd cla5_final_without_ff_0_P3 0.68fF
+C756 ff_14_pmos_2_a_6_2 clk 0.05fF
+C757 ff_13_inverter_0_w_n8_n5 vdd 0.08fF
+C758 ff_7_nmos_3_a_n1_n17 ff_7_inverter_0_in 0.08fF
+C759 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_C3bar 0.05fF
+C760 ff_13_m1_63_n19 ff_13_pmos_3_a_6_2 0.05fF
+C761 ff_10_pmos_2_w_n8_n5 ff_10_pmos_2_a_6_2 0.03fF
+C762 ff_13_nmos_3_a_n1_n17 ff_13_inverter_0_in 0.08fF
+C763 ff_5_nmos_1_a_n1_n17 ff_5_m1_63_n19 0.08fF
+C764 ff_4_m1_11_n14 cla5_final_without_ff_0_S1 0.08fF
+C765 ff_6_pmos_3_w_n8_n5 ff_6_m1_63_n19 0.07fF
+C766 cla5_final_without_ff_0_xorg_3_inverter_1_w_n8_n5 cla5_final_without_ff_0_inverter_4_out 0.07fF
+C767 ff_11_m1_25_n38 ff_11_m1_63_n19 0.05fF
+C768 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_inverter_4_out 0.05fF
+C769 vdd cla5_final_without_ff_0_xorg_2_pmos_2_w_n8_n5 0.08fF
+C770 gnd cla5_final_without_ff_0_A3 0.75fF
+C771 gnd ff_6_m1_25_n38 0.08fF
+C772 vdd cla5_final_without_ff_0_1bit_mcl_4_pmos_0_w_n8_n5 0.08fF
+C773 ff_2_m1_63_n19 ff_2_pmos_3_w_n8_n5 0.07fF
+C774 ff_10_pmos_0_w_n8_n5 vdd 0.08fF
+C775 gnd ff_7_m1_63_n19 0.05fF
+C776 ff_0_m1_63_n19 ff_0_nmos_4_a_6_n17 0.05fF
+C777 ff_11_pmos_2_a_6_2 clk 0.05fF
+C778 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_xorg_1_m1_25_n11 0.15fF
+C779 cla5_final_without_ff_0_xorg_0_m1_102_n17 cla5_final_without_ff_0_P0 0.20fF
+C780 A4_in ff_15_m1_25_n38 0.05fF
+C781 cla5_final_without_ff_0_C2bar cla5_final_without_ff_0_P3 0.14fF
+C782 ff_3_m1_25_n38 ff_3_m1_11_n14 0.12fF
+C783 ff_14_m1_11_n14 vdd 0.12fF
+C784 ff_12_inverter_0_out vdd 0.20fF
+C785 vdd cla5_final_without_ff_0_xorg_4_m1_25_n11 0.12fF
+C786 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n91 0.08fF
+C787 ff_10_m1_25_n38 ff_10_nmos_1_a_n1_n17 0.09fF
+C788 cla5_final_without_ff_0_xorg_1_inverter_0_w_n8_n5 vdd 0.08fF
+C789 ff_2_nmos_3_a_n1_n17 clk 0.09fF
+C790 ff_12_m1_63_n19 ff_12_nmos_2_a_6_n17 0.02fF
+C791 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_C2bar 0.11fF
+C792 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n91 0.08fF
+C793 cla5_final_without_ff_0_xorg_1_m1_102_n91 cla5_final_without_ff_0_xorg_1_inverter_0_out 0.05fF
+C794 gnd cla5_final_without_ff_0_xorg_1_m1_26_n95 0.08fF
+C795 ff_12_inverter_0_in clk 0.05fF
+C796 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_xorg_0_pmos_0_w_n8_n5 0.07fF
+C797 S2_f ff_3_inverter_0_w_n8_n5 0.03fF
+C798 cla5_final_without_ff_0_xorg_1_pmos_2_w_n8_n5 cla5_final_without_ff_0_P1 0.07fF
+C799 ff_11_m1_11_n14 vdd 0.12fF
+C800 gnd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_26_n95 0.08fF
+C801 ff_15_m1_25_n38 clk 0.08fF
+C802 ff_10_m1_63_n19 gnd 0.05fF
+C803 gnd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out 0.08fF
+C804 cla5_final_without_ff_0_inverter_3_out vdd 0.27fF
+C805 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_26_n95 0.05fF
+C806 ff_12_pmos_3_w_n8_n5 vdd 0.08fF
+C807 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_2_w_n8_n5 0.07fF
+C808 cla5_final_without_ff_0_xorg_3_inverter_0_out cla5_final_without_ff_0_xorg_3_m1_25_n11 0.05fF
+C809 ff_8_pmos_1_w_n8_n5 ff_8_m1_11_n14 0.08fF
+C810 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_xorg_4_m1_102_n17 0.12fF
+C811 ff_5_inverter_0_in ff_5_inverter_0_w_n8_n5 0.07fF
+C812 vdd cla5_final_without_ff_0_P3 0.30fF
+C813 ff_1_m1_11_n14 cla5_final_without_ff_0_S4 0.08fF
+C814 ff_11_inverter_0_w_n8_n5 ff_11_inverter_0_in 0.07fF
+C815 gnd cla5_final_without_ff_0_A1 0.37fF
+C816 cla5_final_without_ff_0_B0 clk_mca 0.09fF
+C817 ff_12_inverter_0_out ff_12_inverter_0_in 0.05fF
+C818 ff_9_inverter_0_in clk 0.05fF
+C819 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n97 0.05fF
+C820 gnd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out 0.08fF
+C821 ff_8_inverter_0_in gnd 0.05fF
+C822 gnd ff_7_nmos_4_a_6_n17 0.08fF
+C823 cla5_final_without_ff_0_w_462_353 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 0.03fF
+C824 cla5_final_without_ff_0_xorg_4_inverter_0_out cla5_final_without_ff_0_P4 0.27fF
+C825 ff_8_pmos_3_w_n8_n5 ff_8_m1_63_n19 0.07fF
+C826 ff_13_m1_25_n38 clk 0.08fF
+C827 vdd cla5_final_without_ff_0_A3 0.40fF
+C828 cla5_final_without_ff_0_B0 ff_6_inverter_0_in 0.05fF
+C829 gnd cla5_final_without_ff_0_S4 0.35fF
+C830 ff_9_pmos_3_w_n8_n5 vdd 0.08fF
+C831 cla5_final_without_ff_0_Cout gnd 0.38fF
+C832 B3_in ff_14_pmos_0_w_n8_n5 0.07fF
+C833 ff_2_pmos_0_w_n8_n5 ff_2_m1_11_n14 0.03fF
+C834 ff_9_m1_63_n19 ff_9_nmos_2_a_6_n17 0.02fF
+C835 ff_12_m1_25_n38 gnd 0.08fF
+C836 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 0.12fF
+C837 cla5_final_without_ff_0_xorg_3_inverter_0_w_n8_n5 vdd 0.08fF
+C838 A4_in ff_15_m1_11_n14 0.08fF
+C839 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n67 0.05fF
+C840 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_0_w_n8_n5 0.08fF
+C841 ff_8_pmos_2_w_n8_n5 clk 0.07fF
+C842 ff_15_pmos_3_w_n8_n5 ff_15_pmos_3_a_6_2 0.03fF
+C843 gnd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out 0.45fF
+C844 ff_10_pmos_2_a_6_2 vdd 0.12fF
+C845 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n91 0.05fF
+C846 cla5_final_without_ff_0_xorg_4_inverter_1_out cla5_final_without_ff_0_S4 0.22fF
+C847 ff_3_m1_63_n19 ff_3_pmos_3_a_6_2 0.05fF
+C848 ff_1_pmos_2_w_n8_n5 ff_1_pmos_2_a_6_2 0.03fF
+C849 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n67 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n97 0.08fF
+C850 ff_3_nmos_3_a_n1_n17 ff_3_inverter_0_in 0.08fF
+C851 cla5_final_without_ff_0_B2 clk_mca 0.09fF
+C852 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_w_462_353 0.07fF
+C853 ff_15_inverter_0_w_n8_n5 vdd 0.08fF
+C854 B3_in gnd 0.05fF
+C855 ff_12_m1_63_n19 ff_12_pmos_2_a_6_2 0.03fF
+C856 cla5_final_without_ff_0_C2bar cla5_final_without_ff_0_1bit_mcl_2_pmos_0_w_n8_n5 0.03fF
+C857 ff_2_m1_25_n38 ff_2_m1_63_n19 0.05fF
+C858 ff_15_m1_25_n38 ff_15_pmos_1_w_n8_n5 0.03fF
+C859 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_w_n8_n5 0.08fF
+C860 cla5_final_without_ff_0_xorg_4_m1_102_n91 cla5_final_without_ff_0_xorg_4_inverter_0_out 0.05fF
+C861 ff_9_m1_25_n38 gnd 0.08fF
+C862 clk ff_5_m1_25_n38 0.08fF
+C863 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out 0.12fF
+C864 gnd cla5_final_without_ff_0_xorg_3_inverter_0_out 0.35fF
+C865 gnd cla5_final_without_ff_0_xorg_2_m1_26_n95 0.08fF
+C866 cla5_final_without_ff_0_xorg_0_inverter_0_w_n8_n5 vdd 0.08fF
+C867 ff_3_nmos_4_a_6_n17 gnd 0.08fF
+C868 ff_12_nmos_2_a_6_n17 clk 0.05fF
+C869 gnd cla5_final_without_ff_0_P1 0.61fF
+C870 vdd cla5_final_without_ff_0_A1 0.37fF
+C871 cla5_final_without_ff_0_C3bar cla5_final_without_ff_0_B4 0.16fF
+C872 cla5_final_without_ff_0_inverter_1_in clk_mca 0.30fF
+C873 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n91 0.05fF
+C874 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out 0.12fF
+C875 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_w_n8_n5 0.08fF
+C876 ff_1_m1_25_n38 ff_1_nmos_1_a_n1_n17 0.09fF
+C877 ff_2_pmos_2_w_n8_n5 vdd 0.08fF
+C878 gnd cla5_final_without_ff_0_xorg_0_m1_26_n95 0.08fF
+C879 ff_4_m1_63_n19 ff_4_nmos_2_a_6_n17 0.02fF
+C880 ff_14_inverter_0_in cla5_final_without_ff_0_B3 0.05fF
+C881 ff_13_pmos_3_w_n8_n5 ff_13_pmos_3_a_6_2 0.03fF
+C882 vdd cla5_final_without_ff_0_1bit_mcl_2_pmos_0_w_n8_n5 0.08fF
+C883 ff_15_pmos_3_a_6_2 vdd 0.12fF
+C884 cla5_final_without_ff_0_Cout vdd 0.12fF
+C885 ff_14_inverter_0_w_n8_n5 ff_14_inverter_0_in 0.07fF
+C886 ff_6_pmos_2_w_n8_n5 clk 0.07fF
+C887 ff_9_nmos_2_a_6_n17 clk 0.05fF
+C888 ff_16_pmos_2_w_n8_n5 ff_16_pmos_2_a_6_2 0.03fF
+C889 cla5_final_without_ff_0_C1bar cla5_final_without_ff_0_P2 0.14fF
+C890 cla5_final_without_ff_0_xorg_4_inverter_0_w_n8_n5 cla5_final_without_ff_0_xorg_4_inverter_0_out 0.03fF
+C891 gnd ff_7_inverter_0_in 0.05fF
+C892 ff_9_m1_63_n19 ff_9_pmos_2_a_6_2 0.03fF
+C893 cla5_final_without_ff_0_B4 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n97 0.05fF
+C894 ff_1_pmos_1_w_n8_n5 clk 0.07fF
+C895 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n91 0.08fF
+C896 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out 0.57fF
+C897 ff_13_m1_25_n38 ff_13_pmos_1_w_n8_n5 0.03fF
+C898 ff_2_inverter_0_w_n8_n5 ff_2_inverter_0_in 0.07fF
+C899 vdd ff_8_inverter_0_w_n8_n5 0.08fF
+C900 S1_f ff_4_inverter_0_in 0.05fF
+C901 ff_7_pmos_3_a_6_2 ff_7_m1_63_n19 0.05fF
+C902 ff_13_pmos_3_a_6_2 vdd 0.12fF
+C903 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_C1bar 0.10fF
+C904 gnd ff_6_nmos_2_a_6_n17 0.08fF
+C905 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_xorg_2_pmos_3_w_n8_n5 0.07fF
+C906 ff_8_m1_25_n38 ff_8_nmos_1_a_n1_n17 0.09fF
+C907 ff_5_inverter_0_in S0_f 0.05fF
+C908 clk ff_7_pmos_2_w_n8_n5 0.07fF
+C909 gnd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_26_n95 0.08fF
+C910 ff_15_pmos_1_w_n8_n5 ff_15_m1_11_n14 0.08fF
+C911 ff_6_m1_63_n19 ff_6_nmos_4_a_6_n17 0.05fF
+C912 vdd cla5_final_without_ff_0_xorg_3_inverter_0_out 0.57fF
+C913 ff_16_m1_25_n38 ff_16_nmos_1_a_n1_n17 0.09fF
+C914 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 0.12fF
+C915 ff_16_pmos_1_w_n8_n5 clk 0.07fF
+C916 ff_5_pmos_3_a_6_2 ff_5_m1_63_n19 0.05fF
+C917 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_26_n95 0.05fF
+C918 ff_14_inverter_0_in ff_14_pmos_3_a_6_2 0.01fF
+C919 ff_0_m1_63_n19 ff_0_nmos_2_a_6_n17 0.02fF
+C920 vdd cla5_final_without_ff_0_P1 0.28fF
+C921 ff_9_inverter_0_in cla5_final_without_ff_0_A1 0.05fF
+C922 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 0.12fF
+C923 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_xorg_2_pmos_3_w_n8_n5 0.03fF
+C924 ff_12_pmos_2_a_6_2 clk 0.05fF
+C925 ff_11_inverter_0_w_n8_n5 vdd 0.08fF
+C926 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n97 0.06fF
+C927 gnd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out 0.08fF
+C928 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 0.20fF
+C929 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_2_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 0.03fF
+C930 ff_8_pmos_0_w_n8_n5 vdd 0.08fF
+C931 ff_3_inverter_0_in gnd 0.05fF
+C932 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_m1_102_n91 0.08fF
+C933 ff_4_m1_63_n19 ff_4_pmos_2_a_6_2 0.03fF
+C934 ff_3_m1_25_n38 cla5_final_without_ff_0_S2 0.05fF
+C935 ff_4_nmos_3_a_n1_n17 clk 0.08fF
+C936 Cout_f ff_0_inverter_0_in 0.05fF
+C937 B4_in ff_16_m1_25_n38 0.05fF
+C938 ff_9_pmos_2_a_6_2 clk 0.05fF
+C939 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_C0bar 0.09fF
+C940 ff_12_m1_11_n14 vdd 0.12fF
+C941 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n67 0.05fF
+C942 gnd cla5_final_without_ff_0_S1 0.46fF
+C943 ff_8_m1_11_n14 m1_228_773 0.08fF
+C944 ff_6_m1_11_n14 ff_6_m1_25_n38 0.12fF
+C945 ff_7_pmos_1_w_n8_n5 ff_7_m1_11_n14 0.08fF
+C946 ff_3_pmos_2_w_n8_n5 clk 0.07fF
+C947 ff_13_pmos_1_w_n8_n5 ff_13_m1_11_n14 0.08fF
+C948 ff_5_inverter_0_in ff_5_pmos_3_a_6_2 0.01fF
+C949 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_w_n8_n5 0.07fF
+C950 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n91 0.05fF
+C951 gnd clk_mca 0.08fF
+C952 gnd cla5_final_without_ff_0_B3 0.63fF
+C953 ff_11_inverter_0_in ff_11_pmos_3_a_6_2 0.01fF
+C954 ff_0_nmos_3_a_n1_n17 clk 0.07fF
+C955 cla5_final_without_ff_0_C1bar cla5_final_without_ff_0_1bit_mcl_1_pmos_0_w_n8_n5 0.03fF
+C956 ff_10_inverter_0_in clk 0.05fF
+C957 gnd ff_6_inverter_0_in 0.05fF
+C958 ff_3_pmos_3_w_n8_n5 ff_3_pmos_3_a_6_2 0.03fF
+C959 ff_9_m1_11_n14 vdd 0.12fF
+C960 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n97 0.05fF
+C961 ff_14_m1_25_n38 clk 0.08fF
+C962 ff_10_pmos_3_w_n8_n5 vdd 0.08fF
+C963 gnd ff_7_m1_25_n38 0.08fF
+C964 cla5_final_without_ff_0_inverter_2_w_n8_n5 cla5_final_without_ff_0_inverter_2_out 0.03fF
+C965 ff_0_m1_63_n19 ff_0_pmos_2_a_6_2 0.03fF
+C966 cla5_final_without_ff_0_C2bar cla5_final_without_ff_0_B3 0.12fF
+C967 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n91 0.05fF
+C968 cla5_final_without_ff_0_C2bar clk_mca 0.33fF
+C969 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out 0.12fF
+C970 cla5_final_without_ff_0_inverter_2_out cla5_final_without_ff_0_xorg_1_pmos_1_w_n8_n5 0.07fF
+C971 ff_3_m1_25_n38 ff_3_pmos_1_w_n8_n5 0.03fF
+C972 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_w_n8_n5 0.08fF
+C973 gnd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out 0.49fF
+C974 ff_12_m1_63_n19 ff_12_pmos_3_w_n8_n5 0.07fF
+C975 A4_in clk 0.07fF
+C976 ff_10_m1_63_n19 ff_10_nmos_4_a_6_n17 0.05fF
+C977 ff_14_m1_25_n38 ff_14_m1_11_n14 0.12fF
+C978 vdd ff_5_pmos_2_w_n8_n5 0.08fF
+C979 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n67 0.05fF
+C980 ff_11_m1_25_n38 clk 0.08fF
+C981 vdd cla5_final_without_ff_0_1bit_mcl_0_pmos_0_w_n8_n5 0.08fF
+C982 cla5_final_without_ff_0_xorg_0_inverter_1_out cla5_final_without_ff_0_xorg_0_m1_102_n91 0.05fF
+C983 ff_3_m1_11_n14 cla5_final_without_ff_0_S2 0.08fF
+C984 B4_in gnd 0.05fF
+C985 A3_in ff_13_pmos_0_w_n8_n5 0.07fF
+C986 cla5_final_without_ff_0_C3bar cla5_final_without_ff_0_inverter_1_in 0.08fF
+C987 cla5_final_without_ff_0_C0bar cla5_final_without_ff_0_P1 0.14fF
+C988 cla5_final_without_ff_0_S1 vdd 0.16fF
+C989 ff_5_pmos_2_a_6_2 ff_5_m1_63_n19 0.03fF
+C990 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_0_w_n8_n5 0.07fF
+C991 ff_8_pmos_2_a_6_2 vdd 0.12fF
+C992 S0_f ff_5_inverter_0_w_n8_n5 0.03fF
+C993 vdd ff_7_pmos_0_w_n8_n5 0.08fF
+C994 cla5_final_without_ff_0_B3 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n97 0.05fF
+C995 cla5_final_without_ff_0_inverter_3_w_n8_n5 vdd 0.08fF
+C996 B4_in ff_16_m1_11_n14 0.08fF
+C997 ff_10_m1_25_n38 gnd 0.08fF
+C998 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n91 0.08fF
+C999 ff_3_nmos_2_a_6_n17 gnd 0.08fF
+C1000 ff_15_nmos_1_a_n1_n17 ff_15_m1_63_n19 0.08fF
+C1001 clk ff_7_nmos_2_a_6_n17 0.05fF
+C1002 vdd clk_mca 0.51fF
+C1003 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_xorg_4_pmos_3_w_n8_n5 0.03fF
+C1004 vdd cla5_final_without_ff_0_B3 1.68fF
+C1005 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_P4 0.10fF
+C1006 ff_7_pmos_3_a_6_2 ff_7_inverter_0_in 0.01fF
+C1007 ff_14_inverter_0_w_n8_n5 vdd 0.08fF
+C1008 ff_4_pmos_2_w_n8_n5 vdd 0.08fF
+C1009 B2_in gnd 0.05fF
+C1010 ff_6_pmos_3_a_6_2 ff_6_inverter_0_in 0.01fF
+C1011 ff_9_m1_63_n19 ff_9_pmos_3_w_n8_n5 0.07fF
+C1012 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n67 clk_mca 0.05fF
+C1013 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 0.12fF
+C1014 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_w_n8_n5 0.03fF
+C1015 ff_11_m1_25_n38 ff_11_m1_11_n14 0.12fF
+C1016 ff_2_nmos_4_a_6_n17 gnd 0.08fF
+C1017 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_3_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 0.08fF
+C1018 ff_10_nmos_2_a_6_n17 clk 0.05fF
+C1019 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out 0.47fF
+C1020 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 0.20fF
+C1021 ff_3_pmos_1_w_n8_n5 ff_3_m1_11_n14 0.08fF
+C1022 ff_0_pmos_2_w_n8_n5 vdd 0.08fF
+C1023 ff_12_pmos_0_w_n8_n5 ff_12_m1_11_n14 0.03fF
+C1024 ff_2_inverter_0_in ff_2_pmos_3_a_6_2 0.01fF
+C1025 cla5_final_without_ff_0_inverter_1_in cla5_final_without_ff_0_1bit_mcl_4_m1_45_n67 0.08fF
+C1026 vdd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_2_w_n8_n5 0.08fF
+C1027 ff_3_pmos_0_w_n8_n5 vdd 0.08fF
+C1028 ff_13_nmos_1_a_n1_n17 ff_13_m1_63_n19 0.08fF
+C1029 gnd A0_in 0.05fF
+C1030 ff_14_pmos_3_a_6_2 vdd 0.12fF
+C1031 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out 0.22fF
+C1032 cla5_final_without_ff_0_xorg_4_pmos_2_w_n8_n5 cla5_final_without_ff_0_P4 0.07fF
+C1033 ff_14_m1_63_n19 ff_14_pmos_3_a_6_2 0.05fF
+C1034 ff_14_nmos_3_a_n1_n17 ff_14_inverter_0_in 0.08fF
+C1035 ff_6_pmos_0_w_n8_n5 Cin_in 0.07fF
+C1036 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_P0 0.91fF
+C1037 ff_15_pmos_1_w_n8_n5 clk 0.07fF
+C1038 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_xorg_2_m1_25_n11 0.12fF
+C1039 ff_12_m1_25_n38 ff_12_m1_63_n19 0.05fF
+C1040 cla5_final_without_ff_0_A0 ff_7_inverter_0_in 0.05fF
+C1041 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_w_n8_n5 0.07fF
+C1042 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n91 0.05fF
+C1043 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_m1_102_n17 0.12fF
+C1044 cla5_final_without_ff_0_xorg_4_inverter_0_w_n8_n5 cla5_final_without_ff_0_P4 0.07fF
+C1045 ff_4_m1_63_n19 ff_4_pmos_3_w_n8_n5 0.07fF
+C1046 gnd cla5_final_without_ff_0_B1 0.56fF
+C1047 ff_5_nmos_3_a_n1_n17 ff_5_inverter_0_in 0.08fF
+C1048 vdd cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 0.12fF
+C1049 ff_5_m1_63_n19 ff_5_pmos_3_w_n8_n5 0.07fF
+C1050 ff_13_inverter_0_w_n8_n5 cla5_final_without_ff_0_A3 0.03fF
+C1051 ff_11_pmos_3_a_6_2 vdd 0.12fF
+C1052 cla5_final_without_ff_0_C0bar cla5_final_without_ff_0_1bit_mcl_0_pmos_0_w_n8_n5 0.03fF
+C1053 gnd cla5_final_without_ff_0_xorg_3_m1_102_n91 0.08fF
+C1054 ff_1_m1_63_n19 ff_1_nmos_4_a_6_n17 0.05fF
+C1055 ff_7_m1_63_n19 ff_7_nmos_2_a_6_n17 0.02fF
+C1056 vdd ff_7_pmos_2_a_6_2 0.12fF
+C1057 clk ff_6_m1_25_n38 0.08fF
+C1058 ff_3_m1_63_n19 gnd 0.05fF
+C1059 clk ff_7_m1_63_n19 0.05fF
+C1060 cla5_final_without_ff_0_xorg_1_m1_25_n11 vdd 0.12fF
+C1061 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_xorg_3_m1_25_n11 0.03fF
+C1062 ff_8_pmos_2_w_n8_n5 ff_8_pmos_2_a_6_2 0.03fF
+C1063 ff_13_pmos_1_w_n8_n5 clk 0.07fF
+C1064 ff_9_pmos_0_w_n8_n5 ff_9_m1_11_n14 0.03fF
+C1065 gnd cla5_final_without_ff_0_C3bar 0.22fF
+C1066 cla5_final_without_ff_0_inverter_5_w_n8_n5 cla5_final_without_ff_0_C3bar 0.07fF
+C1067 cla5_final_without_ff_0_C1bar cla5_final_without_ff_0_B2 0.10fF
+C1068 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n91 0.05fF
+C1069 cla5_final_without_ff_0_C0bar clk_mca 0.36fF
+C1070 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_P4 0.24fF
+C1071 ff_10_pmos_2_a_6_2 clk 0.05fF
+C1072 ff_5_nmos_2_a_6_n17 ff_5_m1_63_n19 0.02fF
+C1073 cla5_final_without_ff_0_xorg_2_m1_25_n11 cla5_final_without_ff_0_P2 0.14fF
+C1074 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_A4 0.35fF
+C1075 ff_11_m1_63_n19 ff_11_pmos_3_a_6_2 0.05fF
+C1076 ff_11_nmos_3_a_n1_n17 ff_11_inverter_0_in 0.08fF
+C1077 ff_2_inverter_0_in gnd 0.05fF
+C1078 ff_1_nmos_3_a_n1_n17 clk 0.09fF
+C1079 ff_9_m1_25_n38 ff_9_m1_63_n19 0.05fF
+C1080 ff_0_m1_63_n19 ff_0_pmos_3_w_n8_n5 0.07fF
+C1081 gnd cla5_final_without_ff_0_1bit_mcl_4_m1_45_n97 0.08fF
+C1082 cla5_final_without_ff_0_C2bar cla5_final_without_ff_0_C3bar 0.08fF
+C1083 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_w_928_355 0.07fF
+C1084 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_inverter_0_out 0.15fF
+C1085 cla5_final_without_ff_0_xorg_3_m1_102_n91 cla5_final_without_ff_0_S3 0.08fF
+C1086 vdd cla5_final_without_ff_0_xorg_2_m1_102_n17 0.12fF
+C1087 ff_16_m1_63_n19 ff_16_nmos_4_a_6_n17 0.05fF
+C1088 B3_in ff_14_m1_25_n38 0.05fF
+C1089 cla5_final_without_ff_0_B2 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n97 0.05fF
+C1090 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_xorg_3_inverter_1_w_n8_n5 0.03fF
+C1091 vdd cla5_final_without_ff_0_xorg_2_pmos_0_w_n8_n5 0.08fF
+C1092 ff_2_m1_25_n38 ff_2_m1_11_n14 0.12fF
+C1093 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n91 0.08fF
+C1094 ff_10_m1_11_n14 vdd 0.12fF
+C1095 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_3_w_n8_n5 0.03fF
+C1096 ff_3_pmos_2_a_6_2 vdd 0.12fF
+C1097 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out 0.03fF
+C1098 cla5_final_without_ff_0_xorg_0_pmos_2_w_n8_n5 vdd 0.08fF
+C1099 cla5_final_without_ff_0_xorg_0_m1_25_n11 cla5_final_without_ff_0_P0 0.14fF
+C1100 ff_2_pmos_2_w_n8_n5 clk 0.07fF
+C1101 vdd cla5_final_without_ff_0_B1 0.53fF
+C1102 ff_8_inverter_0_in clk 0.05fF
+C1103 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_P3 0.11fF
+C1104 clk ff_8_nmos_3_a_n1_n17 0.09fF
+C1105 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_3_w_n8_n5 0.03fF
+C1106 ff_4_pmos_0_w_n8_n5 ff_4_m1_11_n14 0.03fF
+C1107 ff_16_nmos_3_a_n1_n17 clk 0.05fF
+C1108 cla5_final_without_ff_0_S4 clk 0.09fF
+C1109 ff_10_m1_63_n19 ff_10_nmos_2_a_6_n17 0.02fF
+C1110 cla5_final_without_ff_0_A0 clk_mca 0.11fF
+C1111 gnd cla5_final_without_ff_0_inverter_4_out 0.14fF
+C1112 ff_8_pmos_3_w_n8_n5 vdd 0.07fF
+C1113 ff_3_nmos_1_a_n1_n17 ff_3_m1_63_n19 0.08fF
+C1114 cla5_final_without_ff_0_Cout clk 0.08fF
+C1115 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n67 clk_mca 0.05fF
+C1116 cla5_final_without_ff_0_xorg_3_inverter_0_w_n8_n5 cla5_final_without_ff_0_P3 0.07fF
+C1117 S3_f ff_2_inverter_0_w_n8_n5 0.03fF
+C1118 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 0.12fF
+C1119 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_w_n8_n5 0.03fF
+C1120 cla5_final_without_ff_0_xorg_2_inverter_0_out cla5_final_without_ff_0_xorg_2_pmos_0_w_n8_n5 0.07fF
+C1121 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_xorg_0_m1_25_n11 0.05fF
+C1122 ff_12_m1_25_n38 clk 0.08fF
+C1123 vdd cla5_final_without_ff_0_C3bar 0.12fF
+C1124 cla5_final_without_ff_0_xorg_2_inverter_1_out cla5_final_without_ff_0_S2 0.22fF
+C1125 cla5_final_without_ff_0_xorg_1_m1_102_n17 cla5_final_without_ff_0_P1 0.20fF
+C1126 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_3_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 0.08fF
+C1127 cla5_final_without_ff_0_xorg_2_inverter_1_w_n8_n5 vdd 0.08fF
+C1128 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_xorg_1_m1_102_n91 0.05fF
+C1129 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 0.20fF
+C1130 ff_4_m1_25_n38 ff_4_m1_63_n19 0.05fF
+C1131 vdd cla5_final_without_ff_0_xorg_3_pmos_2_w_n8_n5 0.08fF
+C1132 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_xorg_4_m1_25_n11 0.12fF
+C1133 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_C2bar 0.05fF
+C1134 B3_in clk 0.08fF
+C1135 cla5_final_without_ff_0_C3bar cla5_final_without_ff_0_1bit_mcl_3_m1_45_n67 0.08fF
+C1136 vdd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_2_w_n8_n5 0.08fF
+C1137 cla5_final_without_ff_0_xorg_1_pmos_3_w_n8_n5 cla5_final_without_ff_0_xorg_1_m1_102_n17 0.08fF
+C1138 ff_9_m1_25_n38 clk 0.08fF
+C1139 ff_8_m1_11_n14 ff_8_m1_25_n38 0.12fF
+C1140 ff_6_nmos_3_a_n1_n17 clk 0.05fF
+C1141 A3_in gnd 0.05fF
+C1142 B2_in ff_12_pmos_0_w_n8_n5 0.07fF
+C1143 ff_0_pmos_0_w_n8_n5 ff_0_m1_11_n14 0.03fF
+C1144 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out 0.22fF
+C1145 S2_f gnd 0.08fF
+C1146 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_S3 0.19fF
+C1147 B3_in ff_14_m1_11_n14 0.08fF
+C1148 cla5_final_without_ff_0_xorg_2_pmos_1_w_n8_n5 cla5_final_without_ff_0_xorg_2_m1_25_n11 0.08fF
+C1149 ff_2_nmos_2_a_6_n17 gnd 0.08fF
+C1150 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_w_n8_n5 0.07fF
+C1151 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n91 0.05fF
+C1152 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_3_w_n8_n5 0.07fF
+C1153 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_0_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 0.03fF
+C1154 ff_14_pmos_3_w_n8_n5 ff_14_pmos_3_a_6_2 0.03fF
+C1155 ff_4_nmos_4_a_6_n17 gnd 0.08fF
+C1156 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 0.12fF
+C1157 ff_15_inverter_0_in cla5_final_without_ff_0_A4 0.05fF
+C1158 cla5_final_without_ff_0_xorg_0_pmos_3_w_n8_n5 cla5_final_without_ff_0_xorg_0_m1_102_n17 0.08fF
+C1159 vdd cla5_final_without_ff_0_inverter_4_out 0.28fF
+C1160 ff_2_m1_63_n19 ff_2_pmos_3_a_6_2 0.05fF
+C1161 ff_15_pmos_2_w_n8_n5 ff_15_pmos_2_a_6_2 0.03fF
+C1162 vdd ff_6_pmos_2_a_6_2 0.12fF
+C1163 ff_2_nmos_3_a_n1_n17 ff_2_inverter_0_in 0.08fF
+C1164 ff_12_inverter_0_w_n8_n5 vdd 0.08fF
+C1165 ff_10_m1_63_n19 ff_10_pmos_2_a_6_2 0.03fF
+C1166 B1_in gnd 0.05fF
+C1167 ff_1_pmos_2_w_n8_n5 vdd 0.08fF
+C1168 ff_7_m1_63_n19 ff_7_nmos_4_a_6_n17 0.05fF
+C1169 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n97 0.05fF
+C1170 ff_14_m1_25_n38 ff_14_pmos_1_w_n8_n5 0.03fF
+C1171 ff_0_m1_25_n38 ff_0_m1_63_n19 0.05fF
+C1172 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 0.20fF
+C1173 clk ff_7_inverter_0_in 0.05fF
+C1174 cla5_final_without_ff_0_xorg_1_inverter_0_w_n8_n5 cla5_final_without_ff_0_P1 0.07fF
+C1175 gnd cla5_final_without_ff_0_C1bar 0.20fF
+C1176 cla5_final_without_ff_0_B4 cla5_final_without_ff_0_P4 0.43fF
+C1177 ff_0_nmos_4_a_6_n17 gnd 0.08fF
+C1178 cla5_final_without_ff_0_C0bar cla5_final_without_ff_0_B1 0.11fF
+C1179 cla5_final_without_ff_0_xorg_4_m1_26_n95 cla5_final_without_ff_0_P4 0.05fF
+C1180 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_w_n8_n5 0.03fF
+C1181 gnd cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n91 0.08fF
+C1182 ff_2_pmos_0_w_n8_n5 cla5_final_without_ff_0_S3 0.07fF
+C1183 gnd cla5_final_without_ff_0_P0 0.56fF
+C1184 gnd Cin_in 0.05fF
+C1185 ff_6_nmos_2_a_6_n17 clk 0.05fF
+C1186 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out cla5_final_without_ff_0_A3 0.36fF
+C1187 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n91 0.05fF
+C1188 cla5_final_without_ff_0_inverter_3_out cla5_final_without_ff_0_xorg_2_m1_26_n95 0.05fF
+C1189 gnd cla5_final_without_ff_0_xorg_1_inverter_0_out 0.37fF
+C1190 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_inverter_1_out 0.22fF
+C1191 ff_15_m1_25_n38 ff_15_nmos_1_a_n1_n17 0.09fF
+C1192 ff_16_pmos_2_w_n8_n5 vdd 0.08fF
+C1193 cla5_final_without_ff_0_xorg_3_inverter_0_out cla5_final_without_ff_0_P3 0.27fF
+C1194 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_B4 0.33fF
+C1195 ff_1_m1_63_n19 ff_1_nmos_2_a_6_n17 0.02fF
+C1196 ff_2_pmos_0_w_n8_n5 vdd 0.08fF
+C1197 ff_12_pmos_3_a_6_2 vdd 0.12fF
+C1198 ff_11_pmos_3_w_n8_n5 ff_11_pmos_3_a_6_2 0.03fF
+C1199 gnd cla5_final_without_ff_0_1bit_mcl_2_m1_45_n97 0.08fF
+C1200 cla5_final_without_ff_0_C1bar cla5_final_without_ff_0_C2bar 0.08fF
+C1201 cla5_final_without_ff_0_xorg_0_inverter_0_out gnd 0.49fF
+C1202 ff_12_inverter_0_w_n8_n5 ff_12_inverter_0_in 0.07fF
+C1203 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_0_w_n8_n5 0.07fF
+C1204 ff_7_pmos_2_w_n8_n5 ff_7_pmos_2_a_6_2 0.03fF
+C1205 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_m1_102_n17 0.12fF
+C1206 S2_f vdd 0.12fF
+C1207 cla5_final_without_ff_0_B1 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n97 0.05fF
+C1208 cla5_final_without_ff_0_xorg_4_inverter_0_out cla5_final_without_ff_0_xorg_4_pmos_0_w_n8_n5 0.07fF
+C1209 ff_13_pmos_2_w_n8_n5 ff_13_pmos_2_a_6_2 0.03fF
+C1210 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_3_w_n8_n5 0.03fF
+C1211 ff_5_pmos_1_w_n8_n5 ff_5_m1_25_n38 0.03fF
+C1212 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out 0.03fF
+C1213 ff_14_pmos_1_w_n8_n5 clk 0.07fF
+C1214 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n91 0.05fF
+C1215 ff_11_m1_25_n38 ff_11_pmos_1_w_n8_n5 0.03fF
+C1216 cla5_final_without_ff_0_A2 cla5_final_without_ff_0_P2 0.13fF
+C1217 ff_0_inverter_0_w_n8_n5 ff_0_inverter_0_in 0.07fF
+C1218 ff_8_pmos_3_a_6_2 ff_8_m1_63_n19 0.05fF
+C1219 ff_8_inverter_0_in ff_8_nmos_3_a_n1_n17 0.08fF
+C1220 gnd ff_5_m1_63_n19 0.05fF
+C1221 cla5_final_without_ff_0_xorg_3_inverter_0_w_n8_n5 cla5_final_without_ff_0_xorg_3_inverter_0_out 0.03fF
+C1222 ff_3_inverter_0_in clk 0.05fF
+C1223 S4_f ff_1_inverter_0_in 0.05fF
+C1224 gnd cla5_final_without_ff_0_xorg_4_inverter_0_out 0.24fF
+C1225 ff_9_pmos_3_a_6_2 vdd 0.12fF
+C1226 ff_5_pmos_2_w_n8_n5 clk 0.07fF
+C1227 gnd cla5_final_without_ff_0_xorg_3_m1_26_n95 0.08fF
+C1228 ff_5_pmos_1_w_n8_n5 ff_5_m1_11_n14 0.08fF
+C1229 ff_2_m1_63_n19 gnd 0.05fF
+C1230 cla5_final_without_ff_0_P1 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 0.12fF
+C1231 vdd cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_w_n8_n5 0.08fF
+C1232 cla5_final_without_ff_0_xorg_3_pmos_3_w_n8_n5 cla5_final_without_ff_0_xorg_3_m1_102_n17 0.08fF
+C1233 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_w_n8_n5 0.03fF
+C1234 ff_3_pmos_3_w_n8_n5 vdd 0.07fF
+C1235 ff_14_pmos_1_w_n8_n5 ff_14_m1_11_n14 0.08fF
+C1236 ff_13_m1_25_n38 ff_13_nmos_1_a_n1_n17 0.09fF
+C1237 ff_4_inverter_0_in gnd 0.05fF
+C1238 ff_8_m1_63_n19 ff_8_nmos_2_a_6_n17 0.02fF
+C1239 vdd cla5_final_without_ff_0_C1bar 0.12fF
+C1240 cla5_final_without_ff_0_S1 clk 0.08fF
+C1241 ff_11_pmos_1_w_n8_n5 clk 0.07fF
+C1242 ff_8_pmos_2_a_6_2 clk 0.05fF
+C1243 ff_5_m1_63_n19 ff_5_nmos_4_a_6_n17 0.05fF
+C1244 ff_12_inverter_0_in ff_12_pmos_3_a_6_2 0.01fF
+C1245 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_3_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 0.08fF
+C1246 ff_16_m1_63_n19 ff_16_nmos_2_a_6_n17 0.02fF
+C1247 cla5_final_without_ff_0_xorg_1_m1_26_n95 cla5_final_without_ff_0_P1 0.05fF
+C1248 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 0.12fF
+C1249 vdd cla5_final_without_ff_0_P0 0.49fF
+C1250 ff_8_inverter_0_in ff_8_inverter_0_w_n8_n5 0.07fF
+C1251 cla5_final_without_ff_0_B4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out 0.05fF
+C1252 clk clk_mca 0.05fF
+C1253 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_B4 0.07fF
+C1254 cla5_final_without_ff_0_xorg_4_pmos_1_w_n8_n5 cla5_final_without_ff_0_xorg_4_m1_25_n11 0.08fF
+C1255 cla5_final_without_ff_0_xorg_1_inverter_0_out vdd 0.27fF
+C1256 cla5_final_without_ff_0_C2bar cla5_final_without_ff_0_1bit_mcl_2_m1_45_n67 0.08fF
+C1257 vdd cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_2_w_n8_n5 0.08fF
+C1258 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 0.12fF
+C1259 cla5_final_without_ff_0_S2 cla5_final_without_ff_0_xorg_2_pmos_1_w_n8_n5 0.03fF
+C1260 cla5_final_without_ff_0_S0 cla5_final_without_ff_0_xorg_0_pmos_3_w_n8_n5 0.03fF
+C1261 clk ff_6_inverter_0_in 0.05fF
+C1262 ff_4_pmos_2_w_n8_n5 clk 0.07fF
+C1263 cla5_final_without_ff_0_1bit_mcl_4_pmos_0_w_n8_n5 clk_mca 0.07fF
+C1264 ff_0_inverter_0_in gnd 0.05fF
+C1265 cla5_final_without_ff_0_A4 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 0.14fF
+C1266 ff_1_m1_63_n19 ff_1_pmos_2_a_6_2 0.03fF
+C1267 cla5_final_without_ff_0_xorg_0_inverter_0_out vdd 0.35fF
+C1268 ff_8_m1_11_n14 vdd 0.12fF
+C1269 gnd ff_5_inverter_0_in 0.05fF
+C1270 cla5_final_without_ff_0_A1 cla5_final_without_ff_0_P1 0.09fF
+C1271 ff_15_nmos_3_a_n1_n17 clk 0.09fF
+C1272 cla5_final_without_ff_0_inverter_2_w_n8_n5 vdd 0.08fF
+C1273 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out 0.22fF
+C1274 ff_3_m1_25_n38 gnd 0.08fF
+C1275 ff_16_inverter_0_out ff_16_inverter_0_in 0.05fF
+C1276 gnd cla5_final_without_ff_0_xorg_0_m1_102_n91 0.08fF
+C1277 clk ff_7_m1_25_n38 0.08fF
+C1278 cla5_final_without_ff_0_inverter_4_out cla5_final_without_ff_0_xorg_3_pmos_1_w_n8_n5 0.07fF
+C1279 cla5_final_without_ff_0_xorg_3_inverter_1_out cla5_final_without_ff_0_xorg_3_pmos_3_w_n8_n5 0.07fF
+C1280 cla5_final_without_ff_0_S3 cla5_final_without_ff_0_xorg_3_m1_26_n95 0.08fF
+C1281 A3_in ff_13_m1_25_n38 0.05fF
+C1282 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_B4 0.10fF
+C1283 ff_2_pmos_2_a_6_2 vdd 0.12fF
+C1284 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_3_w_n8_n5 0.07fF
+C1285 cla5_final_without_ff_0_w_928_355 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 0.03fF
+C1286 cla5_final_without_ff_0_S0 ff_5_pmos_0_w_n8_n5 0.07fF
+C1287 ff_0_pmos_2_w_n8_n5 clk 0.07fF
+C1288 ff_11_pmos_1_w_n8_n5 ff_11_m1_11_n14 0.08fF
+C1289 vdd cla5_final_without_ff_0_xorg_4_inverter_0_out 0.99fF
+C1290 ff_9_inverter_0_in ff_9_pmos_3_a_6_2 0.01fF
+C1291 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_xorg_4_m1_26_n95 0.05fF
+C1292 ff_13_nmos_3_a_n1_n17 clk 0.07fF
+C1293 cla5_final_without_ff_0_inverter_3_w_n8_n5 cla5_final_without_ff_0_inverter_3_out 0.03fF
+C1294 cla5_final_without_ff_0_xorg_1_pmos_0_w_n8_n5 cla5_final_without_ff_0_xorg_1_m1_25_n11 0.03fF
+C1295 B4_in clk 0.06fF
+C1296 ff_2_pmos_3_w_n8_n5 ff_2_pmos_3_a_6_2 0.03fF
+C1297 ff_4_inverter_0_w_n8_n5 ff_4_inverter_0_in 0.07fF
+C1298 ff_10_m1_25_n38 clk 0.08fF
+C1299 cla5_final_without_ff_0_P3 clk_mca 0.26fF
+C1300 ff_3_nmos_2_a_6_n17 clk 0.05fF
+C1301 gnd ff_6_m1_63_n19 0.05fF
+C1302 cla5_final_without_ff_0_B3 cla5_final_without_ff_0_P3 0.72fF
+C1303 ff_3_pmos_2_w_n8_n5 ff_3_pmos_2_a_6_2 0.03fF
+C1304 ff_6_pmos_2_w_n8_n5 ff_6_pmos_2_a_6_2 0.03fF
+C1305 ff_16_m1_63_n19 ff_16_pmos_2_a_6_2 0.03fF
+C1306 gnd cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n91 0.08fF
+C1307 cla5_final_without_ff_0_xorg_1_inverter_1_out cla5_final_without_ff_0_inverter_2_out 0.05fF
+C1308 ff_2_m1_25_n38 ff_2_pmos_1_w_n8_n5 0.03fF
+C1309 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out cla5_final_without_ff_0_A2 0.34fF
+C1310 ff_10_m1_63_n19 ff_10_pmos_3_w_n8_n5 0.07fF
+C1311 ff_4_nmos_2_a_6_n17 gnd 0.08fF
+C1312 cla5_final_without_ff_0_A3 clk_mca 0.11fF
+C1313 B2_in clk 0.07fF
+C1314 clk ff_7_pmos_2_a_6_2 0.05fF
+C1315 cla5_final_without_ff_0_A3 cla5_final_without_ff_0_B3 0.13fF
+C1316 ff_10_inverter_0_in cla5_final_without_ff_0_B1 0.05fF
+C1317 ff_12_m1_25_n38 ff_12_m1_11_n14 0.12fF
+C1318 cla5_final_without_ff_0_xorg_0_inverter_1_out cla5_final_without_ff_0_xorg_0_pmos_3_w_n8_n5 0.07fF
+C1319 cla5_final_without_ff_0_xorg_0_pmos_0_w_n8_n5 cla5_final_without_ff_0_xorg_0_m1_25_n11 0.03fF
+C1320 cla5_final_without_ff_0_P4 cla5_final_without_ff_0_inverter_1_in 0.05fF
+C1321 cla5_final_without_ff_0_C0bar cla5_final_without_ff_0_C1bar 0.08fF
+C1322 gnd cla5_final_without_ff_0_1bit_mcl_0_m1_45_n97 0.08fF
+C1323 ff_3_m1_25_n38 ff_3_nmos_1_a_n1_n17 0.09fF
+C1324 A2_in ff_11_pmos_0_w_n8_n5 0.07fF
+C1325 A2_in gnd 0.05fF
+C1326 cla5_final_without_ff_0_P2 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_3_w_n8_n5 0.03fF
+C1327 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_C0bar 0.05fF
+C1328 cla5_final_without_ff_0_S1 cla5_final_without_ff_0_xorg_1_m1_26_n95 0.08fF
+C1329 ff_4_inverter_0_in ff_4_pmos_3_a_6_2 0.01fF
+C1330 S3_f gnd 0.08fF
+C1331 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out 0.03fF
+C1332 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_0_w_n8_n5 0.07fF
+C1333 ff_0_nmos_2_a_6_n17 gnd 0.08fF
+C1334 A3_in ff_13_m1_11_n14 0.08fF
+C1335 ff_14_nmos_1_a_n1_n17 ff_14_m1_63_n19 0.08fF
+C1336 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 0.05fF
+C1337 ff_10_inverter_0_w_n8_n5 vdd 0.08fF
+C1338 vdd ff_7_m1_11_n14 0.12fF
+C1339 ff_7_m1_25_n38 ff_7_m1_63_n19 0.05fF
+C1340 ff_6_pmos_3_w_n8_n5 vdd 0.08fF
+C1341 ff_1_nmos_4_a_6_n17 gnd 0.08fF
+C1342 ff_6_pmos_3_w_n8_n5 ff_6_pmos_3_a_6_2 0.03fF
+C1343 ff_5_pmos_3_a_6_2 ff_5_pmos_3_w_n8_n5 0.03fF
+C1344 clk A0_in 0.10fF
+C1345 cla5_final_without_ff_0_B0 cla5_final_without_ff_0_S0 0.19fF
+C1346 cla5_final_without_ff_0_S4 cla5_final_without_ff_0_xorg_4_pmos_1_w_n8_n5 0.03fF
+C1347 cla5_final_without_ff_0_inverter_2_w_n8_n5 cla5_final_without_ff_0_C0bar 0.07fF
+C1348 ff_15_pmos_2_w_n8_n5 vdd 0.08fF
+C1349 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_0_w_n8_n5 0.07fF
+C1350 ff_4_pmos_0_w_n8_n5 vdd 0.08fF
+C1351 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_3_w_n8_n5 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 0.08fF
+C1352 ff_6_pmos_3_a_6_2 ff_6_m1_63_n19 0.05fF
+C1353 cla5_final_without_ff_0_A1 clk_mca 0.10fF
+C1354 ff_9_m1_25_n38 ff_9_m1_11_n14 0.12fF
+C1355 ff_8_pmos_1_w_n8_n5 ff_8_m1_25_n38 0.03fF
+C1356 ff_3_pmos_2_a_6_2 clk 0.05fF
+C1357 ff_16_nmos_4_a_6_n17 gnd 0.08fF
+C1358 cla5_final_without_ff_0_P3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 0.12fF
+C1359 cla5_final_without_ff_0_B3 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out 0.05fF
+C1360 cla5_final_without_ff_0_P0 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_26_n95 0.08fF
+C1361 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_w_n8_n5 cla5_final_without_ff_0_B3 0.07fF
+C1362 cla5_final_without_ff_0_xorg_2_pmos_2_w_n8_n5 cla5_final_without_ff_0_xorg_2_m1_102_n17 0.03fF
+C1363 vdd ff_7_inverter_0_w_n8_n5 0.08fF
+C1364 cla5_final_without_ff_0_C1bar cla5_final_without_ff_0_1bit_mcl_1_m1_45_n67 0.08fF
+C1365 ff_2_pmos_1_w_n8_n5 ff_2_m1_11_n14 0.08fF
+C1366 ff_13_pmos_2_w_n8_n5 vdd 0.08fF
+C1367 ff_6_pmos_3_a_6_2 Gnd 0.05fF
+C1368 ff_6_pmos_3_w_n8_n5 Gnd 0.58fF
+C1369 ff_6_pmos_2_a_6_2 Gnd 0.05fF
+C1370 ff_6_pmos_2_w_n8_n5 Gnd 0.58fF
+C1371 ff_6_m1_11_n14 Gnd 0.14fF
+C1372 ff_6_pmos_1_w_n8_n5 Gnd 0.58fF
+C1373 ff_6_pmos_0_w_n8_n5 Gnd 0.58fF
+C1374 ff_6_nmos_4_a_6_n17 Gnd 0.07fF
+C1375 ff_6_inverter_0_in Gnd 0.35fF
+C1376 ff_6_nmos_3_a_n1_n17 Gnd 0.11fF
+C1377 ff_6_nmos_2_a_6_n17 Gnd 0.07fF
+C1378 ff_6_m1_63_n19 Gnd 0.62fF
+C1379 ff_6_nmos_1_a_n1_n17 Gnd 0.11fF
+C1380 ff_6_m1_25_n38 Gnd 0.44fF
+C1381 Cin_in Gnd 0.63fF
+C1382 ff_6_inverter_0_w_n8_n5 Gnd 0.53fF
+C1383 ff_5_pmos_3_a_6_2 Gnd 0.05fF
+C1384 ff_5_pmos_3_w_n8_n5 Gnd 0.58fF
+C1385 ff_5_pmos_2_a_6_2 Gnd 0.05fF
+C1386 clk Gnd 10.10fF
+C1387 ff_5_pmos_2_w_n8_n5 Gnd 0.58fF
+C1388 ff_5_m1_11_n14 Gnd 0.14fF
+C1389 ff_5_pmos_1_w_n8_n5 Gnd 0.58fF
+C1390 ff_5_pmos_0_w_n8_n5 Gnd 0.58fF
+C1391 ff_5_nmos_4_a_6_n17 Gnd 0.07fF
+C1392 ff_5_inverter_0_in Gnd 0.35fF
+C1393 ff_5_nmos_3_a_n1_n17 Gnd 0.11fF
+C1394 ff_5_nmos_2_a_6_n17 Gnd 0.07fF
+C1395 ff_5_m1_63_n19 Gnd 0.62fF
+C1396 ff_5_nmos_1_a_n1_n17 Gnd 0.11fF
+C1397 ff_5_m1_25_n38 Gnd 0.44fF
+C1398 S0_f Gnd 0.19fF
+C1399 ff_5_inverter_0_w_n8_n5 Gnd 0.53fF
+C1400 cla5_final_without_ff_0_1bit_mcl_4_pmos_0_w_n8_n5 Gnd 0.58fF
+C1401 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n97 Gnd 0.24fF
+C1402 cla5_final_without_ff_0_inverter_1_in Gnd 0.28fF
+C1403 cla5_final_without_ff_0_1bit_mcl_4_m1_45_n67 Gnd 0.23fF
+C1404 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n17 Gnd 0.04fF
+C1405 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_3_w_n8_n5 Gnd 0.58fF
+C1406 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_2_w_n8_n5 Gnd 0.58fF
+C1407 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_25_n11 Gnd 0.13fF
+C1408 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_1_w_n8_n5 Gnd 0.58fF
+C1409 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_pmos_0_w_n8_n5 Gnd 0.58fF
+C1410 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_102_n91 Gnd 0.22fF
+C1411 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_out Gnd 0.45fF
+C1412 cla5_final_without_ff_0_P4 Gnd 3.87fF
+C1413 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_m1_26_n95 Gnd 0.22fF
+C1414 cla5_final_without_ff_0_B4 Gnd 2.39fF
+C1415 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_1_w_n8_n5 Gnd 0.53fF
+C1416 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_out Gnd 1.74fF
+C1417 cla5_final_without_ff_0_A4 Gnd 3.67fF
+C1418 cla5_final_without_ff_0_1bit_mcl_4_xorg_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1419 cla5_final_without_ff_0_1bit_mcl_3_pmos_0_w_n8_n5 Gnd 0.58fF
+C1420 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n97 Gnd 0.24fF
+C1421 cla5_final_without_ff_0_C3bar Gnd 1.34fF
+C1422 cla5_final_without_ff_0_1bit_mcl_3_m1_45_n67 Gnd 0.23fF
+C1423 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n17 Gnd 0.04fF
+C1424 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_3_w_n8_n5 Gnd 0.58fF
+C1425 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_2_w_n8_n5 Gnd 0.58fF
+C1426 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_25_n11 Gnd 0.13fF
+C1427 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_pmos_1_w_n8_n5 Gnd 0.58fF
+C1428 cla5_final_without_ff_0_w_928_355 Gnd 0.46fF
+C1429 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_102_n91 Gnd 0.22fF
+C1430 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_out Gnd 0.45fF
+C1431 cla5_final_without_ff_0_P3 Gnd 3.93fF
+C1432 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_m1_26_n95 Gnd 0.22fF
+C1433 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_1_w_n8_n5 Gnd 0.53fF
+C1434 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_out Gnd 1.74fF
+C1435 cla5_final_without_ff_0_1bit_mcl_3_xorg_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1436 cla5_final_without_ff_0_1bit_mcl_2_pmos_0_w_n8_n5 Gnd 0.58fF
+C1437 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n97 Gnd 0.24fF
+C1438 cla5_final_without_ff_0_C2bar Gnd 1.26fF
+C1439 cla5_final_without_ff_0_1bit_mcl_2_m1_45_n67 Gnd 0.23fF
+C1440 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n17 Gnd 0.04fF
+C1441 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_3_w_n8_n5 Gnd 0.58fF
+C1442 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_2_w_n8_n5 Gnd 0.58fF
+C1443 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_25_n11 Gnd 0.13fF
+C1444 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_1_w_n8_n5 Gnd 0.58fF
+C1445 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_pmos_0_w_n8_n5 Gnd 0.58fF
+C1446 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_102_n91 Gnd 0.22fF
+C1447 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_out Gnd 0.45fF
+C1448 cla5_final_without_ff_0_P2 Gnd 3.87fF
+C1449 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_m1_26_n95 Gnd 0.22fF
+C1450 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_1_w_n8_n5 Gnd 0.53fF
+C1451 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_out Gnd 1.74fF
+C1452 cla5_final_without_ff_0_A2 Gnd 3.34fF
+C1453 cla5_final_without_ff_0_1bit_mcl_2_xorg_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1454 cla5_final_without_ff_0_1bit_mcl_1_pmos_0_w_n8_n5 Gnd 0.58fF
+C1455 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n97 Gnd 0.24fF
+C1456 cla5_final_without_ff_0_C1bar Gnd 1.22fF
+C1457 cla5_final_without_ff_0_1bit_mcl_1_m1_45_n67 Gnd 0.23fF
+C1458 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n17 Gnd 0.04fF
+C1459 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_3_w_n8_n5 Gnd 0.58fF
+C1460 cla5_final_without_ff_0_w_462_353 Gnd 0.58fF
+C1461 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_25_n11 Gnd 0.13fF
+C1462 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_1_w_n8_n5 Gnd 0.58fF
+C1463 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_pmos_0_w_n8_n5 Gnd 0.58fF
+C1464 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_102_n91 Gnd 0.22fF
+C1465 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_out Gnd 0.45fF
+C1466 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_m1_26_n95 Gnd 0.22fF
+C1467 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_1_w_n8_n5 Gnd 0.53fF
+C1468 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_out Gnd 1.74fF
+C1469 cla5_final_without_ff_0_1bit_mcl_1_xorg_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1470 cla5_final_without_ff_0_1bit_mcl_0_pmos_0_w_n8_n5 Gnd 0.58fF
+C1471 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n97 Gnd 0.24fF
+C1472 cla5_final_without_ff_0_C0bar Gnd 1.21fF
+C1473 cla5_final_without_ff_0_1bit_mcl_0_m1_45_n67 Gnd 0.23fF
+C1474 cla5_final_without_ff_0_inverter_0_out Gnd 0.33fF
+C1475 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n17 Gnd 0.04fF
+C1476 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_3_w_n8_n5 Gnd 0.58fF
+C1477 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_2_w_n8_n5 Gnd 0.58fF
+C1478 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_25_n11 Gnd 0.13fF
+C1479 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_1_w_n8_n5 Gnd 0.58fF
+C1480 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_pmos_0_w_n8_n5 Gnd 0.58fF
+C1481 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_102_n91 Gnd 0.22fF
+C1482 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_out Gnd 0.45fF
+C1483 cla5_final_without_ff_0_P0 Gnd 8.29fF
+C1484 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_m1_26_n95 Gnd 0.22fF
+C1485 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_1_w_n8_n5 Gnd 0.53fF
+C1486 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_out Gnd 1.74fF
+C1487 cla5_final_without_ff_0_A0 Gnd 2.81fF
+C1488 cla5_final_without_ff_0_1bit_mcl_0_xorg_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1489 cla5_final_without_ff_0_xorg_4_m1_102_n17 Gnd 0.04fF
+C1490 cla5_final_without_ff_0_xorg_4_pmos_3_w_n8_n5 Gnd 0.58fF
+C1491 cla5_final_without_ff_0_xorg_4_pmos_2_w_n8_n5 Gnd 0.58fF
+C1492 cla5_final_without_ff_0_xorg_4_m1_25_n11 Gnd 0.13fF
+C1493 cla5_final_without_ff_0_xorg_4_pmos_1_w_n8_n5 Gnd 0.58fF
+C1494 cla5_final_without_ff_0_xorg_4_pmos_0_w_n8_n5 Gnd 0.58fF
+C1495 cla5_final_without_ff_0_xorg_4_m1_102_n91 Gnd 0.22fF
+C1496 cla5_final_without_ff_0_xorg_4_inverter_1_out Gnd 0.45fF
+C1497 cla5_final_without_ff_0_S4 Gnd 1.11fF
+C1498 cla5_final_without_ff_0_xorg_4_m1_26_n95 Gnd 0.22fF
+C1499 cla5_final_without_ff_0_xorg_4_inverter_1_w_n8_n5 Gnd 0.53fF
+C1500 cla5_final_without_ff_0_xorg_4_inverter_0_out Gnd 1.74fF
+C1501 cla5_final_without_ff_0_xorg_4_inverter_0_w_n8_n5 Gnd 0.53fF
+C1502 cla5_final_without_ff_0_xorg_3_m1_102_n17 Gnd 0.04fF
+C1503 cla5_final_without_ff_0_xorg_3_pmos_3_w_n8_n5 Gnd 0.58fF
+C1504 cla5_final_without_ff_0_xorg_3_pmos_2_w_n8_n5 Gnd 0.58fF
+C1505 cla5_final_without_ff_0_xorg_3_m1_25_n11 Gnd 0.13fF
+C1506 cla5_final_without_ff_0_xorg_3_pmos_1_w_n8_n5 Gnd 0.58fF
+C1507 cla5_final_without_ff_0_xorg_3_pmos_0_w_n8_n5 Gnd 0.58fF
+C1508 cla5_final_without_ff_0_xorg_3_m1_102_n91 Gnd 0.22fF
+C1509 cla5_final_without_ff_0_xorg_3_inverter_1_out Gnd 0.45fF
+C1510 cla5_final_without_ff_0_S3 Gnd 2.05fF
+C1511 cla5_final_without_ff_0_xorg_3_m1_26_n95 Gnd 0.22fF
+C1512 cla5_final_without_ff_0_inverter_4_out Gnd 0.73fF
+C1513 cla5_final_without_ff_0_xorg_3_inverter_1_w_n8_n5 Gnd 0.53fF
+C1514 cla5_final_without_ff_0_xorg_3_inverter_0_out Gnd 1.74fF
+C1515 cla5_final_without_ff_0_xorg_3_inverter_0_w_n8_n5 Gnd 0.53fF
+C1516 cla5_final_without_ff_0_xorg_2_m1_102_n17 Gnd 0.04fF
+C1517 cla5_final_without_ff_0_xorg_2_pmos_3_w_n8_n5 Gnd 0.58fF
+C1518 cla5_final_without_ff_0_xorg_2_pmos_2_w_n8_n5 Gnd 0.58fF
+C1519 cla5_final_without_ff_0_xorg_2_m1_25_n11 Gnd 0.13fF
+C1520 cla5_final_without_ff_0_xorg_2_pmos_1_w_n8_n5 Gnd 0.58fF
+C1521 cla5_final_without_ff_0_xorg_2_pmos_0_w_n8_n5 Gnd 0.58fF
+C1522 cla5_final_without_ff_0_xorg_2_m1_102_n91 Gnd 0.22fF
+C1523 cla5_final_without_ff_0_xorg_2_inverter_1_out Gnd 0.45fF
+C1524 cla5_final_without_ff_0_S2 Gnd 1.84fF
+C1525 cla5_final_without_ff_0_xorg_2_m1_26_n95 Gnd 0.22fF
+C1526 cla5_final_without_ff_0_inverter_3_out Gnd 0.72fF
+C1527 cla5_final_without_ff_0_xorg_2_inverter_1_w_n8_n5 Gnd 0.53fF
+C1528 cla5_final_without_ff_0_xorg_2_inverter_0_out Gnd 1.74fF
+C1529 cla5_final_without_ff_0_xorg_2_inverter_0_w_n8_n5 Gnd 0.53fF
+C1530 cla5_final_without_ff_0_xorg_1_m1_102_n17 Gnd 0.04fF
+C1531 cla5_final_without_ff_0_xorg_1_pmos_3_w_n8_n5 Gnd 0.58fF
+C1532 cla5_final_without_ff_0_xorg_1_pmos_2_w_n8_n5 Gnd 0.58fF
+C1533 cla5_final_without_ff_0_xorg_1_m1_25_n11 Gnd 0.13fF
+C1534 cla5_final_without_ff_0_xorg_1_pmos_1_w_n8_n5 Gnd 0.58fF
+C1535 cla5_final_without_ff_0_xorg_1_pmos_0_w_n8_n5 Gnd 0.58fF
+C1536 cla5_final_without_ff_0_xorg_1_m1_102_n91 Gnd 0.22fF
+C1537 cla5_final_without_ff_0_xorg_1_inverter_1_out Gnd 0.45fF
+C1538 cla5_final_without_ff_0_S1 Gnd 2.24fF
+C1539 cla5_final_without_ff_0_xorg_1_m1_26_n95 Gnd 0.22fF
+C1540 cla5_final_without_ff_0_xorg_1_inverter_1_w_n8_n5 Gnd 0.53fF
+C1541 cla5_final_without_ff_0_xorg_1_inverter_0_out Gnd 1.74fF
+C1542 cla5_final_without_ff_0_xorg_1_inverter_0_w_n8_n5 Gnd 0.53fF
+C1543 cla5_final_without_ff_0_xorg_0_m1_102_n17 Gnd 0.04fF
+C1544 cla5_final_without_ff_0_xorg_0_pmos_3_w_n8_n5 Gnd 0.58fF
+C1545 cla5_final_without_ff_0_xorg_0_pmos_2_w_n8_n5 Gnd 0.58fF
+C1546 cla5_final_without_ff_0_xorg_0_m1_25_n11 Gnd 0.13fF
+C1547 cla5_final_without_ff_0_xorg_0_pmos_1_w_n8_n5 Gnd 0.58fF
+C1548 cla5_final_without_ff_0_xorg_0_pmos_0_w_n8_n5 Gnd 0.58fF
+C1549 cla5_final_without_ff_0_xorg_0_m1_102_n91 Gnd 0.22fF
+C1550 cla5_final_without_ff_0_xorg_0_inverter_1_out Gnd 0.45fF
+C1551 cla5_final_without_ff_0_S0 Gnd 2.22fF
+C1552 cla5_final_without_ff_0_xorg_0_m1_26_n95 Gnd 0.22fF
+C1553 cla5_final_without_ff_0_B0 Gnd 7.67fF
+C1554 cla5_final_without_ff_0_xorg_0_inverter_1_w_n8_n5 Gnd 0.53fF
+C1555 gnd Gnd 40.92fF
+C1556 cla5_final_without_ff_0_xorg_0_inverter_0_out Gnd 1.74fF
+C1557 cla5_final_without_ff_0_xorg_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1558 cla5_final_without_ff_0_inverter_6_w_n8_n5 Gnd 0.53fF
+C1559 cla5_final_without_ff_0_inverter_5_w_n8_n5 Gnd 0.53fF
+C1560 cla5_final_without_ff_0_inverter_4_w_n8_n5 Gnd 0.53fF
+C1561 cla5_final_without_ff_0_inverter_3_w_n8_n5 Gnd 0.53fF
+C1562 cla5_final_without_ff_0_inverter_2_w_n8_n5 Gnd 0.53fF
+C1563 cla5_final_without_ff_0_inverter_1_w_n8_n5 Gnd 0.53fF
+C1564 cla5_final_without_ff_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1565 ff_3_pmos_3_a_6_2 Gnd 0.05fF
+C1566 ff_3_pmos_3_w_n8_n5 Gnd 0.58fF
+C1567 ff_3_pmos_2_a_6_2 Gnd 0.05fF
+C1568 ff_3_pmos_2_w_n8_n5 Gnd 0.58fF
+C1569 ff_3_m1_11_n14 Gnd 0.14fF
+C1570 ff_3_pmos_1_w_n8_n5 Gnd 0.58fF
+C1571 ff_3_pmos_0_w_n8_n5 Gnd 0.58fF
+C1572 ff_3_nmos_4_a_6_n17 Gnd 0.07fF
+C1573 ff_3_inverter_0_in Gnd 0.35fF
+C1574 ff_3_nmos_3_a_n1_n17 Gnd 0.11fF
+C1575 ff_3_nmos_2_a_6_n17 Gnd 0.07fF
+C1576 ff_3_m1_63_n19 Gnd 0.62fF
+C1577 ff_3_nmos_1_a_n1_n17 Gnd 0.11fF
+C1578 ff_3_m1_25_n38 Gnd 0.44fF
+C1579 S2_f Gnd 0.16fF
+C1580 ff_3_inverter_0_w_n8_n5 Gnd 0.53fF
+C1581 ff_4_pmos_3_a_6_2 Gnd 0.05fF
+C1582 ff_4_pmos_3_w_n8_n5 Gnd 0.58fF
+C1583 ff_4_pmos_2_a_6_2 Gnd 0.05fF
+C1584 ff_4_pmos_2_w_n8_n5 Gnd 0.58fF
+C1585 ff_4_m1_11_n14 Gnd 0.14fF
+C1586 ff_4_pmos_1_w_n8_n5 Gnd 0.58fF
+C1587 ff_4_pmos_0_w_n8_n5 Gnd 0.58fF
+C1588 ff_4_nmos_4_a_6_n17 Gnd 0.07fF
+C1589 ff_4_inverter_0_in Gnd 0.35fF
+C1590 ff_4_nmos_3_a_n1_n17 Gnd 0.11fF
+C1591 ff_4_nmos_2_a_6_n17 Gnd 0.07fF
+C1592 ff_4_m1_63_n19 Gnd 0.62fF
+C1593 ff_4_nmos_1_a_n1_n17 Gnd 0.11fF
+C1594 ff_4_m1_25_n38 Gnd 0.44fF
+C1595 S1_f Gnd 0.16fF
+C1596 ff_4_inverter_0_w_n8_n5 Gnd 0.53fF
+C1597 ff_2_pmos_3_a_6_2 Gnd 0.05fF
+C1598 ff_2_pmos_3_w_n8_n5 Gnd 0.58fF
+C1599 ff_2_pmos_2_a_6_2 Gnd 0.05fF
+C1600 ff_2_pmos_2_w_n8_n5 Gnd 0.58fF
+C1601 ff_2_m1_11_n14 Gnd 0.14fF
+C1602 ff_2_pmos_1_w_n8_n5 Gnd 0.58fF
+C1603 ff_2_pmos_0_w_n8_n5 Gnd 0.58fF
+C1604 ff_2_nmos_4_a_6_n17 Gnd 0.07fF
+C1605 ff_2_inverter_0_in Gnd 0.35fF
+C1606 ff_2_nmos_3_a_n1_n17 Gnd 0.11fF
+C1607 ff_2_nmos_2_a_6_n17 Gnd 0.07fF
+C1608 ff_2_m1_63_n19 Gnd 0.62fF
+C1609 ff_2_nmos_1_a_n1_n17 Gnd 0.11fF
+C1610 ff_2_m1_25_n38 Gnd 0.44fF
+C1611 S3_f Gnd 0.20fF
+C1612 ff_2_inverter_0_w_n8_n5 Gnd 0.53fF
+C1613 ff_1_pmos_3_a_6_2 Gnd 0.05fF
+C1614 ff_1_pmos_3_w_n8_n5 Gnd 0.58fF
+C1615 ff_1_pmos_2_a_6_2 Gnd 0.05fF
+C1616 ff_1_pmos_2_w_n8_n5 Gnd 0.58fF
+C1617 ff_1_m1_11_n14 Gnd 0.14fF
+C1618 ff_1_pmos_1_w_n8_n5 Gnd 0.58fF
+C1619 ff_1_pmos_0_w_n8_n5 Gnd 0.58fF
+C1620 ff_1_nmos_4_a_6_n17 Gnd 0.07fF
+C1621 ff_1_inverter_0_in Gnd 0.35fF
+C1622 ff_1_nmos_3_a_n1_n17 Gnd 0.11fF
+C1623 ff_1_nmos_2_a_6_n17 Gnd 0.07fF
+C1624 ff_1_m1_63_n19 Gnd 0.62fF
+C1625 ff_1_nmos_1_a_n1_n17 Gnd 0.11fF
+C1626 ff_1_m1_25_n38 Gnd 0.44fF
+C1627 S4_f Gnd 0.20fF
+C1628 ff_1_inverter_0_w_n8_n5 Gnd 0.53fF
+C1629 ff_0_pmos_3_a_6_2 Gnd 0.05fF
+C1630 ff_0_pmos_3_w_n8_n5 Gnd 0.58fF
+C1631 ff_0_pmos_2_a_6_2 Gnd 0.05fF
+C1632 ff_0_pmos_2_w_n8_n5 Gnd 0.58fF
+C1633 ff_0_m1_11_n14 Gnd 0.14fF
+C1634 ff_0_pmos_1_w_n8_n5 Gnd 0.58fF
+C1635 ff_0_pmos_0_w_n8_n5 Gnd 0.58fF
+C1636 ff_0_nmos_4_a_6_n17 Gnd 0.07fF
+C1637 ff_0_inverter_0_in Gnd 0.35fF
+C1638 ff_0_nmos_3_a_n1_n17 Gnd 0.11fF
+C1639 ff_0_nmos_2_a_6_n17 Gnd 0.07fF
+C1640 ff_0_m1_63_n19 Gnd 0.62fF
+C1641 ff_0_nmos_1_a_n1_n17 Gnd 0.11fF
+C1642 ff_0_m1_25_n38 Gnd 0.44fF
+C1643 cla5_final_without_ff_0_Cout Gnd 0.80fF
+C1644 Cout_f Gnd 0.20fF
+C1645 ff_0_inverter_0_w_n8_n5 Gnd 0.53fF
+C1646 ff_15_pmos_3_a_6_2 Gnd 0.05fF
+C1647 ff_15_pmos_3_w_n8_n5 Gnd 0.58fF
+C1648 ff_15_pmos_2_a_6_2 Gnd 0.05fF
+C1649 ff_15_pmos_2_w_n8_n5 Gnd 0.58fF
+C1650 ff_15_m1_11_n14 Gnd 0.14fF
+C1651 ff_15_pmos_1_w_n8_n5 Gnd 0.58fF
+C1652 ff_15_pmos_0_w_n8_n5 Gnd 0.58fF
+C1653 ff_15_nmos_4_a_6_n17 Gnd 0.07fF
+C1654 ff_15_inverter_0_in Gnd 0.35fF
+C1655 ff_15_nmos_3_a_n1_n17 Gnd 0.11fF
+C1656 ff_15_nmos_2_a_6_n17 Gnd 0.07fF
+C1657 ff_15_m1_63_n19 Gnd 0.62fF
+C1658 ff_15_nmos_1_a_n1_n17 Gnd 0.11fF
+C1659 ff_15_m1_25_n38 Gnd 0.44fF
+C1660 A4_in Gnd 0.64fF
+C1661 ff_15_inverter_0_w_n8_n5 Gnd 0.53fF
+C1662 ff_16_pmos_3_a_6_2 Gnd 0.05fF
+C1663 ff_16_pmos_3_w_n8_n5 Gnd 0.58fF
+C1664 ff_16_pmos_2_a_6_2 Gnd 0.05fF
+C1665 ff_16_pmos_2_w_n8_n5 Gnd 0.58fF
+C1666 ff_16_m1_11_n14 Gnd 0.14fF
+C1667 ff_16_pmos_1_w_n8_n5 Gnd 0.58fF
+C1668 ff_16_pmos_0_w_n8_n5 Gnd 0.58fF
+C1669 ff_16_nmos_4_a_6_n17 Gnd 0.07fF
+C1670 ff_16_inverter_0_in Gnd 0.35fF
+C1671 ff_16_nmos_3_a_n1_n17 Gnd 0.11fF
+C1672 ff_16_nmos_2_a_6_n17 Gnd 0.07fF
+C1673 ff_16_m1_63_n19 Gnd 0.62fF
+C1674 ff_16_nmos_1_a_n1_n17 Gnd 0.11fF
+C1675 ff_16_m1_25_n38 Gnd 0.44fF
+C1676 B4_in Gnd 0.63fF
+C1677 ff_16_inverter_0_out Gnd 0.15fF
+C1678 ff_16_inverter_0_w_n8_n5 Gnd 0.53fF
+C1679 ff_14_pmos_3_a_6_2 Gnd 0.05fF
+C1680 ff_14_pmos_3_w_n8_n5 Gnd 0.58fF
+C1681 ff_14_pmos_2_a_6_2 Gnd 0.05fF
+C1682 ff_14_pmos_2_w_n8_n5 Gnd 0.58fF
+C1683 ff_14_m1_11_n14 Gnd 0.14fF
+C1684 ff_14_pmos_1_w_n8_n5 Gnd 0.58fF
+C1685 ff_14_pmos_0_w_n8_n5 Gnd 0.58fF
+C1686 ff_14_nmos_4_a_6_n17 Gnd 0.07fF
+C1687 ff_14_inverter_0_in Gnd 0.35fF
+C1688 ff_14_nmos_3_a_n1_n17 Gnd 0.11fF
+C1689 ff_14_nmos_2_a_6_n17 Gnd 0.07fF
+C1690 ff_14_m1_63_n19 Gnd 0.62fF
+C1691 ff_14_nmos_1_a_n1_n17 Gnd 0.11fF
+C1692 ff_14_m1_25_n38 Gnd 0.44fF
+C1693 B3_in Gnd 0.54fF
+C1694 ff_14_inverter_0_w_n8_n5 Gnd 0.53fF
+C1695 ff_13_pmos_3_a_6_2 Gnd 0.05fF
+C1696 ff_13_pmos_3_w_n8_n5 Gnd 0.58fF
+C1697 ff_13_pmos_2_a_6_2 Gnd 0.05fF
+C1698 ff_13_pmos_2_w_n8_n5 Gnd 0.58fF
+C1699 ff_13_m1_11_n14 Gnd 0.14fF
+C1700 ff_13_pmos_1_w_n8_n5 Gnd 0.58fF
+C1701 ff_13_pmos_0_w_n8_n5 Gnd 0.58fF
+C1702 ff_13_nmos_4_a_6_n17 Gnd 0.07fF
+C1703 ff_13_inverter_0_in Gnd 0.35fF
+C1704 ff_13_nmos_3_a_n1_n17 Gnd 0.11fF
+C1705 ff_13_nmos_2_a_6_n17 Gnd 0.07fF
+C1706 ff_13_m1_63_n19 Gnd 0.62fF
+C1707 ff_13_nmos_1_a_n1_n17 Gnd 0.11fF
+C1708 ff_13_m1_25_n38 Gnd 0.44fF
+C1709 A3_in Gnd 0.54fF
+C1710 ff_13_inverter_0_w_n8_n5 Gnd 0.53fF
+C1711 ff_12_pmos_3_a_6_2 Gnd 0.05fF
+C1712 ff_12_pmos_3_w_n8_n5 Gnd 0.58fF
+C1713 ff_12_pmos_2_a_6_2 Gnd 0.05fF
+C1714 ff_12_pmos_2_w_n8_n5 Gnd 0.58fF
+C1715 ff_12_m1_11_n14 Gnd 0.14fF
+C1716 ff_12_pmos_1_w_n8_n5 Gnd 0.58fF
+C1717 ff_12_pmos_0_w_n8_n5 Gnd 0.58fF
+C1718 ff_12_nmos_4_a_6_n17 Gnd 0.07fF
+C1719 ff_12_inverter_0_in Gnd 0.35fF
+C1720 ff_12_nmos_3_a_n1_n17 Gnd 0.11fF
+C1721 ff_12_nmos_2_a_6_n17 Gnd 0.07fF
+C1722 ff_12_m1_63_n19 Gnd 0.62fF
+C1723 ff_12_nmos_1_a_n1_n17 Gnd 0.11fF
+C1724 ff_12_m1_25_n38 Gnd 0.44fF
+C1725 B2_in Gnd 0.60fF
+C1726 ff_12_inverter_0_w_n8_n5 Gnd 0.53fF
+C1727 ff_11_pmos_3_a_6_2 Gnd 0.05fF
+C1728 ff_11_pmos_3_w_n8_n5 Gnd 0.58fF
+C1729 ff_11_pmos_2_a_6_2 Gnd 0.05fF
+C1730 ff_11_pmos_2_w_n8_n5 Gnd 0.58fF
+C1731 ff_11_m1_11_n14 Gnd 0.14fF
+C1732 ff_11_pmos_1_w_n8_n5 Gnd 0.58fF
+C1733 ff_11_pmos_0_w_n8_n5 Gnd 0.58fF
+C1734 ff_11_nmos_4_a_6_n17 Gnd 0.07fF
+C1735 ff_11_inverter_0_in Gnd 0.35fF
+C1736 ff_11_nmos_3_a_n1_n17 Gnd 0.11fF
+C1737 ff_11_nmos_2_a_6_n17 Gnd 0.07fF
+C1738 ff_11_m1_63_n19 Gnd 0.62fF
+C1739 ff_11_nmos_1_a_n1_n17 Gnd 0.11fF
+C1740 ff_11_m1_25_n38 Gnd 0.44fF
+C1741 A2_in Gnd 0.68fF
+C1742 ff_11_inverter_0_w_n8_n5 Gnd 0.53fF
+C1743 ff_10_pmos_3_a_6_2 Gnd 0.05fF
+C1744 ff_10_pmos_3_w_n8_n5 Gnd 0.58fF
+C1745 ff_10_pmos_2_a_6_2 Gnd 0.05fF
+C1746 ff_10_pmos_2_w_n8_n5 Gnd 0.58fF
+C1747 ff_10_m1_11_n14 Gnd 0.14fF
+C1748 ff_10_pmos_1_w_n8_n5 Gnd 0.58fF
+C1749 ff_10_pmos_0_w_n8_n5 Gnd 0.58fF
+C1750 ff_10_nmos_4_a_6_n17 Gnd 0.07fF
+C1751 ff_10_inverter_0_in Gnd 0.35fF
+C1752 ff_10_nmos_3_a_n1_n17 Gnd 0.11fF
+C1753 ff_10_nmos_2_a_6_n17 Gnd 0.07fF
+C1754 ff_10_m1_63_n19 Gnd 0.62fF
+C1755 ff_10_nmos_1_a_n1_n17 Gnd 0.11fF
+C1756 ff_10_m1_25_n38 Gnd 0.44fF
+C1757 B1_in Gnd 0.66fF
+C1758 ff_10_inverter_0_w_n8_n5 Gnd 0.53fF
+C1759 ff_9_pmos_3_a_6_2 Gnd 0.05fF
+C1760 ff_9_pmos_3_w_n8_n5 Gnd 0.58fF
+C1761 ff_9_pmos_2_a_6_2 Gnd 0.05fF
+C1762 ff_9_pmos_2_w_n8_n5 Gnd 0.58fF
+C1763 ff_9_m1_11_n14 Gnd 0.14fF
+C1764 ff_9_pmos_1_w_n8_n5 Gnd 0.58fF
+C1765 ff_9_pmos_0_w_n8_n5 Gnd 0.58fF
+C1766 ff_9_nmos_4_a_6_n17 Gnd 0.07fF
+C1767 ff_9_inverter_0_in Gnd 0.35fF
+C1768 ff_9_nmos_3_a_n1_n17 Gnd 0.11fF
+C1769 ff_9_nmos_2_a_6_n17 Gnd 0.07fF
+C1770 ff_9_m1_63_n19 Gnd 0.62fF
+C1771 ff_9_nmos_1_a_n1_n17 Gnd 0.11fF
+C1772 ff_9_m1_25_n38 Gnd 0.44fF
+C1773 A1_in Gnd 0.60fF
+C1774 ff_9_inverter_0_w_n8_n5 Gnd 0.53fF
+C1775 ff_8_pmos_3_a_6_2 Gnd 0.05fF
+C1776 ff_8_pmos_3_w_n8_n5 Gnd 0.58fF
+C1777 ff_8_pmos_2_a_6_2 Gnd 0.05fF
+C1778 ff_8_pmos_2_w_n8_n5 Gnd 0.58fF
+C1779 ff_8_m1_11_n14 Gnd 0.14fF
+C1780 ff_8_pmos_1_w_n8_n5 Gnd 0.58fF
+C1781 ff_8_pmos_0_w_n8_n5 Gnd 0.58fF
+C1782 ff_8_nmos_4_a_6_n17 Gnd 0.07fF
+C1783 ff_8_inverter_0_in Gnd 0.35fF
+C1784 ff_8_nmos_3_a_n1_n17 Gnd 0.11fF
+C1785 ff_8_nmos_2_a_6_n17 Gnd 0.07fF
+C1786 ff_8_m1_63_n19 Gnd 0.62fF
+C1787 ff_8_nmos_1_a_n1_n17 Gnd 0.11fF
+C1788 ff_8_m1_25_n38 Gnd 0.44fF
+C1789 m1_228_773 Gnd 0.61fF
+C1790 ff_8_inverter_0_w_n8_n5 Gnd 0.53fF
+C1791 ff_7_pmos_3_a_6_2 Gnd 0.05fF
+C1792 ff_7_pmos_3_w_n8_n5 Gnd 0.58fF
+C1793 ff_7_pmos_2_a_6_2 Gnd 0.05fF
+C1794 ff_7_pmos_2_w_n8_n5 Gnd 0.58fF
+C1795 ff_7_m1_11_n14 Gnd 0.14fF
+C1796 ff_7_pmos_1_w_n8_n5 Gnd 0.58fF
+C1797 ff_7_pmos_0_w_n8_n5 Gnd 0.58fF
+C1798 ff_7_nmos_4_a_6_n17 Gnd 0.07fF
+C1799 ff_7_inverter_0_in Gnd 0.35fF
+C1800 ff_7_nmos_3_a_n1_n17 Gnd 0.11fF
+C1801 ff_7_nmos_2_a_6_n17 Gnd 0.07fF
+C1802 ff_7_m1_63_n19 Gnd 0.62fF
+C1803 ff_7_nmos_1_a_n1_n17 Gnd 0.11fF
+C1804 ff_7_m1_25_n38 Gnd 0.44fF
+C1805 A0_in Gnd 0.64fF
+C1806 ff_7_inverter_0_w_n8_n5 Gnd 0.53fF
+
+
+
+Vdd vdd Gnd 1.8
+Vclk clk gnd PULSE(0 1.8 0 100p 100p 10n 20n)
+
+Va0 A0 gnd 1.8
+Va1 A1 gnd 0
+Va2 A2 gnd 0
+Va3 A3 gnd 1.8
+Va4 A4 gnd 1.8
+
+Vb0 B0 gnd 1
+Vb1 B1 gnd 1
+Vb2 B2 gnd 0
+Vb3 B3 gnd 0
+Vb4 B4 gnd 0
+
+Vcin Cin gnd 1.8
+
+.tran 0.1n 100n
+
+.control
+run
+plot clk clk_mca+2 A0_in+4 Cout_f+6 S0_f+8 S1_f+10 S2_f+12 S3_f+14 S4_f+16
+.endc
+.end

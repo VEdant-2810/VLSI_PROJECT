@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1764802739
+timestamp 1764806552
 << nwell >>
 rect 462 353 463 356
 rect 928 355 929 356
@@ -29,6 +29,9 @@ rect 966 248 971 283
 rect 1286 252 1291 293
 rect 1463 212 1472 361
 rect -34 195 77 200
+rect -120 163 -103 167
+rect -178 139 -145 143
+rect -141 -32 -134 125
 rect -34 10 -27 195
 rect 890 193 958 198
 rect 1272 175 1294 180
@@ -47,10 +50,27 @@ rect 656 166 679 170
 rect 699 166 973 170
 rect 993 166 1277 170
 rect 656 152 662 166
-rect 428 148 662 152
+rect 428 150 662 152
+rect 1276 152 1292 155
+rect 428 148 660 150
+rect 86 143 90 147
+rect 373 146 377 147
+rect 369 143 377 146
+rect 671 145 672 146
+rect 369 134 373 143
+rect 658 142 672 145
+rect 954 142 968 146
+rect 658 141 673 142
+rect 283 129 373 134
+rect 658 135 662 141
+rect 590 131 662 135
+rect 954 133 958 142
+rect 1276 141 1280 152
+rect 1184 136 1281 141
 rect 1368 139 1374 175
 rect 1464 143 1471 212
 rect 1399 139 1472 143
+rect 883 128 958 133
 rect -4 119 6 122
 rect 30 118 45 123
 rect 150 108 157 121
@@ -68,14 +88,19 @@ rect 1402 115 1451 119
 rect 150 103 185 104
 rect -14 94 5 98
 rect 33 94 50 98
-rect -14 10 -7 94
+rect -14 91 1 94
 rect 441 102 630 107
 rect 731 103 922 108
 rect 1032 106 1039 109
+rect -14 10 -7 91
 rect 17 20 24 80
+rect 67 64 86 67
+rect 372 64 378 68
 rect 56 36 87 40
 rect 1201 43 1287 48
 rect 303 36 374 40
+rect 46 10 51 24
+rect 61 22 66 36
 rect 657 35 667 39
 rect 925 35 963 39
 rect 657 30 663 35
@@ -168,20 +193,36 @@ rect 749 210 757 217
 rect 876 208 884 215
 rect 1044 210 1051 217
 rect 77 195 85 200
+rect -103 163 -92 170
+rect -117 136 -109 145
 rect 958 193 967 199
 rect 890 185 900 193
 rect -4 169 5 178
+rect 88 137 95 143
+rect 275 129 283 136
+rect 378 138 385 143
+rect 582 130 590 137
+rect 673 136 678 142
+rect 968 136 973 142
+rect 1289 144 1295 151
+rect 874 128 883 133
+rect 1179 128 1191 136
 rect -14 98 -6 104
 rect 157 92 168 103
 rect 489 89 498 102
 rect 778 90 787 103
 rect 1072 97 1083 109
+rect 1284 76 1290 83
+rect 86 68 92 73
+rect 374 68 381 73
+rect 669 67 674 73
+rect 964 67 969 73
 rect 1201 48 1210 57
 rect 48 36 56 41
 rect 296 36 303 45
+rect 17 13 24 20
 rect 918 35 925 41
 rect 602 23 610 31
-rect 17 13 24 20
 rect 1231 12 1244 19
 rect -32 -35 -23 -25
 rect 321 5 329 10
@@ -219,7 +260,10 @@ rect 1114 -326 1119 -321
 rect -6 261 0 345
 rect -67 172 -4 176
 rect -68 169 -4 172
-rect -68 50 -57 169
+rect -68 168 -57 169
+rect -92 163 -57 168
+rect -109 136 -95 143
+rect -68 50 -57 163
 rect 36 159 41 231
 rect 85 196 91 259
 rect 281 260 286 348
@@ -233,8 +277,12 @@ rect -45 155 41 159
 rect -68 49 -56 50
 rect -67 -71 -56 49
 rect -45 41 -39 155
+rect 88 136 95 137
+rect 73 132 275 136
+rect 88 129 275 132
 rect -14 104 -6 110
 rect 51 49 56 118
+rect 88 73 93 129
 rect 51 45 77 49
 rect -45 36 48 41
 rect 18 -25 24 13
@@ -254,7 +302,10 @@ rect 602 221 621 223
 rect 463 211 581 214
 rect 315 195 381 200
 rect 315 5 321 195
+rect 378 134 382 138
+rect 378 130 582 134
 rect 339 -58 343 118
+rect 378 73 382 130
 rect 338 -78 343 -58
 rect 334 -85 343 -78
 rect 489 -78 498 89
@@ -263,7 +314,10 @@ rect 669 200 675 237
 rect 757 210 876 213
 rect 614 193 675 200
 rect 614 4 618 193
+rect 671 132 676 136
+rect 671 128 874 132
 rect 635 45 639 117
+rect 671 73 676 128
 rect 635 -6 640 45
 rect 636 -78 640 -6
 rect 778 -63 788 90
@@ -282,7 +336,10 @@ rect 1374 220 1450 226
 rect 1280 207 1291 208
 rect 1238 206 1294 207
 rect 1224 203 1294 206
+rect 966 132 972 136
+rect 966 128 1179 132
 rect 930 48 934 117
+rect 966 73 972 128
 rect 930 -6 935 48
 rect 334 -106 342 -85
 rect 636 -90 639 -78
@@ -294,20 +351,22 @@ rect 1238 202 1294 203
 rect 1272 201 1294 202
 rect 1224 8 1231 138
 rect 1250 -56 1254 126
+rect 1286 83 1292 144
 rect 1438 105 1448 220
 rect 1414 99 1448 105
 rect 1438 98 1448 99
 rect 1205 -67 1255 -56
-rect 636 -96 678 -90
+rect 636 -96 654 -90
+rect -74 -123 77 -115
+rect 335 -117 342 -106
+rect 643 -103 654 -96
 rect 856 -91 935 -87
 rect 1151 -87 1154 -85
 rect 1213 -87 1224 -67
 rect 856 -94 1023 -91
 rect 1151 -94 1225 -87
 rect 856 -96 934 -94
-rect -74 -123 77 -115
-rect 335 -117 342 -106
-rect 643 -109 655 -96
+rect 643 -109 655 -103
 rect -101 -186 -97 -179
 rect -101 -189 -79 -186
 rect -82 -267 -79 -189
@@ -336,10 +395,13 @@ rect 759 -322 820 -318
 rect 997 -320 1110 -317
 rect 1107 -323 1110 -320
 rect 1107 -326 1114 -323
+<< m3contact >>
+rect -95 134 -85 145
+rect 73 136 81 143
+rect -14 110 -6 118
 << metal3 >>
-rect -91 110 -14 118
-<< m4contact >>
-rect -14 110 -6 116
+rect -85 136 73 142
+rect -81 110 -14 118
 use 1bit_mcl  1bit_mcl_0
 timestamp 1764797379
 transform 1 0 57 0 1 104
@@ -348,14 +410,26 @@ use inverter  inverter_0
 timestamp 1764702656
 transform 1 0 13 0 1 104
 box -10 -25 20 18
-use inverter  inverter_2
+use xorg  xorg_0
+timestamp 1764782750
+transform 1 0 -61 0 1 -201
+box -62 -125 143 29
+use inverter  inverter_6
 timestamp 1764702656
-transform 1 0 193 0 1 -82
+transform 1 0 -137 0 1 149
 box -10 -25 20 18
 use 1bit_mcl  1bit_mcl_1
 timestamp 1764797379
 transform 1 0 344 0 1 104
 box -71 -114 174 253
+use inverter  inverter_2
+timestamp 1764702656
+transform 1 0 193 0 1 -82
+box -10 -25 20 18
+use xorg  xorg_1
+timestamp 1764782750
+transform 1 0 238 0 1 -207
+box -62 -125 143 29
 use 1bit_mcl  1bit_mcl_2
 timestamp 1764797379
 transform 1 0 639 0 1 103
@@ -364,18 +438,30 @@ use inverter  inverter_3
 timestamp 1764702656
 transform 1 0 524 0 1 -79
 box -10 -25 20 18
-use 1bit_mcl  1bit_mcl_3
-timestamp 1764797379
-transform 1 0 934 0 1 103
-box -71 -114 174 253
+use xorg  xorg_2
+timestamp 1764782750
+transform 1 0 582 0 1 -202
+box -62 -125 143 29
 use inverter  inverter_4
 timestamp 1764702656
 transform 1 0 816 0 1 -66
 box -10 -25 20 18
+use xorg  xorg_3
+timestamp 1764782750
+transform 1 0 868 0 1 -205
+box -62 -125 143 29
+use 1bit_mcl  1bit_mcl_3
+timestamp 1764797379
+transform 1 0 934 0 1 103
+box -71 -114 174 253
 use inverter  inverter_5
 timestamp 1764702656
 transform 1 0 1105 0 1 -56
 box -10 -25 20 18
+use xorg  xorg_4
+timestamp 1764782750
+transform 1 0 1163 0 1 -209
+box -62 -125 143 29
 use 1bit_mcl  1bit_mcl_4
 timestamp 1764797379
 transform 1 0 1255 0 1 112
@@ -384,41 +470,9 @@ use inverter  inverter_1
 timestamp 1764702656
 transform 1 0 1382 0 1 125
 box -10 -25 20 18
-use xorg  xorg_4
-timestamp 1764782750
-transform 1 0 1163 0 1 -209
-box -62 -125 143 29
-use xorg  xorg_3
-timestamp 1764782750
-transform 1 0 868 0 1 -205
-box -62 -125 143 29
-use xorg  xorg_2
-timestamp 1764782750
-transform 1 0 582 0 1 -202
-box -62 -125 143 29
-use xorg  xorg_1
-timestamp 1764782750
-transform 1 0 238 0 1 -207
-box -62 -125 143 29
-use xorg  xorg_0
-timestamp 1764782750
-transform 1 0 -61 0 1 -201
-box -62 -125 143 29
 << labels >>
-rlabel metal1 157 167 165 169 1 vff
-rlabel metal1 157 167 165 169 1 vdd
 rlabel metal1 161 -9 169 -7 1 gnd
-rlabel space 91 143 95 146 1 clk
-rlabel space 88 64 92 67 1 clk
-rlabel space 379 143 383 146 1 clk
-rlabel space 372 64 376 67 1 clk
-rlabel space 673 142 677 145 1 clk
-rlabel space 669 63 673 66 1 clk
-rlabel space 969 142 973 145 1 clk
-rlabel space 963 63 967 66 1 clk
 rlabel space 1289 151 1293 154 1 clk
-rlabel space 1285 73 1289 76 1 clk
-rlabel metal1 -14 94 -4 96 3 Cin
 rlabel space 85 37 88 39 1 A0
 rlabel space 87 6 90 8 1 B0
 rlabel space 50 229 53 231 1 A0
@@ -446,7 +500,6 @@ rlabel space 1279 291 1285 294 1 B4
 rlabel space 1340 127 1346 130 1 Coutbar
 rlabel metal1 1417 117 1427 118 1 Cout
 rlabel metal2 73 -123 76 -105 1 P0
-rlabel space 655 -95 686 -92 1 P2
 rlabel metal2 988 -94 1019 -91 1 P3
 rlabel metal1 93 -248 110 -244 1 S0
 rlabel metal1 391 -254 400 -251 1 S1
@@ -455,4 +508,19 @@ rlabel metal1 726 -246 742 -244 1 S2
 rlabel metal1 1015 -250 1031 -248 1 S3
 rlabel metal1 1300 -254 1310 -252 1 S4
 rlabel metal2 323 -121 334 -119 1 P1
+rlabel metal2 646 -108 648 -101 1 P2
+rlabel metal1 62 23 63 27 1 A0
+rlabel metal1 48 14 49 18 1 B0
+rlabel metal1 349 36 355 38 1 A1
+rlabel metal1 350 5 356 7 1 B1
+rlabel metal1 651 24 657 26 1 A2
+rlabel metal1 646 6 652 8 1 B2
+rlabel metal1 944 35 950 37 1 A3
+rlabel metal1 940 5 946 7 1 B3
+rlabel metal1 1264 44 1270 46 1 A4
+rlabel metal1 1261 13 1267 15 1 B4
+rlabel metal3 -80 111 -76 114 1 Cin
+rlabel metal3 -82 137 -78 138 1 clk_mca
+rlabel metal1 -177 140 -176 141 3 clk
+rlabel metal1 163 167 166 169 1 vdd
 << end >>
