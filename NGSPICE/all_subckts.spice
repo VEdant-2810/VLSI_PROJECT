@@ -118,7 +118,7 @@ XpassP Coutbar P Cinbar gnd nmos wn=2u
 XclkPMOS Coutbar clk vdd vdd pmos wp=1.8u
 
 
-*----------Generate G = AB , putting two nmos in series with gates as A
+*----------Generate G = AB , putting two nmos in series with gates 
 C_ab AB gnd 1f
 XnA Coutbar A AB gnd nmos wn=0.9u
 C_bclk Bclk gnd 1f
@@ -127,7 +127,6 @@ XnB AB B Bclk gnd nmos wn=0.9u
 XclkNMOS Bclk clk gnd gnd nmos wn=0.9u
 
 
-* ----- 4. Restoring inverter : Coutbar to Cout 
 Xcout_p Cout Coutbar vdd vdd pmos wp=1.8u
 Xcout_n Cout Coutbar gnd gnd nmos wn=1.8u
 

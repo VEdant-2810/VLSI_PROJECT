@@ -356,10 +356,7 @@ M1175 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_C3bar gnd G
 +  ad=20 pd=18 as=0 ps=0
 M1176 cla5_final_without_ff_0_inverter_5_out cla5_final_without_ff_0_C3bar vdd cla5_final_without_ff_0_inverter_5_w_n8_n5 CMOSP w=8 l=2
 +  ad=40 pd=26 as=0 ps=0
-M1177 clk_mca clk gnd Gnd CMOSN w=4 l=2
-+  ad=20 pd=18 as=0 ps=0
-M1178 clk_mca clk vdd cla5_final_without_ff_0_inverter_6_w_n8_n5 CMOSP w=8 l=2
-+  ad=40 pd=26 as=0 ps=0
+
 M1179 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_P0 gnd Gnd CMOSN w=4 l=2
 +  ad=20 pd=18 as=0 ps=0
 M1180 cla5_final_without_ff_0_xorg_0_inverter_0_out cla5_final_without_ff_0_P0 vdd cla5_final_without_ff_0_xorg_0_inverter_0_w_n8_n5 CMOSP w=8 l=2
@@ -2502,18 +2499,24 @@ C1804 ff_7_m1_25_n38 Gnd 0.44fF
 C1805 A0_in Gnd 0.64fF
 C1806 ff_7_inverter_0_w_n8_n5 Gnd 0.53fF
 
+*M1177 clk_mca clk gnd Gnd CMOSN w=4 l=2
+*+  ad=20 pd=18 as=0 ps=0
+*M1178 clk_mca clk vdd cla5_final_without_ff_0_inverter_6_w_n8_n5 CMOSP w=8 l=2
+*+  ad=40 pd=26 as=0 ps=0
+
 
 
 Vdd vdd Gnd 1.8
-Vclk clk gnd PULSE(0 1.8 0 100p 100p 10n 20n)
+Vclk clk gnd PULSE(0 1.8 2n 100p 100p 10n 20n)
+Vclk_mca clk_mca gnd PULSE(1.8 0 3n 100p 100p 10n 20n)
 
-Va0 A0 gnd 0
-Va1 A1 gnd 0
-Va2 A2 gnd 0
-Va3 A3 gnd 0
-Va4 A4 gnd 0
+Va0 A0 gnd 1
+Va1 A1 gnd 1
+Va2 A2 gnd 1
+Va3 A3 gnd 1
+Va4 A4 gnd 1
 
-Vb0 B0 gnd 0
+Vb0 B0 gnd 1
 Vb1 B1 gnd 0
 Vb2 B2 gnd 0
 Vb3 B3 gnd 0
@@ -2525,6 +2528,6 @@ Vcin Cin gnd PULSE(0 1.8 0 100p 100p 15n 20n)
 
 .control
 run
-plot clk clk_mca+2 A0_in+4 Cout_f+6 S0_f+8 S1_f+10 S2_f+12 S3_f+14 S4_f+16
+plot clk clk_mca+2 Cout_f+6 S0_f+8 S1_f+10 S2_f+12 S3_f+14 S4_f+16
 .endc
 .end

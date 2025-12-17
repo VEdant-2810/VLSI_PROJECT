@@ -1,0 +1,290 @@
+
+*** Running vivado
+    with args -log cla5_registered.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cla5_registered.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source cla5_registered.tcl -notrace
+Command: synth_design -top cla5_registered -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50-csga324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50-csga324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19704 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 303.324 ; gain = 78.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'cla5_registered' [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:78]
+INFO: [Synth 8-638] synthesizing module 'pg_bit' [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:4]
+INFO: [Synth 8-256] done synthesizing module 'pg_bit' (1#1) [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:4]
+INFO: [Synth 8-638] synthesizing module 'sum_bit' [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:39]
+INFO: [Synth 8-256] done synthesizing module 'sum_bit' (2#1) [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:39]
+INFO: [Synth 8-638] synthesizing module 'dff_vec_neg' [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:59]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dff_neg' [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:48]
+INFO: [Synth 8-256] done synthesizing module 'dff_neg' (3#1) [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:48]
+INFO: [Synth 8-256] done synthesizing module 'dff_vec_neg' (4#1) [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:59]
+INFO: [Synth 8-638] synthesizing module 'carry_lookahead5' [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:14]
+INFO: [Synth 8-256] done synthesizing module 'carry_lookahead5' (5#1) [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:14]
+INFO: [Synth 8-256] done synthesizing module 'cla5_registered' (6#1) [C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v:78]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 342.652 ; gain = 118.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 342.652 ; gain = 118.168
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/joann/Downloads/boolean_cla.xdc]
+Finished Parsing XDC File [C:/Users/joann/Downloads/boolean_cla.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/joann/Downloads/boolean_cla.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/cla5_registered_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/cla5_registered_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 628.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pg_bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module sum_bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT3 |     4|
+|3     |LUT5 |     4|
+|4     |FDRE |    17|
+|5     |IBUF |    12|
+|6     |OBUF |     6|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------+--------------+------+
+|      |Instance            |Module        |Cells |
++------+--------------------+--------------+------+
+|1     |top                 |              |    44|
+|2     |  dff_a             |dff_vec_neg   |     5|
+|3     |    \dffs[0].u_dff  |dff_neg_13    |     1|
+|4     |    \dffs[1].u_dff  |dff_neg_14    |     1|
+|5     |    \dffs[2].u_dff  |dff_neg_15    |     1|
+|6     |    \dffs[3].u_dff  |dff_neg_16    |     1|
+|7     |    \dffs[4].u_dff  |dff_neg_17    |     1|
+|8     |  dff_b             |dff_vec_neg_0 |    13|
+|9     |    \dffs[0].u_dff  |dff_neg_8     |     5|
+|10    |    \dffs[1].u_dff  |dff_neg_9     |     2|
+|11    |    \dffs[2].u_dff  |dff_neg_10    |     2|
+|12    |    \dffs[3].u_dff  |dff_neg_11    |     2|
+|13    |    \dffs[4].u_dff  |dff_neg_12    |     2|
+|14    |  dff_c0            |dff_neg       |     1|
+|15    |  dff_cout          |dff_neg_1     |     1|
+|16    |  dff_sum           |dff_vec_neg_2 |     5|
+|17    |    \dffs[0].u_dff  |dff_neg_3     |     1|
+|18    |    \dffs[1].u_dff  |dff_neg_4     |     1|
+|19    |    \dffs[2].u_dff  |dff_neg_5     |     1|
+|20    |    \dffs[3].u_dff  |dff_neg_6     |     1|
+|21    |    \dffs[4].u_dff  |dff_neg_7     |     1|
++------+--------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 628.840 ; gain = 118.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 628.840 ; gain = 404.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 628.840 ; gain = 407.855
+INFO: [Common 17-1381] The checkpoint 'C:/Users/joann/Desktop/FINAL_FINAL_FPGA/FINAL_FINAL_FPGA.runs/synth_1/cla5_registered.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 628.840 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 06:47:45 2025...

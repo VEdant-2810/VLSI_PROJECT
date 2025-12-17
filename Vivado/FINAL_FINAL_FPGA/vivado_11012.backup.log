@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec  4 01:54:30 2025
+# Process ID: 11012
+# Current directory: C:/Users/joann/Desktop/FINAL_FINAL_FPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13296 C:\Users\joann\Desktop\FINAL_FINAL_FPGA\FINAL_FINAL_FPGA.xpr
+# Log file: C:/Users/joann/Desktop/FINAL_FINAL_FPGA/vivado.log
+# Journal file: C:/Users/joann/Desktop/FINAL_FINAL_FPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/joann/Desktop/FINAL_FINAL_FPGA/FINAL_FINAL_FPGA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Desktop/FINAL_FINAL_FPGA' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/joann/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v'; using path 'C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/joann/Users/joann/Downloads/boolean_cla.xdc'; using path 'C:/Users/joann/Downloads/boolean_cla.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/joann/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/tb_cla5.v'; using path 'C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/tb_cla5.v' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/joann/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v'; using path 'C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/joann/Users/joann/Downloads/boolean_cla.xdc'; using path 'C:/Users/joann/Downloads/boolean_cla.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/joann/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v'; using path 'C:/Users/joann/OneDrive - IIIT Hyderabad/2-1/VLSI Design/Project/verilog/cla5.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/joann/Users/joann/Downloads/boolean_cla.xdc'; using path 'C:/Users/joann/Downloads/boolean_cla.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 826.426 ; gain = 22.359
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  4 02:03:49 2025...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Dec  4 00:14:28 2025
+# Process ID: 11304
+# Current directory: C:/Desktop/FINAL_FINAL_FPGA/FINAL_FINAL_FPGA.runs/impl_1
+# Command line: vivado.exe -log cla5_registered.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cla5_registered.tcl -notrace
+# Log file: C:/Desktop/FINAL_FINAL_FPGA/FINAL_FINAL_FPGA.runs/impl_1/cla5_registered.vdi
+# Journal file: C:/Desktop/FINAL_FINAL_FPGA/FINAL_FINAL_FPGA.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cla5_registered.tcl -notrace

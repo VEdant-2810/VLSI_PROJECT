@@ -1,113 +1,101 @@
-* =============================================================
-* 1-bit Manchester Carry Look-Ahead Adder (TSMC 180nm-style)
-* With proper sizing (un/up = 2) and full transient + delay checks
-* =============================================================
 
+.include TSMC_180nm.txt
 .param VDD=1.8
 .param L=180n
 .param Wn_unit=1u
 .param un_up=2
 .param Wp_unit = {un_up*Wn_unit}
 
-* -------------------------------------------------------------
-* MOS Models (simple level-1 for functional sim)
-* -------------------------------------------------------------
-.model nmos NMOS (level=1 kp=120u vto=0.7)
-.model pmos PMOS (level=1 kp=60u  vto=-0.7)
+
 
 * -------------------------------------------------------------
 * Power & Inputs
 * -------------------------------------------------------------
-VDD Vdd 0 {VDD}
+VDD Vdd 0 1.8
 
 * Clock (you can use it for dynamic tests)
-VCLK CLK 0 PULSE(0 {VDD} 0 1n 1n 2n 10n)
+VCLK CLK 0 PULSE(0 1.8 0 1n 1n 2n 10n)
 
 * Inputs A, B, CIN (change as needed)
-VA   A   0 PULSE(0 {VDD} 0     1n 1n 5n 20n)
-VB   B   0 PULSE(0 {VDD} 2.5n  1n 1n 5n 20n)
-VCIN CIN 0 PULSE(0 {VDD} 5n    1n 1n 5n 20n)
+VA   A   0 PULSE(0 1.8 0     1n 1n 5n 20n)
+VB   B   0 PULSE(0 1.8 2.5n  1n 1n 5n 20n)
+VCIN CIN 0 PULSE(0 1.8 5n    1n 1n 5n 20n)
 
 * -------------------------------------------------------------
 * XOR (p = A XOR B)
 * -------------------------------------------------------------
 * Internal XOR nodes: px1, px2
 
-Mp1 px1 A Vdd Vdd pmos W={Wp_unit} L={L}
-Mp2 px1 B Vdd Vdd pmos W={Wp_unit} L={L}
-Mp3 px2 A px1 Vdd pmos W={Wp_unit} L={L}
-Mp4 px2 B px1 Vdd pmos W={Wp_unit} L={L}
+Mp1 px1 A Vdd Vdd CMOSP W={Wp_unit} L={L}
+Mp2 px1 B Vdd Vdd CMOSP W={Wp_unit} L={L}
+Mp3 px2 A px1 Vdd CMOSP W={Wp_unit} L={L}
+Mp4 px2 B px1 Vdd CMOSP W={Wp_unit} L={L}
 
-Mn1 px1 A 0 0 nmos W={Wn_unit} L={L}
-Mn2 px1 B 0 0 nmos W={Wn_unit} L={L}
-Mn3 px2 A px1 0 nmos W={Wn_unit} L={L}
-Mn4 px2 B px1 0 nmos W={Wn_unit} L={L}
+Mn1 px1 A 0 0 CMOSN W={Wn_unit} L={L}
+Mn2 px1 B 0 0 CMOSN W={Wn_unit} L={L}
+Mn3 px2 A px1 0 CMOSN W={Wn_unit} L={L}
+Mn4 px2 B px1 0 CMOSN W={Wn_unit} L={L}
 
 * XOR output inverter -> p
-Mp_inv p Vdd px2 Vdd pmos W={Wp_unit} L={L}
-Mn_inv p px2 0 0 nmos W={Wn_unit} L={L}
+Mp_inv p Vdd px2 Vdd CMOSP W={Wp_unit} L={L}
+Mn_inv p px2 0 0 CMOSN W={Wn_unit} L={L}
 
 * -------------------------------------------------------------
 * Generate g = A AND B  (via NAND + inverter)
 * -------------------------------------------------------------
-Mp_g1 n_g A Vdd Vdd pmos W={Wp_unit} L={L}
-Mp_g2 n_g B Vdd Vdd pmos W={Wp_unit} L={L}
+Mp_g1 n_g A Vdd Vdd CMOSP W={Wp_unit} L={L}
+Mp_g2 n_g B Vdd Vdd CMOSP W={Wp_unit} L={L}
 
-* For correct delay: series NMOS => W = 2 * Wn_unit
-Mn_g1 n_g A 0 0 nmos W={2*Wn_unit} L={L}
-Mn_g2 n_g B n_g 0 nmos W={2*Wn_unit} L={L}
+* For correct delay: series CMOSN => W = 2 * Wn_unit
+Mn_g1 n_g A 0 0 CMOSN W={2*Wn_unit} L={L}
+Mn_g2 n_g B n_g 0 CMOSN W={2*Wn_unit} L={L}
 
-Mp_ginv g Vdd n_g Vdd pmos W={Wp_unit} L={L}
-Mn_ginv g n_g 0 0 nmos W={Wn_unit} L={L}
+Mp_ginv g Vdd n_g Vdd CMOSP W={Wp_unit} L={L}
+Mn_ginv g n_g 0 0 CMOSN W={Wn_unit} L={L}
 
 * -------------------------------------------------------------
 * p AND CIN  (propagate · cin)
 * -------------------------------------------------------------
-Mp_pcin1 p_and_cin p Vdd Vdd pmos W={Wp_unit} L={L}
-Mp_pcin2 p_and_cin CIN Vdd Vdd pmos W={Wp_unit} L={L}
+Mp_pcin1 p_and_cin p Vdd Vdd CMOSP W={Wp_unit} L={L}
+Mp_pcin2 p_and_cin CIN Vdd Vdd CMOSP W={Wp_unit} L={L}
 
-* series NMOS => width doubled
-Mn_pcin1 p_and_cin p 0 0 nmos W={2*Wn_unit} L={L}
-Mn_pcin2 p_and_cin CIN p_and_cin 0 nmos W={2*Wn_unit} L={L}
+* series CMOSN => width doubled
+Mn_pcin1 p_and_cin p 0 0 CMOSN W={2*Wn_unit} L={L}
+Mn_pcin2 p_and_cin CIN p_and_cin 0 CMOSN W={2*Wn_unit} L={L}
 
 * Inverter for rail-to-rail
-Mp_pcin_inv p_and_cin_inv Vdd p_and_cin Vdd pmos W={Wp_unit} L={L}
-Mn_pcin_inv p_and_cin_inv p_and_cin 0 0 nmos W={Wn_unit} L={L}
+Mp_pcin_inv p_and_cin_inv Vdd p_and_cin Vdd CMOSP W={Wp_unit} L={L}
+Mn_pcin_inv p_and_cin_inv p_and_cin 0 0 CMOSN W={Wn_unit} L={L}
 
 * -------------------------------------------------------------
 * Carry logic: COUT = g OR (p AND CIN)
 * (via NAND then invert)
 * -------------------------------------------------------------
-Mp_c1 c_nand g Vdd Vdd pmos W={Wp_unit} L={L}
-Mp_c2 c_nand p_and_cin_inv Vdd Vdd pmos W={Wp_unit} L={L}
+Mp_c1 c_nand g Vdd Vdd CMOSP W={Wp_unit} L={L}
+Mp_c2 c_nand p_and_cin_inv Vdd Vdd CMOSP W={Wp_unit} L={L}
 
-Mn_c1 c_nand g 0 0 nmos W={2*Wn_unit} L={L}
-Mn_c2 c_nand p_and_cin_inv c_nand 0 nmos W={2*Wn_unit} L={L}
+Mn_c1 c_nand g 0 0 CMOSN W={2*Wn_unit} L={L}
+Mn_c2 c_nand p_and_cin_inv c_nand 0 CMOSN W={2*Wn_unit} L={L}
 
-Mp_cinv COUT Vdd c_nand Vdd pmos W={Wp_unit} L={L}
-Mn_cinv COUT c_nand 0 0 nmos W={Wn_unit} L={L}
+Mp_cinv COUT Vdd c_nand Vdd CMOSP W={Wp_unit} L={L}
+Mn_cinv COUT c_nand 0 0 CMOSN W={Wn_unit} L={L}
 
 * Output buffer
-Mp_buf COUT_buf Vdd COUT Vdd pmos W={Wp_unit} L={L}
-Mn_buf COUT_buf COUT 0 0 nmos W={Wn_unit} L={L}
-
-* =============================================================
-* TRANSIENT ANALYSIS + PLOTTING + DELAY MEASUREMENT
-* =============================================================
+Mp_buf COUT_buf Vdd COUT Vdd CMOSP W={Wp_unit} L={L}
+Mn_buf COUT_buf COUT 0 0 CMOSN W={Wn_unit} L={L}
 
 .tran 0.1n 100n
 
 * Plot all useful waveforms
-.plot tran V(A) V(B) V(CIN) V(p) V(g) V(p_and_cin_inv) V(COUT) V(COUT_buf)
+plot  V(A) V(B) V(CIN) V(p) V(g) V(p_and_cin_inv) V(COUT) V(COUT_buf)
 
-* Save everything
-.save all
+
 
 * Delay: 50% → 50% transitions
-.measure tran tpd_A_COUT_r  trig V(A) val='{VDD/2}' rise=1  targ V(COUT) val='{VDD/2}' rise=1
-.measure tran tpd_A_COUT_f  trig V(A) val='{VDD/2}' fall=1  targ V(COUT) val='{VDD/2}' fall=1
+meas tran tpd_A_COUT_r  trig V(A) val=0.9 rise=1  targ V(COUT) val=0.9 rise=1
+meas tran tpd_A_COUT_f  trig V(A) val=0.9 fall=1  targ V(COUT) val=0.9 fall=1
 
-.measure tran tpd_CIN_COUT_r trig V(CIN) val='{VDD/2}' rise=1 targ V(COUT) val='{VDD/2}' rise=1
-.measure tran tpd_CIN_COUT_f trig V(CIN) val='{VDD/2}' fall=1 targ V(COUT) val='{VDD/2}' fall=1
+meas tran tpd_CIN_COUT_r trig V(CIN) val=0.9 rise=1 targ V(COUT) val=0.9 rise=1
+meas tran tpd_CIN_COUT_f trig V(CIN) val=0.9 fall=1 targ V(COUT) val=0.9 fall=1
 
 .end
